@@ -1,0 +1,171 @@
+{
+  "call_id": "call_016",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Daniel",
+  "duration_s": 67.936,
+  "planted_faults": [
+    "false_barge_in",
+    "slow_response",
+    "wrong_readback"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Kevin Kim",
+    "phone_said": "4262249793",
+    "phone_read_back": "4262249713"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.842,
+      "text": "Thanks for calling Harbor Insurance. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.458,
+      "end": 8.068,
+      "text": "Yeah, it's Kevin Kim."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.892,
+      "end": 12.412,
+      "text": "Thanks, Kevin. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 13.16,
+      "end": 19.555,
+      "text": "Sure, it's four two six, two two four, nine seven nine three."
+    },
+    {
+      "speaker": "agent",
+      "start": 20.069,
+      "end": 25.651,
+      "text": "Let me read that back. four two six, two two four, nine seven one three. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 26.196,
+      "end": 30.947,
+      "text": "No, it's four two six, two two four, nine seven nine three."
+    },
+    {
+      "speaker": "agent",
+      "start": 31.686,
+      "end": 36.222,
+      "text": "Sorry about that. four two six, two two four, nine seven nine three."
+    },
+    {
+      "speaker": "caller",
+      "start": 36.895,
+      "end": 38.194,
+      "text": "Yes, that's it."
+    },
+    {
+      "speaker": "agent",
+      "start": 39.037,
+      "end": 42.016,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 42.807,
+      "end": 49.12,
+      "text": "Well, my car's been making a grinding noise, mostly when I brake on the highway."
+    },
+    {
+      "speaker": "agent",
+      "start": 51.618,
+      "end": 52.84,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 53.64,
+      "end": 54.914,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 56.114,
+      "end": 58.533,
+      "text": "Oh, no, that was just a cough."
+    },
+    {
+      "speaker": "agent",
+      "start": 59.452,
+      "end": 62.697,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 63.44,
+      "end": 64.896,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 65.714,
+      "end": 67.436,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.824
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.514
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.739
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.843
+    },
+    {
+      "turn": 10,
+      "latency_s": 2.499
+    },
+    {
+      "turn": 13,
+      "latency_s": 0.919
+    },
+    {
+      "turn": 15,
+      "latency_s": 0.818
+    }
+  ],
+  "events": [
+    {
+      "type": "wrong_readback",
+      "time": 20.069,
+      "said": "4262249793",
+      "read_back": "4262249713"
+    },
+    {
+      "type": "slow_response",
+      "time": 51.618,
+      "latency_s": 2.499
+    },
+    {
+      "type": "false_barge_in",
+      "time": 52.541,
+      "agent_stopped_at": 52.841
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "call_id": "call_021",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Moira",
+  "duration_s": 57.181,
+  "planted_faults": [
+    "dead_air",
+    "false_barge_in"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Grace Brooks",
+    "phone_said": "4032712852",
+    "phone_read_back": "4032712852"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.662,
+      "text": "Thanks for calling Lakeview Dental. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.286,
+      "end": 7.956,
+      "text": "Yeah, it's Grace Brooks."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.9,
+      "end": 12.465,
+      "text": "Thanks, Grace. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.986,
+      "end": 18.96,
+      "text": "Sure, it's four zero three, two seven one, two eight five two."
+    },
+    {
+      "speaker": "agent",
+      "start": 19.707,
+      "end": 25.31,
+      "text": "Let me read that back. four zero three, two seven one, two eight five two. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 26.033,
+      "end": 27.383,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 28.05,
+      "end": 31.029,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 31.659,
+      "end": 36.982,
+      "text": "Well, I slipped on the stairs at my building, and my wrist still hurts."
+    },
+    {
+      "speaker": "agent",
+      "start": 41.388,
+      "end": 42.675,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 43.475,
+      "end": 44.749,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 45.949,
+      "end": 48.278,
+      "text": "Oh, no, that was just a cough."
+    },
+    {
+      "speaker": "agent",
+      "start": 49.153,
+      "end": 52.398,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 53.015,
+      "end": 54.505,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 54.959,
+      "end": 56.681,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.944
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.747
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.668
+    },
+    {
+      "turn": 8,
+      "latency_s": 4.406
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.875
+    },
+    {
+      "turn": 13,
+      "latency_s": 0.455
+    }
+  ],
+  "events": [
+    {
+      "type": "dead_air",
+      "time": 41.388,
+      "latency_s": 4.406
+    },
+    {
+      "type": "false_barge_in",
+      "time": 42.375,
+      "agent_stopped_at": 42.675
+    }
+  ]
+}

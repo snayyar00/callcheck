@@ -1,0 +1,180 @@
+{
+  "call_id": "call_023",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Daniel",
+  "duration_s": 64.471,
+  "planted_faults": [
+    "cutoff",
+    "false_barge_in",
+    "slow_response",
+    "wrong_readback"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Kevin Carter",
+    "phone_said": "8019958919",
+    "phone_read_back": "8019958419"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.662,
+      "text": "Thanks for calling Lakeview Dental. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.191,
+      "end": 7.865,
+      "text": "Yeah, it's Kevin Carter."
+    },
+    {
+      "speaker": "agent",
+      "start": 10.285,
+      "end": 13.806,
+      "text": "Thanks, Kevin. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 14.487,
+      "end": 20.474,
+      "text": "Sure, it's eight zero one, nine nine five, eight nine one nine."
+    },
+    {
+      "speaker": "agent",
+      "start": 16.895,
+      "end": 19.056,
+      "text": "Sorry, could you repeat the full number?",
+      "interrupts_caller": true
+    },
+    {
+      "speaker": "agent",
+      "start": 20.929,
+      "end": 26.391,
+      "text": "Let me read that back. eight zero one, nine nine five, eight four one nine. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 26.744,
+      "end": 31.29,
+      "text": "No, it's eight zero one, nine nine five, eight nine one nine."
+    },
+    {
+      "speaker": "agent",
+      "start": 31.862,
+      "end": 36.252,
+      "text": "Sorry about that. eight zero one, nine nine five, eight nine one nine."
+    },
+    {
+      "speaker": "caller",
+      "start": 36.974,
+      "end": 38.273,
+      "text": "Yes, that's it."
+    },
+    {
+      "speaker": "agent",
+      "start": 38.84,
+      "end": 41.819,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 42.207,
+      "end": 47.613,
+      "text": "Well, I need to move my appointment, because I'm out of town on Thursday."
+    },
+    {
+      "speaker": "agent",
+      "start": 48.468,
+      "end": 49.667,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 50.467,
+      "end": 51.74,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 52.94,
+      "end": 55.359,
+      "text": "Oh, no, that was just a cough."
+    },
+    {
+      "speaker": "agent",
+      "start": 55.974,
+      "end": 59.219,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 59.983,
+      "end": 61.439,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 62.249,
+      "end": 63.971,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 2.42
+    },
+    {
+      "turn": 7,
+      "latency_s": 0.571
+    },
+    {
+      "turn": 9,
+      "latency_s": 0.566
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.855
+    },
+    {
+      "turn": 14,
+      "latency_s": 0.615
+    },
+    {
+      "turn": 16,
+      "latency_s": 0.81
+    }
+  ],
+  "events": [
+    {
+      "type": "slow_response",
+      "time": 10.285,
+      "latency_s": 2.42
+    },
+    {
+      "type": "cutoff",
+      "time": 16.895,
+      "caller_still_talking_until": 20.474
+    },
+    {
+      "type": "wrong_readback",
+      "time": 20.929,
+      "said": "8019958919",
+      "read_back": "8019958419"
+    },
+    {
+      "type": "false_barge_in",
+      "time": 49.367,
+      "agent_stopped_at": 49.667
+    }
+  ]
+}

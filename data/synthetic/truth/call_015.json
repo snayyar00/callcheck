@@ -1,0 +1,136 @@
+{
+  "call_id": "call_015",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Rocko (English (US))",
+  "duration_s": 57.656,
+  "planted_faults": [
+    "wrong_readback"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Elena Brooks",
+    "phone_said": "9669938480",
+    "phone_read_back": "9669538480"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.877,
+      "text": "Thanks for calling Metro Auto Care. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.206,
+      "end": 7.731,
+      "text": "Yeah, it's Elena Brooks."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.422,
+      "end": 11.948,
+      "text": "Thanks, Elena. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.57,
+      "end": 18.577,
+      "text": "Sure, it's nine six six, nine nine three, eight four eight zero."
+    },
+    {
+      "speaker": "agent",
+      "start": 19.147,
+      "end": 24.758,
+      "text": "Let me read that back. nine six six, nine five three, eight four eight zero. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.143,
+      "end": 29.504,
+      "text": "No, it's nine six six, nine nine three, eight four eight zero."
+    },
+    {
+      "speaker": "agent",
+      "start": 30.389,
+      "end": 34.867,
+      "text": "Sorry about that. nine six six, nine nine three, eight four eight zero."
+    },
+    {
+      "speaker": "caller",
+      "start": 35.298,
+      "end": 36.399,
+      "text": "Yes, that's it."
+    },
+    {
+      "speaker": "agent",
+      "start": 36.934,
+      "end": 39.913,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 40.325,
+      "end": 47.554,
+      "text": "Well, I was in a car accident last week, and the other driver's insurance won't call me back."
+    },
+    {
+      "speaker": "agent",
+      "start": 48.028,
+      "end": 53.187,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 53.671,
+      "end": 54.915,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 55.434,
+      "end": 57.156,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.691
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.571
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.885
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.534
+    },
+    {
+      "turn": 10,
+      "latency_s": 0.474
+    },
+    {
+      "turn": 12,
+      "latency_s": 0.519
+    }
+  ],
+  "events": [
+    {
+      "type": "wrong_readback",
+      "time": 19.147,
+      "said": "9669938480",
+      "read_back": "9669538480"
+    }
+  ]
+}

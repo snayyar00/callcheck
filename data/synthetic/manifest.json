@@ -1,0 +1,186 @@
+[
+  {
+    "call_id": "call_000",
+    "faults": [],
+    "duration_s": 48.202
+  },
+  {
+    "call_id": "call_001",
+    "faults": [],
+    "duration_s": 47.64
+  },
+  {
+    "call_id": "call_002",
+    "faults": [],
+    "duration_s": 49.831
+  },
+  {
+    "call_id": "call_003",
+    "faults": [],
+    "duration_s": 48.343
+  },
+  {
+    "call_id": "call_004",
+    "faults": [
+      "dead_air",
+      "slow_response",
+      "wrong_readback"
+    ],
+    "duration_s": 64.088
+  },
+  {
+    "call_id": "call_005",
+    "faults": [
+      "cutoff",
+      "slow_response",
+      "wrong_readback"
+    ],
+    "duration_s": 59.16
+  },
+  {
+    "call_id": "call_006",
+    "faults": [
+      "false_barge_in"
+    ],
+    "duration_s": 53.218
+  },
+  {
+    "call_id": "call_007",
+    "faults": [
+      "dead_air",
+      "false_barge_in",
+      "slow_response",
+      "wrong_readback"
+    ],
+    "duration_s": 67.494
+  },
+  {
+    "call_id": "call_008",
+    "faults": [
+      "cutoff",
+      "false_barge_in"
+    ],
+    "duration_s": 53.019
+  },
+  {
+    "call_id": "call_009",
+    "faults": [
+      "cutoff",
+      "slow_response",
+      "wrong_readback"
+    ],
+    "duration_s": 59.045
+  },
+  {
+    "call_id": "call_010",
+    "faults": [
+      "slow_response",
+      "wrong_readback"
+    ],
+    "duration_s": 57.977
+  },
+  {
+    "call_id": "call_011",
+    "faults": [
+      "false_barge_in"
+    ],
+    "duration_s": 52.133
+  },
+  {
+    "call_id": "call_012",
+    "faults": [
+      "dead_air",
+      "wrong_readback"
+    ],
+    "duration_s": 59.718
+  },
+  {
+    "call_id": "call_013",
+    "faults": [
+      "false_barge_in"
+    ],
+    "duration_s": 53.172
+  },
+  {
+    "call_id": "call_014",
+    "faults": [
+      "cutoff"
+    ],
+    "duration_s": 47.424
+  },
+  {
+    "call_id": "call_015",
+    "faults": [
+      "wrong_readback"
+    ],
+    "duration_s": 57.656
+  },
+  {
+    "call_id": "call_016",
+    "faults": [
+      "false_barge_in",
+      "slow_response",
+      "wrong_readback"
+    ],
+    "duration_s": 67.936
+  },
+  {
+    "call_id": "call_017",
+    "faults": [
+      "dead_air",
+      "false_barge_in",
+      "slow_response"
+    ],
+    "duration_s": 61.505
+  },
+  {
+    "call_id": "call_018",
+    "faults": [
+      "dead_air"
+    ],
+    "duration_s": 50.766
+  },
+  {
+    "call_id": "call_019",
+    "faults": [
+      "dead_air",
+      "false_barge_in",
+      "wrong_readback"
+    ],
+    "duration_s": 68.452
+  },
+  {
+    "call_id": "call_020",
+    "faults": [
+      "false_barge_in",
+      "slow_response",
+      "wrong_readback"
+    ],
+    "duration_s": 64.805
+  },
+  {
+    "call_id": "call_021",
+    "faults": [
+      "dead_air",
+      "false_barge_in"
+    ],
+    "duration_s": 57.181
+  },
+  {
+    "call_id": "call_022",
+    "faults": [
+      "wrong_readback"
+    ],
+    "duration_s": 58.425
+  },
+  {
+    "call_id": "call_023",
+    "faults": [
+      "cutoff",
+      "false_barge_in",
+      "slow_response",
+      "wrong_readback"
+    ],
+    "duration_s": 64.471
+  }
+]

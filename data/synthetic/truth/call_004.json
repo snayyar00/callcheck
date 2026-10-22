@@ -1,0 +1,148 @@
+{
+  "call_id": "call_004",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Karen",
+  "duration_s": 64.088,
+  "planted_faults": [
+    "dead_air",
+    "slow_response",
+    "wrong_readback"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Tom Brooks",
+    "phone_said": "7040509701",
+    "phone_read_back": "7040509771"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.547,
+      "text": "Thanks for calling Northside Clinic. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 5.872,
+      "end": 7.503,
+      "text": "Yeah, it's Tom Brooks."
+    },
+    {
+      "speaker": "agent",
+      "start": 10.043,
+      "end": 13.604,
+      "text": "Thanks, Tom. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 13.968,
+      "end": 20.507,
+      "text": "Sure, it's seven zero four, zero five zero, nine seven zero one."
+    },
+    {
+      "speaker": "agent",
+      "start": 21.397,
+      "end": 27.457,
+      "text": "Let me read that back. seven zero four, zero five zero, nine seven seven one. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 27.772,
+      "end": 32.704,
+      "text": "No, it's seven zero four, zero five zero, nine seven zero one."
+    },
+    {
+      "speaker": "agent",
+      "start": 33.49,
+      "end": 38.464,
+      "text": "Sorry about that. seven zero four, zero five zero, nine seven zero one."
+    },
+    {
+      "speaker": "caller",
+      "start": 38.887,
+      "end": 40.155,
+      "text": "Yes, that's it."
+    },
+    {
+      "speaker": "agent",
+      "start": 40.834,
+      "end": 43.813,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 44.465,
+      "end": 50.438,
+      "text": "Well, my car's been making a grinding noise, mostly when I brake on the highway."
+    },
+    {
+      "speaker": "agent",
+      "start": 54.323,
+      "end": 59.482,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 59.9,
+      "end": 61.365,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 61.865,
+      "end": 63.588,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 2.54
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.891
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.786
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.679
+    },
+    {
+      "turn": 10,
+      "latency_s": 3.886
+    },
+    {
+      "turn": 12,
+      "latency_s": 0.501
+    }
+  ],
+  "events": [
+    {
+      "type": "slow_response",
+      "time": 10.043,
+      "latency_s": 2.54
+    },
+    {
+      "type": "wrong_readback",
+      "time": 21.397,
+      "said": "7040509701",
+      "read_back": "7040509771"
+    },
+    {
+      "type": "dead_air",
+      "time": 54.323,
+      "latency_s": 3.886
+    }
+  ]
+}

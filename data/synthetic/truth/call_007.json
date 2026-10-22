@@ -1,0 +1,177 @@
+{
+  "call_id": "call_007",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Reed (English (US))",
+  "duration_s": 67.494,
+  "planted_faults": [
+    "dead_air",
+    "false_barge_in",
+    "slow_response",
+    "wrong_readback"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Tom Brooks",
+    "phone_said": "0313119913",
+    "phone_read_back": "3313119913"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.842,
+      "text": "Thanks for calling Harbor Insurance. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.636,
+      "end": 8.159,
+      "text": "Yeah, it's Tom Brooks."
+    },
+    {
+      "speaker": "agent",
+      "start": 9.002,
+      "end": 12.563,
+      "text": "Thanks, Tom. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.923,
+      "end": 19.086,
+      "text": "Sure, it's zero three one, three one one, nine nine one three."
+    },
+    {
+      "speaker": "agent",
+      "start": 19.813,
+      "end": 25.195,
+      "text": "Let me read that back. three three one, three one one, nine nine one three. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.832,
+      "end": 30.307,
+      "text": "No, it's zero three one, three one one, nine nine one three."
+    },
+    {
+      "speaker": "agent",
+      "start": 31.117,
+      "end": 35.562,
+      "text": "Sorry about that. zero three one, three one one, nine nine one three."
+    },
+    {
+      "speaker": "caller",
+      "start": 35.876,
+      "end": 36.98,
+      "text": "Yes, that's it."
+    },
+    {
+      "speaker": "agent",
+      "start": 38.807,
+      "end": 41.786,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 42.447,
+      "end": 48.122,
+      "text": "Well, I got a bill I don't understand, it's for a visit I never had."
+    },
+    {
+      "speaker": "agent",
+      "start": 51.816,
+      "end": 53.367,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 54.167,
+      "end": 55.441,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 56.641,
+      "end": 58.83,
+      "text": "Oh, no, that was just a cough."
+    },
+    {
+      "speaker": "agent",
+      "start": 59.537,
+      "end": 62.782,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 63.098,
+      "end": 64.343,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 65.272,
+      "end": 66.994,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.843
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.727
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.81
+    },
+    {
+      "turn": 8,
+      "latency_s": 1.827
+    },
+    {
+      "turn": 10,
+      "latency_s": 3.694
+    },
+    {
+      "turn": 13,
+      "latency_s": 0.706
+    },
+    {
+      "turn": 15,
+      "latency_s": 0.929
+    }
+  ],
+  "events": [
+    {
+      "type": "wrong_readback",
+      "time": 19.813,
+      "said": "0313119913",
+      "read_back": "3313119913"
+    },
+    {
+      "type": "slow_response",
+      "time": 38.807,
+      "latency_s": 1.827
+    },
+    {
+      "type": "dead_air",
+      "time": 51.816,
+      "latency_s": 3.694
+    },
+    {
+      "type": "false_barge_in",
+      "time": 53.067,
+      "agent_stopped_at": 53.367
+    }
+  ]
+}

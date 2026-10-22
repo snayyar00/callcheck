@@ -1,0 +1,119 @@
+{
+  "call_id": "call_018",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Reed (English (US))",
+  "duration_s": 50.766,
+  "planted_faults": [
+    "dead_air"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Grace Haddad",
+    "phone_said": "7899283521",
+    "phone_read_back": "7899283521"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.842,
+      "text": "Thanks for calling Harbor Insurance. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.576,
+      "end": 8.05,
+      "text": "Yeah, it's Grace Haddad."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.915,
+      "end": 12.481,
+      "text": "Thanks, Grace. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.81,
+      "end": 18.777,
+      "text": "Sure, it's seven eight nine, nine two eight, three five two one."
+    },
+    {
+      "speaker": "agent",
+      "start": 19.633,
+      "end": 25.081,
+      "text": "Let me read that back. seven eight nine, nine two eight, three five two one. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.468,
+      "end": 26.693,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 30.879,
+      "end": 33.858,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 34.312,
+      "end": 39.951,
+      "text": "Well, I need to move my appointment, because I'm out of town on Thursday."
+    },
+    {
+      "speaker": "agent",
+      "start": 40.819,
+      "end": 45.978,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 46.759,
+      "end": 48.005,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 48.544,
+      "end": 50.266,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.865
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.857
+    },
+    {
+      "turn": 6,
+      "latency_s": 4.186
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.868
+    },
+    {
+      "turn": 10,
+      "latency_s": 0.539
+    }
+  ],
+  "events": [
+    {
+      "type": "dead_air",
+      "time": 30.879,
+      "latency_s": 4.186
+    }
+  ]
+}

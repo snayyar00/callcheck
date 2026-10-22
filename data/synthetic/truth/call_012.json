@@ -1,0 +1,142 @@
+{
+  "call_id": "call_012",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Rocko (English (US))",
+  "duration_s": 59.718,
+  "planted_faults": [
+    "dead_air",
+    "wrong_readback"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Grace Shah",
+    "phone_said": "9145621848",
+    "phone_read_back": "9145623848"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.842,
+      "text": "Thanks for calling Harbor Insurance. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.157,
+      "end": 7.604,
+      "text": "Yeah, it's Grace Shah."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.458,
+      "end": 12.023,
+      "text": "Thanks, Grace. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.392,
+      "end": 18.21,
+      "text": "Sure, it's nine one four, five six two, one eight four eight."
+    },
+    {
+      "speaker": "agent",
+      "start": 18.855,
+      "end": 24.287,
+      "text": "Let me read that back. nine one four, five six two, three eight four eight. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 24.904,
+      "end": 29.05,
+      "text": "No, it's nine one four, five six two, one eight four eight."
+    },
+    {
+      "speaker": "agent",
+      "start": 29.591,
+      "end": 33.814,
+      "text": "Sorry about that. nine one four, five six two, one eight four eight."
+    },
+    {
+      "speaker": "caller",
+      "start": 34.591,
+      "end": 35.693,
+      "text": "Yes, that's it."
+    },
+    {
+      "speaker": "agent",
+      "start": 36.57,
+      "end": 39.549,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 39.999,
+      "end": 45.36,
+      "text": "Well, I slipped on the stairs at my building, and my wrist still hurts."
+    },
+    {
+      "speaker": "agent",
+      "start": 49.577,
+      "end": 54.736,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 55.439,
+      "end": 56.683,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 57.496,
+      "end": 59.219,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.854
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.645
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.541
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.877
+    },
+    {
+      "turn": 10,
+      "latency_s": 4.217
+    },
+    {
+      "turn": 12,
+      "latency_s": 0.813
+    }
+  ],
+  "events": [
+    {
+      "type": "wrong_readback",
+      "time": 18.855,
+      "said": "9145621848",
+      "read_back": "9145623848"
+    },
+    {
+      "type": "dead_air",
+      "time": 49.577,
+      "latency_s": 4.217
+    }
+  ]
+}

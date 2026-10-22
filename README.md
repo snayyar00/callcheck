@@ -66,6 +66,18 @@ AMI meeting corpus, 29 four-minute windows of two people talking, individual hea
 | Latency within 0.5 s | 78% | |
 | Cut-off | precision 43%, recall 27% | precision 51%, recall 33% |
 
+## Side study: can audio alone tell when the caller is done?
+
+The same real calls give a clean test of endpointing, the decision every voice agent makes at each caller pause. On 99 held-out SpokenWOZ calls (2328 caller pauses), I compared a plain silence timeout with a gradient-boosted model on prosody features and with the open smart-turn v3.2 model run zero-shot.
+
+| Wait before answering | Silence timeout cuts in on | Best model |
+|---|---|---|
+| 0.3 s | 80% of mid-turn pauses | 66% (smart-turn) |
+| 0.5 s | 49% | 47% |
+| 0.8 s | 31% | 31% (no gain) |
+
+From audio alone, no model beat the timeout at the waits a production agent would use. It only helps when you answer very fast. Most of what the model learned was pause length and how long this caller usually pauses. Pitch and energy added little. Human operators in these calls answer a median 1.0 s after the caller stops. Details, confidence intervals and limits are in `research/endpointing/RESULTS.md`. The likely next step is text: what the caller said, not how it sounded.
+
 ## Where it breaks
 
 - **Echo / bleed.** If the agent's voice leaks into the caller channel (or the reverse), callcheck sees phantom turns. On clips where the other channel is near the same level, almost every caller sentence is flagged as a cut-off.

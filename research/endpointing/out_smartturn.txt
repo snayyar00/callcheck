@@ -1,0 +1,51 @@
+inferences: 0
+smart-turn AUC by delay: {'0.2': 0.726, '0.3': 0.721, '0.5': 0.688, '0.8': 0.632, '1.2': 0.602}
+F=0.8: at cut<=timeout0.8 (0.308): best mean lat 0.8 | at lat<=0.8: best cut 0.30837988826815643
+  thr 0.02 cut 100.0% lat 0.20
+  thr 0.26 cut 100.0% lat 0.20
+  thr 0.5 cut 100.0% lat 0.20
+  thr 0.53 cut 66.0% lat 0.28
+  thr 0.55 cut 63.8% lat 0.29
+  thr 0.57 cut 61.3% lat 0.31
+  thr 0.59 cut 59.9% lat 0.32
+  thr 0.61 cut 57.7% lat 0.34
+  thr 0.63 cut 56.1% lat 0.35
+  thr 0.65 cut 54.5% lat 0.37
+  thr 0.67 cut 51.7% lat 0.38
+  thr 0.69 cut 49.5% lat 0.41
+  thr 0.71 cut 44.2% lat 0.46
+  thr 0.73 cut 30.8% lat 0.80
+  thr 0.75 cut 30.8% lat 0.80
+  thr 0.77 cut 30.8% lat 0.80
+  thr 0.79 cut 30.8% lat 0.80
+  thr 0.85 cut 30.8% lat 0.80
+  thr 0.98 cut 30.8% lat 0.80
+F=1.2: at cut<=timeout0.8 (0.308): best mean lat 1.2 | at lat<=0.8: best cut 0.3474860335195531
+  thr 0.02 cut 100.0% lat 0.20
+  thr 0.26 cut 100.0% lat 0.20
+  thr 0.5 cut 100.0% lat 0.20
+  thr 0.53 cut 63.8% lat 0.31
+  thr 0.55 cut 61.2% lat 0.34
+  thr 0.57 cut 58.3% lat 0.36
+  thr 0.59 cut 56.8% lat 0.38
+  thr 0.61 cut 54.2% lat 0.40
+  thr 0.63 cut 52.4% lat 0.43
+  thr 0.65 cut 50.8% lat 0.45
+  thr 0.67 cut 47.9% lat 0.48
+  thr 0.69 cut 45.6% lat 0.52
+  thr 0.71 cut 39.9% lat 0.60
+  thr 0.73 cut 24.5% lat 1.20
+  thr 0.75 cut 24.5% lat 1.20
+  thr 0.77 cut 24.5% lat 1.20
+  thr 0.79 cut 24.5% lat 1.20
+  thr 0.85 cut 24.5% lat 1.20
+  thr 0.98 cut 24.5% lat 1.20
+
+latency-matched table: min cut-off % reachable at mean added wait <= L (point estimates, test)
+L(s)           timeout        logreg        gboost  gboost dense    smart-turn
+0.3               80.4          82.9          71.2          70.2          65.7
+0.4               62.3          64.7          56.6          56.1          55.2
+0.5               49.4          58.7          47.8          48.4          46.7
+0.6               40.4          47.2          40.8          39.4          39.9
+0.8               30.8          37.8          31.5          33.4          34.7
+1.0               26.1          28.2          26.3          27.5          34.7

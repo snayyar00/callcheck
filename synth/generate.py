@@ -128,10 +128,11 @@ class Call:
         end = self._place("agent", audio, start)
         self.turns.append({"speaker": "agent", "start": round(start, 3), "end": round(end, 3), "text": text,
                            **({"truncated": True} if truncate_at is not None else {})})
-        # Response latency only exists when this agent turn answers a caller turn.
-        answers_caller = len(self.turns) >= 2 and self.turns[-2]["speaker"] == "caller"
-        if self.last_caller_end is not None and answers_caller:
-            self.latencies.append({"turn": len(self.turns) - 1, "latency_s": round(start - self.last_caller_end, 3)})
+        # Response latency only exists when the last thing heard before this turn was the caller.
+        before = [t for t in self.turns[:-1] if t["start"] < start]
+        last = max(before, key=lambda t: t["end"]) if before else None
+        if last is not None and last["speaker"] == "caller" and last["end"] <= start:
+            self.latencies.append({"turn": len(self.turns) - 1, "latency_s": round(start - last["end"], 3)})
         self.t = end
         return start, end
 
@@ -165,6 +166,12 @@ def build(call_id, rng, faults):
         return None
 
     def mark_latency(turn_no):
+        if turn_no not in (dead_turn, slow_turn):
+            return
+        if not c.latencies or c.latencies[-1]["turn"] != len(c.turns) - 1:
+            # This turn follows agent speech (after a cut-off), so it has no response latency to plant on.
+            c.faults.discard("dead_air" if turn_no == dead_turn else "slow_response")
+            return
         last = c.latencies[-1]["latency_s"]
         if turn_no == dead_turn:
             c.event("dead_air", c.turns[-1]["start"], latency_s=last)
@@ -192,7 +199,6 @@ def build(call_id, rng, faults):
                         "text": "Sorry, could you repeat the full number?", "interrupts_caller": True})
         c.event("cutoff", jump, caller_still_talking_until=round(c.last_caller_end, 3))
         c.t = max(c.t, jump + len(audio) / SR)
-        c.last_caller_end = None  # next agent turn follows agent speech, so it has no response latency
 
     readback = phone
     if "wrong_readback" in faults:
@@ -224,7 +230,6 @@ def build(call_id, rng, faults):
                         "text": text, "interrupts_caller": True})
         c.event("cutoff", jump, caller_still_talking_until=round(c.last_caller_end, 3))
         c.t = max(c.t, jump + len(audio) / SR)
-        c.last_caller_end = None
 
     reply = "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
     if "false_barge_in" in faults:
@@ -235,7 +240,6 @@ def build(call_id, rng, faults):
         c.say_agent(reply, latency=latency, truncate_at=noise_at + 0.3)
         mark_latency(4)
         c.event("false_barge_in", noise_at, agent_stopped_at=round(noise_at + 0.3, 3))
-        c.last_caller_end = None  # the cough is not a caller turn
         c.say_agent("Sorry, go ahead.", latency=0.8)
         c.say_caller(["Oh, no, that was just a cough."], gap=1.2)
         c.say_agent("No problem. I'll connect you with someone on our team now.")
@@ -257,7 +261,7 @@ def build(call_id, rng, faults):
         "channels": {"left": "caller", "right": "agent"},
         "caller_voice": c.caller_voice,
         "duration_s": round(end / SR, 3),
-        "planted_faults": sorted(faults),
+        "planted_faults": sorted(c.faults),
         "thresholds": {"slow_response_s": SLOW_RESPONSE_S, "dead_air_s": DEAD_AIR_S},
         "entities": {"name": f"{first} {last}", "phone_said": phone, "phone_read_back": readback},
         "turns": c.turns,

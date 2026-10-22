@@ -28,7 +28,7 @@ def speech_frames(channel, sr):
     n = int(FRAME_S * sr)
     frames = channel[: len(channel) // n * n].reshape(-1, n)
     rms = np.sqrt((frames ** 2).mean(axis=1))
-    return rms > 0.01  # noise floor is about 0.002 RMS
+    return rms > 0.005  # noise floor is about 0.002 RMS; soft onsets like "S" sit near 0.009
 
 
 def frame(t):

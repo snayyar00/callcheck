@@ -46,16 +46,16 @@ This is an upper bound. Synthetic calls are clean and the faults are planted the
 
 SpokenWOZ test set: real two-party customer-service phone calls, 8 kHz stereo, one speaker per channel, utterance times marked by annotators. The annotation pads every utterance by about 0.35 s on each side (measured against channel energy over 1090 turns), so that constant is removed before scoring.
 
-Tuned on 32 calls, scored on 37 *untouched* calls (125 min):
+Tuned on 32 calls, scored on 40 *untouched* calls (131 min):
 
 | Check | Result |
 |---|---|
-| Response latency, 699 turns | median error -0.08 s, 90% within 0.22 s |
+| Response latency, 731 turns | median error -0.08 s, 90% within 0.21 s |
 | Gaps over 1.5 s | precision 85%, recall 78% |
 | Gaps over 3 s | precision 64%, recall 82% |
-| Cut-off (agent talks over caller) | precision 56%, recall 38% |
+| Cut-off (agent talks over caller) | precision 57%, recall 39% |
 
-The cut-off detector in the first version scored precision 13%, recall 14% on these same calls. It counted line clicks as the caller resuming, and it missed every case where the caller never paused.
+The cut-off detector in the first version scored precision 13%, recall 14% on the first 37 of these calls. It counted line clicks as the caller resuming, and it missed every case where the caller never paused.
 
 ### Real meetings, word-level timing (harder than phone)
 
@@ -93,8 +93,14 @@ uv run --python 3.12 --with numpy python synth/generate.py --calls 60 --seed 202
 uv run --python 3.12 --with numpy python synth/verify.py data/final
 uv run --python 3.12 --with numpy --with onnxruntime python score.py data/final phone
 uv run --python 3.12 --with numpy --with onnxruntime --with faster-whisper python score_entities.py data/final phone
-uv run --python 3.12 --with numpy python realdata/telephone/build_real_tel.py holdout
+mkdir -p data/.corpora/spokenwoz_text data/.corpora/spokenwoz_test
+curl -L -o data/.corpora/spokenwoz_text/data.json https://huggingface.co/datasets/ssz1111/SpokenWOZ-Test-Text-Fixed/resolve/main/data.json
+curl -L -o data/.corpora/spokenwoz_test/audio_5700_test.zip https://huggingface.co/datasets/ssz1111/SpokenWOZ-Test-Audio-Fixed/resolve/main/audio_5700_test.zip
+uv run --python 3.12 --with numpy python realdata/telephone/build_real_tel.py           # 32 tuning calls
+uv run --python 3.12 --with numpy python realdata/telephone/build_real_tel.py holdout   # 40 held-out calls
 uv run --python 3.12 --with numpy --with onnxruntime python realdata/telephone/score_real.py holdout
+sh realdata/ami/fetch.sh                                   # ~2.2 GB of AMI audio
+uv run --python 3.12 --with numpy python realdata/ami/build_pairs.py
 uv run --python 3.12 --with numpy --with onnxruntime python realdata/ami/score_ami.py
 ```
 

@@ -121,9 +121,11 @@ def main():
         if len(kept) >= N_HARD + N_RANDOM:
             break
         p = RAW / "audio_5700_test" / f"{k}.wav"
-        import wave
-        w = wave.open(str(p)); sr = w.getframerate()
-        x = np.frombuffer(w.readframes(w.getnframes()), np.int16).reshape(-1, 2).astype(float)
+        # ffmpeg, not the wave module: a few SpokenWOZ files are 32-bit float WAV, which wave cannot read.
+        sr = 8000
+        x = np.frombuffer(subprocess.run(["ffmpeg", "-loglevel", "error", "-i", str(p), "-f", "s16le", "-ac", "2",
+                                          "-ar", str(sr), "-"], capture_output=True, check=True).stdout,
+                          np.int16).reshape(-1, 2).astype(float)
         tr = turns_of(d[k]["log"], pad=False)
         # channel sanity: caller turns must be louder on ch0 and agent turns on ch1 (else swapped/mono: reject)
         def rms(who, ch):

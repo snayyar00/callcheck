@@ -1,0 +1,119 @@
+{
+  "call_id": "call_020",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Daniel",
+  "duration_s": 51.609,
+  "planted_faults": [
+    "dead_air"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Elena Nguyen",
+    "phone_said": "4095262310",
+    "phone_read_back": "4095262310"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.547,
+      "text": "Thanks for calling Northside Clinic. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.206,
+      "end": 7.89,
+      "text": "Yeah, it's Elena Nguyen."
+    },
+    {
+      "speaker": "agent",
+      "start": 11.86,
+      "end": 15.385,
+      "text": "Thanks, Elena. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 16.15,
+      "end": 22.586,
+      "text": "Sure, it's four zero nine, five two six, two three one zero."
+    },
+    {
+      "speaker": "agent",
+      "start": 23.332,
+      "end": 29.09,
+      "text": "Let me read that back. four zero nine, five two six, two three one zero. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 29.598,
+      "end": 31.073,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 31.572,
+      "end": 34.551,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 34.853,
+      "end": 41.213,
+      "text": "Well, my car's been making a grinding noise, mostly when I brake on the highway."
+    },
+    {
+      "speaker": "agent",
+      "start": 41.665,
+      "end": 46.824,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 47.251,
+      "end": 48.707,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 49.387,
+      "end": 51.109,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 3.97
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.746
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.499
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.452
+    },
+    {
+      "turn": 10,
+      "latency_s": 0.68
+    }
+  ],
+  "events": [
+    {
+      "type": "dead_air",
+      "time": 11.86,
+      "latency_s": 3.97
+    }
+  ]
+}

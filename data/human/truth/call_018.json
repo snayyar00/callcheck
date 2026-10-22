@@ -1,0 +1,145 @@
+{
+  "call_id": "call_018",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "librispeech:777",
+  "caller_source": "LibriSpeech dev-clean (real human, read speech)",
+  "duration_s": 54.98,
+  "planted_faults": [
+    "false_barge_in",
+    "slow_response"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {},
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.662,
+      "text": "Thanks for calling Lakeview Dental. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.264,
+      "end": 7.444,
+      "text": "he had been a prisoner himself"
+    },
+    {
+      "speaker": "agent",
+      "start": 9.945,
+      "end": 12.812,
+      "text": "Thanks. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 13.422,
+      "end": 20.743,
+      "text": "he looked dubiously at his brother in law but he did not ask him for information i would call it cannibalistic that's what it is"
+    },
+    {
+      "speaker": "agent",
+      "start": 21.408,
+      "end": 23.469,
+      "text": "Let me read that back. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 24.247,
+      "end": 26.037,
+      "text": "he gets a red face poring over them"
+    },
+    {
+      "speaker": "agent",
+      "start": 26.814,
+      "end": 29.793,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 30.393,
+      "end": 40.2,
+      "text": "they are nourishing their greed on the quivering flesh and the warm blood of the people nothing else struggle warfare was the condition of private ownership it was fatal"
+    },
+    {
+      "speaker": "agent",
+      "start": 40.679,
+      "end": 41.799,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 42.599,
+      "end": 43.873,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 45.073,
+      "end": 46.933,
+      "text": "mister verloc was fully responsive now"
+    },
+    {
+      "speaker": "agent",
+      "start": 47.714,
+      "end": 50.96,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 51.308,
+      "end": 52.198,
+      "text": "comfortable dear"
+    },
+    {
+      "speaker": "agent",
+      "start": 52.758,
+      "end": 54.48,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 2.501
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.665
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.777
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.479
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.781
+    },
+    {
+      "turn": 13,
+      "latency_s": 0.56
+    }
+  ],
+  "events": [
+    {
+      "type": "slow_response",
+      "time": 9.945,
+      "latency_s": 2.501
+    },
+    {
+      "type": "false_barge_in",
+      "time": 41.499,
+      "agent_stopped_at": 41.799
+    }
+  ]
+}

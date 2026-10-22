@@ -1,0 +1,4490 @@
+{
+ "duration_s": 240.0,
+ "A_turns": [
+  {
+   "start": 0.32,
+   "end": 2.7,
+   "backchannel": false,
+   "words": [
+    "no",
+    "black",
+    "all",
+    "black"
+   ],
+   "n_words": 4
+  },
+  {
+   "start": 3.48,
+   "end": 4.97,
+   "backchannel": false,
+   "words": [
+    "so",
+    "yeah"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 7.44,
+   "end": 7.78,
+   "backchannel": true,
+   "words": [
+    "mm-hmm"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 13.27,
+   "end": 13.49,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 14.47,
+   "end": 16.4,
+   "backchannel": false,
+   "words": [
+    "the",
+    "the",
+    "angle",
+    "you",
+    "have",
+    "to",
+    "use"
+   ],
+   "n_words": 7
+  },
+  {
+   "start": 17.4,
+   "end": 21.04,
+   "backchannel": false,
+   "words": [
+    "you",
+    "had",
+    "different",
+    "remote",
+    "controls",
+    "for",
+    "different",
+    "devices"
+   ],
+   "n_words": 9
+  },
+  {
+   "start": 26.09,
+   "end": 26.19,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 30.92,
+   "end": 36.16,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "but",
+    "then",
+    "again",
+    "you",
+    "you",
+    "still",
+    "have"
+   ],
+   "n_words": 13
+  },
+  {
+   "start": 46.82,
+   "end": 47.88,
+   "backchannel": false,
+   "words": [
+    "flap",
+    "yeah"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 50.34,
+   "end": 55.19,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "okay",
+    "that's",
+    "possible",
+    "but",
+    "it'll",
+    "get",
+    "very"
+   ],
+   "n_words": 13
+  },
+  {
+   "start": 61.35,
+   "end": 61.82,
+   "backchannel": true,
+   "words": [
+    "mm-hmm"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 74.32,
+   "end": 75.38,
+   "backchannel": false,
+   "words": [
+    "mm-hmm",
+    "numbers"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 78.13,
+   "end": 78.83,
+   "backchannel": false,
+   "words": [
+    "on",
+    "and",
+    "off"
+   ],
+   "n_words": 3
+  },
+  {
+   "start": 85.78,
+   "end": 87.41,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "play",
+    "pause",
+    "stop"
+   ],
+   "n_words": 4
+  },
+  {
+   "start": 95.84,
+   "end": 96.74,
+   "backchannel": false,
+   "words": [
+    "mm-hmm",
+    "of",
+    "course"
+   ],
+   "n_words": 3
+  },
+  {
+   "start": 109.11,
+   "end": 109.34,
+   "backchannel": false,
+   "words": [
+    "no"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 113.05,
+   "end": 113.31,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 114.5,
+   "end": 120.93,
+   "backchannel": false,
+   "words": [
+    "because",
+    "i",
+    "think",
+    "a",
+    "market",
+    "will",
+    "be",
+    "all"
+   ],
+   "n_words": 18
+  },
+  {
+   "start": 137.44,
+   "end": 139.5,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "i",
+    "think",
+    "that's",
+    "the",
+    "better",
+    "one",
+    "because"
+   ],
+   "n_words": 8
+  },
+  {
+   "start": 140.9,
+   "end": 151.29,
+   "backchannel": false,
+   "words": [
+    "i",
+    "think",
+    "if",
+    "you",
+    "you're",
+    "going",
+    "to",
+    "target"
+   ],
+   "n_words": 34
+  },
+  {
+   "start": 152.02,
+   "end": 155.91,
+   "backchannel": false,
+   "words": [
+    "i",
+    "think",
+    "the",
+    "aim",
+    "is",
+    "better",
+    "to",
+    "use"
+   ],
+   "n_words": 15
+  },
+  {
+   "start": 157.62,
+   "end": 158.18,
+   "backchannel": false,
+   "words": [
+    "not",
+    "that",
+    "much"
+   ],
+   "n_words": 3
+  },
+  {
+   "start": 175.4,
+   "end": 177.7,
+   "backchannel": false,
+   "words": [
+    "mm",
+    "standard",
+    "deliver"
+   ],
+   "n_words": 3
+  },
+  {
+   "start": 180.64,
+   "end": 180.95,
+   "backchannel": true,
+   "words": [
+    "mm"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 189.52,
+   "end": 190.57,
+   "backchannel": false,
+   "words": [
+    "no",
+    "but"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 191.81,
+   "end": 196.21,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "yeah",
+    "th",
+    "it",
+    "it's",
+    "i",
+    "think",
+    "that's"
+   ],
+   "n_words": 9
+  },
+  {
+   "start": 206.8,
+   "end": 208.03,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "okay"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 216.6,
+   "end": 216.87,
+   "backchannel": false,
+   "words": [
+    "no"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 219.28,
+   "end": 221.95,
+   "backchannel": false,
+   "words": [
+    "i",
+    "think",
+    "n",
+    "m",
+    "n",
+    "most",
+    "televisions",
+    "nowadays"
+   ],
+   "n_words": 10
+  },
+  {
+   "start": 223.57,
+   "end": 225.53,
+   "backchannel": false,
+   "words": [
+    "so",
+    "i",
+    "think",
+    "numerals"
+   ],
+   "n_words": 4
+  },
+  {
+   "start": 229.89,
+   "end": 239.84,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "but",
+    "then",
+    "you",
+    "have",
+    "to",
+    "choose",
+    "the"
+   ],
+   "n_words": 35
+  }
+ ],
+ "B_turns": [
+  {
+   "start": 0.96,
+   "end": 1.13,
+   "backchannel": true,
+   "words": [
+    "mm"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 3.94,
+   "end": 5.39,
+   "backchannel": false,
+   "words": [
+    "black",
+    "colours"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 8.01,
+   "end": 12.03,
+   "backchannel": false,
+   "words": [
+    "they",
+    "use",
+    "batteries",
+    "and",
+    "batteries",
+    "uh",
+    "and",
+    "poor"
+   ],
+   "n_words": 9
+  },
+  {
+   "start": 13.69,
+   "end": 14.22,
+   "backchannel": false,
+   "words": [
+    "uh"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 18.56,
+   "end": 20.19,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "different",
+    "remote",
+    "controls",
+    "yeah"
+   ],
+   "n_words": 5
+  },
+  {
+   "start": 23.41,
+   "end": 25.68,
+   "backchannel": false,
+   "words": [
+    "uh",
+    "for",
+    "the",
+    "use",
+    "of",
+    "different",
+    "uh",
+    "devices"
+   ],
+   "n_words": 8
+  },
+  {
+   "start": 36.31,
+   "end": 41.24,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "but",
+    "you",
+    "could",
+    "uh",
+    "i",
+    "thin",
+    "uh"
+   ],
+   "n_words": 16
+  },
+  {
+   "start": 43.43,
+   "end": 50.17,
+   "backchannel": false,
+   "words": [
+    "to",
+    "put",
+    "those",
+    "buttons",
+    "uh",
+    "behind",
+    "some",
+    "uh"
+   ],
+   "n_words": 27
+  },
+  {
+   "start": 51.83,
+   "end": 85.4,
+   "backchannel": false,
+   "words": [
+    "that's",
+    "possible",
+    "so",
+    "that",
+    "you",
+    "only",
+    "get",
+    "the"
+   ],
+   "n_words": 93
+  },
+  {
+   "start": 86.53,
+   "end": 87.65,
+   "backchannel": false,
+   "words": [
+    "so",
+    "uh"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 90.0,
+   "end": 91.07,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "i",
+    "think",
+    "so",
+    "yeah"
+   ],
+   "n_words": 5
+  },
+  {
+   "start": 98.89,
+   "end": 104.58,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "uh",
+    "teletext",
+    "think",
+    "so",
+    "okay"
+   ],
+   "n_words": 6
+  },
+  {
+   "start": 113.88,
+   "end": 114.04,
+   "backchannel": true,
+   "words": [
+    "right"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 134.58,
+   "end": 135.04,
+   "backchannel": false,
+   "words": [
+    "uh"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 137.54,
+   "end": 138.6,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "i",
+    "i",
+    "understand"
+   ],
+   "n_words": 4
+  },
+  {
+   "start": 147.89,
+   "end": 148.18,
+   "backchannel": false,
+   "words": [
+    "no"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 155.5,
+   "end": 155.94,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 157.25,
+   "end": 162.75,
+   "backchannel": false,
+   "words": [
+    "when",
+    "i",
+    "think",
+    "of",
+    "it",
+    "uh",
+    "i",
+    "think"
+   ],
+   "n_words": 19
+  },
+  {
+   "start": 164.37,
+   "end": 190.75,
+   "backchannel": false,
+   "words": [
+    "to",
+    "make",
+    "it",
+    "user",
+    "friendly",
+    "so",
+    "uh",
+    "i"
+   ],
+   "n_words": 79
+  },
+  {
+   "start": 195.11,
+   "end": 219.56,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "but",
+    "i",
+    "but",
+    "it",
+    "is",
+    "impossible",
+    "to"
+   ],
+   "n_words": 75
+  },
+  {
+   "start": 222.31,
+   "end": 229.89,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "but",
+    "uh",
+    "they",
+    "don't",
+    "use",
+    "the",
+    "same"
+   ],
+   "n_words": 28
+  },
+  {
+   "start": 235.22,
+   "end": 236.79,
+   "backchannel": false,
+   "words": [
+    "okay",
+    "okay"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 238.69,
+   "end": 239.25,
+   "backchannel": true,
+   "words": [
+    "okay"
+   ],
+   "n_words": 1
+  }
+ ],
+ "B_agent_turns": [
+  {
+   "start": 0.96,
+   "end": 1.13,
+   "backchannel": true,
+   "words": [
+    "mm"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 3.94,
+   "end": 5.39,
+   "backchannel": false,
+   "words": [
+    "black",
+    "colours"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 8.01,
+   "end": 12.03,
+   "backchannel": false,
+   "words": [
+    "they",
+    "use",
+    "batteries",
+    "and",
+    "batteries",
+    "uh",
+    "and",
+    "poor"
+   ],
+   "n_words": 9
+  },
+  {
+   "start": 13.69,
+   "end": 14.22,
+   "backchannel": false,
+   "words": [
+    "uh"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 18.56,
+   "end": 20.19,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "different",
+    "remote",
+    "controls",
+    "yeah"
+   ],
+   "n_words": 5
+  },
+  {
+   "start": 23.41,
+   "end": 25.68,
+   "backchannel": false,
+   "words": [
+    "uh",
+    "for",
+    "the",
+    "use",
+    "of",
+    "different",
+    "uh",
+    "devices"
+   ],
+   "n_words": 8
+  },
+  {
+   "start": 36.31,
+   "end": 41.24,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "but",
+    "you",
+    "could",
+    "uh",
+    "i",
+    "thin",
+    "uh"
+   ],
+   "n_words": 16
+  },
+  {
+   "start": 43.43,
+   "end": 50.17,
+   "backchannel": false,
+   "words": [
+    "to",
+    "put",
+    "those",
+    "buttons",
+    "uh",
+    "behind",
+    "some",
+    "uh"
+   ],
+   "n_words": 27
+  },
+  {
+   "start": 51.83,
+   "end": 85.4,
+   "backchannel": false,
+   "words": [
+    "that's",
+    "possible",
+    "so",
+    "that",
+    "you",
+    "only",
+    "get",
+    "the"
+   ],
+   "n_words": 93
+  },
+  {
+   "start": 86.53,
+   "end": 87.65,
+   "backchannel": false,
+   "words": [
+    "so",
+    "uh"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 90.0,
+   "end": 91.07,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "i",
+    "think",
+    "so",
+    "yeah"
+   ],
+   "n_words": 5
+  },
+  {
+   "start": 98.89,
+   "end": 104.58,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "uh",
+    "teletext",
+    "think",
+    "so",
+    "okay"
+   ],
+   "n_words": 6
+  },
+  {
+   "start": 113.88,
+   "end": 114.04,
+   "backchannel": true,
+   "words": [
+    "right"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 134.58,
+   "end": 135.04,
+   "backchannel": false,
+   "words": [
+    "uh"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 137.54,
+   "end": 138.6,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "i",
+    "i",
+    "understand"
+   ],
+   "n_words": 4
+  },
+  {
+   "start": 147.89,
+   "end": 148.18,
+   "backchannel": false,
+   "words": [
+    "no"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 155.5,
+   "end": 155.94,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 157.25,
+   "end": 162.75,
+   "backchannel": false,
+   "words": [
+    "when",
+    "i",
+    "think",
+    "of",
+    "it",
+    "uh",
+    "i",
+    "think"
+   ],
+   "n_words": 19
+  },
+  {
+   "start": 164.37,
+   "end": 190.75,
+   "backchannel": false,
+   "words": [
+    "to",
+    "make",
+    "it",
+    "user",
+    "friendly",
+    "so",
+    "uh",
+    "i"
+   ],
+   "n_words": 79
+  },
+  {
+   "start": 195.11,
+   "end": 219.56,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "but",
+    "i",
+    "but",
+    "it",
+    "is",
+    "impossible",
+    "to"
+   ],
+   "n_words": 75
+  },
+  {
+   "start": 222.31,
+   "end": 229.89,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "but",
+    "uh",
+    "they",
+    "don't",
+    "use",
+    "the",
+    "same"
+   ],
+   "n_words": 28
+  },
+  {
+   "start": 235.22,
+   "end": 236.79,
+   "backchannel": false,
+   "words": [
+    "okay",
+    "okay"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 238.69,
+   "end": 239.25,
+   "backchannel": true,
+   "words": [
+    "okay"
+   ],
+   "n_words": 1
+  }
+ ],
+ "latencies": [
+  {
+   "b_start": 23.41,
+   "a_end": 21.04,
+   "latency_s": 2.37,
+   "backchannel": false,
+   "b_words": [
+    "uh",
+    "for",
+    "the",
+    "use",
+    "of",
+    "different"
+   ]
+  },
+  {
+   "b_start": 36.31,
+   "a_end": 36.16,
+   "latency_s": 0.15,
+   "backchannel": false,
+   "b_words": [
+    "yeah",
+    "but",
+    "you",
+    "could",
+    "uh",
+    "i"
+   ]
+  },
+  {
+   "b_start": 98.89,
+   "a_end": 96.74,
+   "latency_s": 2.15,
+   "backchannel": false,
+   "b_words": [
+    "yeah",
+    "uh",
+    "teletext",
+    "think",
+    "so",
+    "okay"
+   ]
+  },
+  {
+   "b_start": 113.88,
+   "a_end": 109.34,
+   "latency_s": 4.54,
+   "backchannel": true,
+   "b_words": [
+    "right"
+   ]
+  },
+  {
+   "b_start": 134.58,
+   "a_end": 120.93,
+   "latency_s": 13.65,
+   "backchannel": false,
+   "b_words": [
+    "uh"
+   ]
+  },
+  {
+   "b_start": 222.31,
+   "a_end": 221.95,
+   "latency_s": 0.36,
+   "backchannel": false,
+   "b_words": [
+    "yeah",
+    "but",
+    "uh",
+    "they",
+    "don't",
+    "use"
+   ]
+  }
+ ],
+ "overlaps": [
+  {
+   "b_start": 0.96,
+   "b_end": 1.13,
+   "overlap_s": 0.17,
+   "kind": "backchannel",
+   "a_turn": [
+    0.32,
+    2.7
+   ],
+   "a_resumes_after": false,
+   "b_words": [
+    "mm"
+   ]
+  },
+  {
+   "b_start": 3.94,
+   "b_end": 5.39,
+   "overlap_s": 1.03,
+   "kind": "interruption",
+   "a_turn": [
+    3.48,
+    4.97
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "black",
+    "colours"
+   ]
+  },
+  {
+   "b_start": 18.56,
+   "b_end": 20.19,
+   "overlap_s": 1.63,
+   "kind": "interruption",
+   "a_turn": [
+    17.4,
+    21.04
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "yeah",
+    "different",
+    "remote",
+    "controls",
+    "yeah"
+   ]
+  },
+  {
+   "b_start": 51.83,
+   "b_end": 85.4,
+   "overlap_s": 3.36,
+   "kind": "interruption",
+   "a_turn": [
+    50.34,
+    55.19
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "that's",
+    "possible",
+    "so",
+    "that",
+    "you",
+    "only",
+    "get",
+    "the",
+    "no",
+    "n",
+    "n",
+    "no",
+    "just",
+    "uh",
+    "for",
+    "example",
+    "you",
+    "got",
+    "th",
+    "uh",
+    "the",
+    "same",
+    "size",
+    "uh",
+    "remote",
+    "control",
+    "you",
+    "use",
+    "everyday",
+    "but",
+    "um",
+    "the",
+    "usual",
+    "buttons",
+    "such",
+    "as",
+    "uh",
+    "um",
+    "zapping",
+    "uh",
+    "as",
+    "you",
+    "call",
+    "it",
+    "in",
+    "dutch",
+    "uh",
+    "and",
+    "the",
+    "volume",
+    "control",
+    "uh",
+    "are",
+    "only",
+    "the",
+    "only",
+    "possible",
+    "buttons",
+    "uh",
+    "to",
+    "use",
+    "directly",
+    "or",
+    "uh",
+    "the",
+    "numbers",
+    "of",
+    "course",
+    "but",
+    "uh",
+    "not",
+    "uh",
+    "the",
+    "buttons",
+    "used",
+    "to",
+    "search",
+    "on",
+    "the",
+    "the",
+    "channels",
+    "on",
+    "your",
+    "television",
+    "you",
+    "only",
+    "use",
+    "those",
+    "uh",
+    "the",
+    "first",
+    "time",
+    "or"
+   ]
+  },
+  {
+   "b_start": 86.53,
+   "b_end": 87.65,
+   "overlap_s": 0.88,
+   "kind": "interruption",
+   "a_turn": [
+    85.78,
+    87.41
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "so",
+    "uh"
+   ]
+  },
+  {
+   "b_start": 137.54,
+   "b_end": 138.6,
+   "overlap_s": 1.06,
+   "kind": "interruption",
+   "a_turn": [
+    137.44,
+    139.5
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "yeah",
+    "i",
+    "i",
+    "understand"
+   ]
+  },
+  {
+   "b_start": 147.89,
+   "b_end": 148.18,
+   "overlap_s": 0.29,
+   "kind": "interruption",
+   "a_turn": [
+    140.9,
+    151.29
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "no"
+   ]
+  },
+  {
+   "b_start": 155.5,
+   "b_end": 155.94,
+   "overlap_s": 0.41,
+   "kind": "backchannel",
+   "a_turn": [
+    152.02,
+    155.91
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "yeah"
+   ]
+  },
+  {
+   "b_start": 195.11,
+   "b_end": 219.56,
+   "overlap_s": 1.1,
+   "kind": "interruption",
+   "a_turn": [
+    191.81,
+    196.21
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "yeah",
+    "but",
+    "i",
+    "but",
+    "it",
+    "is",
+    "impossible",
+    "to",
+    "uh",
+    "to",
+    "accommodate",
+    "uh",
+    "accommodate",
+    "uh",
+    "all",
+    "the",
+    "buttons",
+    "on",
+    "the",
+    "s",
+    "on",
+    "the",
+    "difference",
+    "different",
+    "televisions",
+    "sets",
+    "on",
+    "one",
+    "remote",
+    "control",
+    "it's",
+    "impossible",
+    "because",
+    "uh",
+    "for",
+    "example",
+    "sony",
+    "television",
+    "uh",
+    "has",
+    "the",
+    "opportunity",
+    "to",
+    "s",
+    "to",
+    "make",
+    "uh",
+    "uh",
+    "to",
+    "make",
+    "it",
+    "possible",
+    "for",
+    "to",
+    "see",
+    "on",
+    "one",
+    "side",
+    "of",
+    "the",
+    "screen",
+    "uh",
+    "teletext",
+    "and",
+    "on",
+    "the",
+    "other",
+    "side",
+    "uh",
+    "just",
+    "n",
+    "uh",
+    "regular",
+    "television",
+    "uh"
+   ]
+  },
+  {
+   "b_start": 235.22,
+   "b_end": 236.79,
+   "overlap_s": 1.57,
+   "kind": "interruption",
+   "a_turn": [
+    229.89,
+    239.84
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "okay",
+    "okay"
+   ]
+  },
+  {
+   "b_start": 238.69,
+   "b_end": 239.25,
+   "overlap_s": 0.56,
+   "kind": "backchannel",
+   "a_turn": [
+    229.89,
+    239.84
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "okay"
+   ]
+  }
+ ],
+ "cutoffs": [
+  {
+   "b_start": 3.94,
+   "a_resumes_at": 4.66
+  },
+  {
+   "b_start": 18.56,
+   "a_resumes_at": 19.27
+  },
+  {
+   "b_start": 51.83,
+   "a_resumes_at": 52.53
+  },
+  {
+   "b_start": 86.53,
+   "a_resumes_at": 86.66
+  },
+  {
+   "b_start": 137.54,
+   "a_resumes_at": 137.68
+  },
+  {
+   "b_start": 147.89,
+   "a_resumes_at": 148.17
+  },
+  {
+   "b_start": 157.25,
+   "a_resumes_at": 157.62
+  },
+  {
+   "b_start": 195.11,
+   "a_resumes_at": 195.28
+  },
+  {
+   "b_start": 222.31,
+   "a_resumes_at": 223.57
+  },
+  {
+   "b_start": 235.22,
+   "a_resumes_at": 235.38
+  }
+ ],
+ "cutoffs_pause": [
+  {
+   "b_start": 157.25,
+   "a_resumes_at": 157.62
+  },
+  {
+   "b_start": 222.31,
+   "a_resumes_at": 223.57
+  }
+ ],
+ "vocal_sounds": {
+  "A": [
+   {
+    "start": 98.689,
+    "end": 100.061,
+    "type": "laugh"
+   },
+   {
+    "start": 194.58,
+    "end": 194.58,
+    "type": "other"
+   }
+  ],
+  "B": [
+   {
+    "start": 25.68,
+    "end": 25.68,
+    "type": "other"
+   },
+   {
+    "start": 56.57,
+    "end": 56.57,
+    "type": "laugh"
+   },
+   {
+    "start": 62.71,
+    "end": 62.71,
+    "type": "other"
+   },
+   {
+    "start": 66.11,
+    "end": 66.11,
+    "type": "other"
+   },
+   {
+    "start": 76.03,
+    "end": 76.03,
+    "type": "other"
+   },
+   {
+    "start": 147.072,
+    "end": 147.072,
+    "type": "other"
+   }
+  ]
+ },
+ "false_barge_candidates": [],
+ "A_words": [
+  [
+   0.32,
+   1.55,
+   "no"
+  ],
+  [
+   1.55,
+   1.94,
+   "black"
+  ],
+  [
+   1.94,
+   2.12,
+   "all"
+  ],
+  [
+   2.12,
+   2.7,
+   "black"
+  ],
+  [
+   3.48,
+   4.66,
+   "so"
+  ],
+  [
+   4.66,
+   4.97,
+   "yeah"
+  ],
+  [
+   7.44,
+   7.78,
+   "mm-hmm"
+  ],
+  [
+   13.27,
+   13.49,
+   "yeah"
+  ],
+  [
+   14.47,
+   14.76,
+   "the"
+  ],
+  [
+   14.76,
+   15.02,
+   "the"
+  ],
+  [
+   15.02,
+   15.49,
+   "angle"
+  ],
+  [
+   15.49,
+   15.58,
+   "you"
+  ],
+  [
+   15.58,
+   15.73,
+   "have"
+  ],
+  [
+   15.73,
+   15.82,
+   "to"
+  ],
+  [
+   15.82,
+   16.4,
+   "use"
+  ],
+  [
+   17.4,
+   17.46,
+   "you"
+  ],
+  [
+   17.46,
+   17.61,
+   "had"
+  ],
+  [
+   17.61,
+   17.93,
+   "different"
+  ],
+  [
+   17.93,
+   18.21,
+   "remote"
+  ],
+  [
+   18.21,
+   19.27,
+   "controls"
+  ],
+  [
+   19.27,
+   19.4,
+   "for"
+  ],
+  [
+   19.4,
+   19.7,
+   "different"
+  ],
+  [
+   19.7,
+   20.79,
+   "devices"
+  ],
+  [
+   20.79,
+   21.04,
+   "yes"
+  ],
+  [
+   26.09,
+   26.19,
+   "yeah"
+  ],
+  [
+   30.92,
+   31.17,
+   "yeah"
+  ],
+  [
+   31.17,
+   31.31,
+   "but"
+  ],
+  [
+   31.31,
+   31.53,
+   "then"
+  ],
+  [
+   31.53,
+   31.78,
+   "again"
+  ],
+  [
+   31.78,
+   31.94,
+   "you"
+  ],
+  [
+   31.94,
+   33.31,
+   "you"
+  ],
+  [
+   33.31,
+   33.94,
+   "still"
+  ],
+  [
+   33.94,
+   34.45,
+   "have"
+  ],
+  [
+   34.45,
+   34.54,
+   "a"
+  ],
+  [
+   34.54,
+   34.68,
+   "lot"
+  ],
+  [
+   34.68,
+   34.78,
+   "of"
+  ],
+  [
+   34.78,
+   35.93,
+   "buttons"
+  ],
+  [
+   35.93,
+   36.16,
+   "so"
+  ],
+  [
+   46.82,
+   47.52,
+   "flap"
+  ],
+  [
+   47.52,
+   47.88,
+   "yeah"
+  ],
+  [
+   50.34,
+   50.6,
+   "yeah"
+  ],
+  [
+   50.6,
+   50.88,
+   "okay"
+  ],
+  [
+   50.88,
+   51.75,
+   "that's"
+  ],
+  [
+   51.75,
+   52.53,
+   "possible"
+  ],
+  [
+   52.53,
+   52.63,
+   "but"
+  ],
+  [
+   52.63,
+   52.75,
+   "it'll"
+  ],
+  [
+   52.75,
+   52.91,
+   "get"
+  ],
+  [
+   52.91,
+   53.24,
+   "very"
+  ],
+  [
+   53.24,
+   53.44,
+   "big"
+  ],
+  [
+   53.44,
+   54.05,
+   "the"
+  ],
+  [
+   54.05,
+   54.11,
+   "the"
+  ],
+  [
+   54.11,
+   54.36,
+   "remote"
+  ],
+  [
+   54.36,
+   55.19,
+   "control"
+  ],
+  [
+   61.35,
+   61.82,
+   "mm-hmm"
+  ],
+  [
+   74.32,
+   75.06,
+   "mm-hmm"
+  ],
+  [
+   75.06,
+   75.38,
+   "numbers"
+  ],
+  [
+   78.13,
+   78.3,
+   "on"
+  ],
+  [
+   78.3,
+   78.41,
+   "and"
+  ],
+  [
+   78.41,
+   78.83,
+   "off"
+  ],
+  [
+   85.78,
+   86.45,
+   "yeah"
+  ],
+  [
+   86.45,
+   86.66,
+   "play"
+  ],
+  [
+   86.66,
+   87.14,
+   "pause"
+  ],
+  [
+   87.14,
+   87.41,
+   "stop"
+  ],
+  [
+   95.84,
+   95.98,
+   "mm-hmm"
+  ],
+  [
+   95.98,
+   96.53,
+   "of"
+  ],
+  [
+   96.53,
+   96.74,
+   "course"
+  ],
+  [
+   109.11,
+   109.34,
+   "no"
+  ],
+  [
+   113.05,
+   113.31,
+   "yeah"
+  ],
+  [
+   114.5,
+   114.81,
+   "because"
+  ],
+  [
+   114.81,
+   114.91,
+   "i"
+  ],
+  [
+   114.91,
+   115.1,
+   "think"
+  ],
+  [
+   115.1,
+   115.22,
+   "a"
+  ],
+  [
+   115.22,
+   115.64,
+   "market"
+  ],
+  [
+   115.64,
+   115.84,
+   "will"
+  ],
+  [
+   115.84,
+   116.11,
+   "be"
+  ],
+  [
+   116.11,
+   116.44,
+   "all"
+  ],
+  [
+   116.44,
+   116.68,
+   "kind"
+  ],
+  [
+   116.68,
+   116.8,
+   "of"
+  ],
+  [
+   116.8,
+   117.43,
+   "people"
+  ],
+  [
+   117.43,
+   117.79,
+   "elderly"
+  ],
+  [
+   117.79,
+   117.97,
+   "p"
+  ],
+  [
+   117.97,
+   118.24,
+   "el"
+  ],
+  [
+   118.24,
+   119.19,
+   "elderly"
+  ],
+  [
+   119.19,
+   119.48,
+   "young"
+  ],
+  [
+   119.48,
+   120.69,
+   "people"
+  ],
+  [
+   120.69,
+   120.93,
+   "so"
+  ],
+  [
+   137.44,
+   137.68,
+   "yeah"
+  ],
+  [
+   137.68,
+   137.77,
+   "i"
+  ],
+  [
+   137.77,
+   138.14,
+   "think"
+  ],
+  [
+   138.14,
+   138.35,
+   "that's"
+  ],
+  [
+   138.35,
+   138.43,
+   "the"
+  ],
+  [
+   138.43,
+   138.97,
+   "better"
+  ],
+  [
+   138.97,
+   139.21,
+   "one"
+  ],
+  [
+   139.21,
+   139.5,
+   "because"
+  ],
+  [
+   140.9,
+   141.12,
+   "i"
+  ],
+  [
+   141.12,
+   141.49,
+   "think"
+  ],
+  [
+   141.49,
+   141.69,
+   "if"
+  ],
+  [
+   141.69,
+   142.23,
+   "you"
+  ],
+  [
+   142.23,
+   142.41,
+   "you're"
+  ],
+  [
+   142.41,
+   142.72,
+   "going"
+  ],
+  [
+   142.72,
+   143.1,
+   "to"
+  ],
+  [
+   143.1,
+   143.46,
+   "target"
+  ],
+  [
+   143.46,
+   143.54,
+   "a"
+  ],
+  [
+   143.54,
+   143.69,
+   "lot"
+  ],
+  [
+   143.69,
+   144.01,
+   "of"
+  ],
+  [
+   144.01,
+   144.52,
+   "people"
+  ],
+  [
+   144.52,
+   145.29,
+   "and"
+  ],
+  [
+   145.29,
+   145.35,
+   "the"
+  ],
+  [
+   145.35,
+   145.55,
+   "whole"
+  ],
+  [
+   145.55,
+   145.81,
+   "world"
+  ],
+  [
+   145.81,
+   145.91,
+   "and"
+  ],
+  [
+   145.91,
+   146.18,
+   "only"
+  ],
+  [
+   146.18,
+   146.55,
+   "britain"
+  ],
+  [
+   146.55,
+   147.44,
+   "then"
+  ],
+  [
+   147.44,
+   147.67,
+   "i"
+  ],
+  [
+   147.67,
+   148.17,
+   "think"
+  ],
+  [
+   148.17,
+   148.28,
+   "the"
+  ],
+  [
+   148.28,
+   148.61,
+   "cost"
+  ],
+  [
+   148.61,
+   149.03,
+   "will"
+  ],
+  [
+   149.03,
+   149.21,
+   "uh"
+  ],
+  [
+   149.21,
+   149.75,
+   "rise"
+  ],
+  [
+   149.75,
+   150.07,
+   "higher"
+  ],
+  [
+   150.07,
+   150.28,
+   "than"
+  ],
+  [
+   150.28,
+   150.38,
+   "the"
+  ],
+  [
+   150.38,
+   150.56,
+   "twelve"
+  ],
+  [
+   150.56,
+   150.86,
+   "fifty"
+  ],
+  [
+   150.86,
+   150.94,
+   "i"
+  ],
+  [
+   150.94,
+   151.29,
+   "think"
+  ],
+  [
+   152.02,
+   152.09,
+   "i"
+  ],
+  [
+   152.09,
+   152.42,
+   "think"
+  ],
+  [
+   152.42,
+   152.71,
+   "the"
+  ],
+  [
+   152.71,
+   152.9,
+   "aim"
+  ],
+  [
+   152.9,
+   153.02,
+   "is"
+  ],
+  [
+   153.02,
+   153.28,
+   "better"
+  ],
+  [
+   153.28,
+   153.39,
+   "to"
+  ],
+  [
+   153.39,
+   153.71,
+   "use"
+  ],
+  [
+   153.71,
+   153.93,
+   "uh"
+  ],
+  [
+   153.93,
+   154.08,
+   "the"
+  ],
+  [
+   154.08,
+   154.49,
+   "whole"
+  ],
+  [
+   154.49,
+   154.82,
+   "world"
+  ],
+  [
+   154.82,
+   155.2,
+   "and"
+  ],
+  [
+   155.2,
+   155.67,
+   "britain"
+  ],
+  [
+   155.67,
+   155.91,
+   "yeah"
+  ],
+  [
+   157.62,
+   157.83,
+   "not"
+  ],
+  [
+   157.83,
+   158.0,
+   "that"
+  ],
+  [
+   158.0,
+   158.18,
+   "much"
+  ],
+  [
+   175.4,
+   176.07,
+   "mm"
+  ],
+  [
+   176.07,
+   176.64,
+   "standard"
+  ],
+  [
+   176.64,
+   177.7,
+   "deliver"
+  ],
+  [
+   180.64,
+   180.95,
+   "mm"
+  ],
+  [
+   189.52,
+   190.28,
+   "no"
+  ],
+  [
+   190.28,
+   190.57,
+   "but"
+  ],
+  [
+   191.81,
+   192.84,
+   "yeah"
+  ],
+  [
+   192.84,
+   193.28,
+   "yeah"
+  ],
+  [
+   193.28,
+   194.16,
+   "th"
+  ],
+  [
+   194.16,
+   194.58,
+   "it"
+  ],
+  [
+   194.58,
+   194.87,
+   "it's"
+  ],
+  [
+   194.87,
+   194.99,
+   "i"
+  ],
+  [
+   194.99,
+   195.28,
+   "think"
+  ],
+  [
+   195.28,
+   195.48,
+   "that's"
+  ],
+  [
+   195.48,
+   196.21,
+   "not"
+  ],
+  [
+   206.8,
+   207.04,
+   "yeah"
+  ],
+  [
+   207.04,
+   208.03,
+   "okay"
+  ],
+  [
+   216.6,
+   216.87,
+   "no"
+  ],
+  [
+   219.28,
+   219.42,
+   "i"
+  ],
+  [
+   219.42,
+   219.77,
+   "think"
+  ],
+  [
+   219.77,
+   219.86,
+   "n"
+  ],
+  [
+   219.86,
+   220.09,
+   "m"
+  ],
+  [
+   220.09,
+   220.31,
+   "n"
+  ],
+  [
+   220.31,
+   220.66,
+   "most"
+  ],
+  [
+   220.66,
+   221.11,
+   "televisions"
+  ],
+  [
+   221.11,
+   221.46,
+   "nowadays"
+  ],
+  [
+   221.46,
+   221.54,
+   "do"
+  ],
+  [
+   221.54,
+   221.95,
+   "this"
+  ],
+  [
+   223.57,
+   224.27,
+   "so"
+  ],
+  [
+   224.27,
+   224.4,
+   "i"
+  ],
+  [
+   224.4,
+   224.58,
+   "think"
+  ],
+  [
+   224.58,
+   225.53,
+   "numerals"
+  ],
+  [
+   229.89,
+   230.08,
+   "yeah"
+  ],
+  [
+   230.08,
+   230.17,
+   "but"
+  ],
+  [
+   230.17,
+   230.29,
+   "then"
+  ],
+  [
+   230.29,
+   230.35,
+   "you"
+  ],
+  [
+   230.35,
+   230.51,
+   "have"
+  ],
+  [
+   230.51,
+   230.75,
+   "to"
+  ],
+  [
+   230.75,
+   231.0,
+   "choose"
+  ],
+  [
+   231.0,
+   231.79,
+   "the"
+  ],
+  [
+   231.79,
+   231.97,
+   "this"
+  ],
+  [
+   231.97,
+   232.3,
+   "always"
+  ],
+  [
+   232.3,
+   232.43,
+   "with"
+  ],
+  [
+   232.43,
+   232.62,
+   "r"
+  ],
+  [
+   232.62,
+   233.16,
+   "universal"
+  ],
+  [
+   233.16,
+   233.47,
+   "remotes"
+  ],
+  [
+   233.47,
+   233.55,
+   "you"
+  ],
+  [
+   233.55,
+   233.64,
+   "have"
+  ],
+  [
+   233.64,
+   233.77,
+   "to"
+  ],
+  [
+   233.77,
+   234.01,
+   "choose"
+  ],
+  [
+   234.01,
+   234.49,
+   "the"
+  ],
+  [
+   234.49,
+   235.11,
+   "code"
+  ],
+  [
+   235.11,
+   235.23,
+   "you"
+  ],
+  [
+   235.23,
+   235.38,
+   "can"
+  ],
+  [
+   235.38,
+   235.65,
+   "use"
+  ],
+  [
+   235.65,
+   235.99,
+   "which"
+  ],
+  [
+   235.99,
+   236.57,
+   "which"
+  ],
+  [
+   236.57,
+   236.79,
+   "type"
+  ],
+  [
+   236.79,
+   236.89,
+   "of"
+  ],
+  [
+   236.89,
+   237.31,
+   "television"
+  ],
+  [
+   237.31,
+   237.37,
+   "you"
+  ],
+  [
+   237.37,
+   237.64,
+   "have"
+  ],
+  [
+   237.64,
+   237.78,
+   "that's"
+  ],
+  [
+   237.78,
+   237.88,
+   "no"
+  ],
+  [
+   237.88,
+   238.83,
+   "problem"
+  ],
+  [
+   238.83,
+   239.73,
+   "but"
+  ],
+  [
+   239.73,
+   239.84,
+   "i"
+  ]
+ ],
+ "B_words": [
+  [
+   0.96,
+   1.13,
+   "mm"
+  ],
+  [
+   3.94,
+   4.13,
+   "black"
+  ],
+  [
+   4.13,
+   5.39,
+   "colours"
+  ],
+  [
+   8.01,
+   8.62,
+   "they"
+  ],
+  [
+   8.62,
+   8.95,
+   "use"
+  ],
+  [
+   8.95,
+   9.53,
+   "batteries"
+  ],
+  [
+   9.53,
+   10.02,
+   "and"
+  ],
+  [
+   10.02,
+   10.53,
+   "batteries"
+  ],
+  [
+   10.53,
+   10.91,
+   "uh"
+  ],
+  [
+   10.91,
+   11.25,
+   "and"
+  ],
+  [
+   11.25,
+   11.48,
+   "poor"
+  ],
+  [
+   11.48,
+   12.03,
+   "signal"
+  ],
+  [
+   13.69,
+   14.22,
+   "uh"
+  ],
+  [
+   18.56,
+   18.91,
+   "yeah"
+  ],
+  [
+   18.91,
+   19.31,
+   "different"
+  ],
+  [
+   19.31,
+   19.6,
+   "remote"
+  ],
+  [
+   19.6,
+   19.98,
+   "controls"
+  ],
+  [
+   19.98,
+   20.19,
+   "yeah"
+  ],
+  [
+   23.41,
+   23.83,
+   "uh"
+  ],
+  [
+   23.83,
+   23.9,
+   "for"
+  ],
+  [
+   23.9,
+   23.97,
+   "the"
+  ],
+  [
+   23.97,
+   24.1,
+   "use"
+  ],
+  [
+   24.1,
+   24.24,
+   "of"
+  ],
+  [
+   24.24,
+   24.71,
+   "different"
+  ],
+  [
+   24.71,
+   24.83,
+   "uh"
+  ],
+  [
+   24.83,
+   25.68,
+   "devices"
+  ],
+  [
+   36.31,
+   36.49,
+   "yeah"
+  ],
+  [
+   36.49,
+   36.59,
+   "but"
+  ],
+  [
+   36.59,
+   36.67,
+   "you"
+  ],
+  [
+   36.67,
+   36.95,
+   "could"
+  ],
+  [
+   36.95,
+   37.09,
+   "uh"
+  ],
+  [
+   37.09,
+   37.34,
+   "i"
+  ],
+  [
+   37.34,
+   37.64,
+   "thin"
+  ],
+  [
+   37.64,
+   37.91,
+   "uh"
+  ],
+  [
+   37.91,
+   38.04,
+   "there's"
+  ],
+  [
+   38.04,
+   38.09,
+   "a"
+  ],
+  [
+   38.09,
+   38.62,
+   "possibility"
+  ],
+  [
+   38.62,
+   38.78,
+   "to"
+  ],
+  [
+   38.78,
+   38.89,
+   "g"
+  ],
+  [
+   38.89,
+   40.09,
+   "uh"
+  ],
+  [
+   40.09,
+   40.47,
+   "to"
+  ],
+  [
+   40.47,
+   41.24,
+   "uh"
+  ],
+  [
+   43.43,
+   43.53,
+   "to"
+  ],
+  [
+   43.53,
+   43.7,
+   "put"
+  ],
+  [
+   43.7,
+   43.89,
+   "those"
+  ],
+  [
+   43.89,
+   44.42,
+   "buttons"
+  ],
+  [
+   44.42,
+   44.64,
+   "uh"
+  ],
+  [
+   44.64,
+   45.04,
+   "behind"
+  ],
+  [
+   45.04,
+   45.36,
+   "some"
+  ],
+  [
+   45.36,
+   45.52,
+   "uh"
+  ],
+  [
+   45.52,
+   45.75,
+   "kind"
+  ],
+  [
+   45.75,
+   46.0,
+   "of"
+  ],
+  [
+   46.0,
+   46.83,
+   "uh"
+  ],
+  [
+   46.83,
+   47.51,
+   "protection"
+  ],
+  [
+   47.51,
+   47.73,
+   "so"
+  ],
+  [
+   47.73,
+   47.9,
+   "that"
+  ],
+  [
+   47.9,
+   48.04,
+   "if"
+  ],
+  [
+   48.04,
+   48.26,
+   "y"
+  ],
+  [
+   48.26,
+   48.54,
+   "y"
+  ],
+  [
+   48.54,
+   48.75,
+   "you"
+  ],
+  [
+   48.75,
+   48.93,
+   "only"
+  ],
+  [
+   48.93,
+   49.12,
+   "get"
+  ],
+  [
+   49.12,
+   49.18,
+   "to"
+  ],
+  [
+   49.18,
+   49.38,
+   "see"
+  ],
+  [
+   49.38,
+   49.57,
+   "them"
+  ],
+  [
+   49.57,
+   49.7,
+   "when"
+  ],
+  [
+   49.7,
+   49.79,
+   "you"
+  ],
+  [
+   49.79,
+   49.98,
+   "need"
+  ],
+  [
+   49.98,
+   50.17,
+   "'em"
+  ],
+  [
+   51.83,
+   51.95,
+   "that's"
+  ],
+  [
+   51.95,
+   52.38,
+   "possible"
+  ],
+  [
+   52.38,
+   52.52,
+   "so"
+  ],
+  [
+   52.52,
+   52.64,
+   "that"
+  ],
+  [
+   52.64,
+   52.71,
+   "you"
+  ],
+  [
+   52.71,
+   52.92,
+   "only"
+  ],
+  [
+   52.92,
+   53.07,
+   "get"
+  ],
+  [
+   53.07,
+   54.35,
+   "the"
+  ],
+  [
+   54.35,
+   54.79,
+   "no"
+  ],
+  [
+   54.79,
+   54.82,
+   "n"
+  ],
+  [
+   54.82,
+   54.85,
+   "n"
+  ],
+  [
+   54.85,
+   55.02,
+   "no"
+  ],
+  [
+   55.02,
+   56.57,
+   "just"
+  ],
+  [
+   56.57,
+   57.01,
+   "uh"
+  ],
+  [
+   57.01,
+   57.11,
+   "for"
+  ],
+  [
+   57.11,
+   57.41,
+   "example"
+  ],
+  [
+   57.41,
+   57.48,
+   "you"
+  ],
+  [
+   57.48,
+   57.67,
+   "got"
+  ],
+  [
+   57.67,
+   57.71,
+   "th"
+  ],
+  [
+   57.71,
+   58.68,
+   "uh"
+  ],
+  [
+   58.68,
+   58.82,
+   "the"
+  ],
+  [
+   58.82,
+   59.08,
+   "same"
+  ],
+  [
+   59.08,
+   59.55,
+   "size"
+  ],
+  [
+   59.55,
+   59.66,
+   "uh"
+  ],
+  [
+   59.66,
+   59.93,
+   "remote"
+  ],
+  [
+   59.93,
+   60.27,
+   "control"
+  ],
+  [
+   60.27,
+   60.33,
+   "you"
+  ],
+  [
+   60.33,
+   60.5,
+   "use"
+  ],
+  [
+   60.5,
+   60.93,
+   "everyday"
+  ],
+  [
+   60.93,
+   61.25,
+   "but"
+  ],
+  [
+   61.25,
+   62.71,
+   "um"
+  ],
+  [
+   62.71,
+   62.79,
+   "the"
+  ],
+  [
+   62.79,
+   63.15,
+   "usual"
+  ],
+  [
+   63.15,
+   63.62,
+   "buttons"
+  ],
+  [
+   63.62,
+   63.92,
+   "such"
+  ],
+  [
+   63.92,
+   64.19,
+   "as"
+  ],
+  [
+   64.19,
+   64.82,
+   "uh"
+  ],
+  [
+   64.82,
+   66.11,
+   "um"
+  ],
+  [
+   66.11,
+   66.63,
+   "zapping"
+  ],
+  [
+   66.63,
+   66.93,
+   "uh"
+  ],
+  [
+   66.93,
+   67.01,
+   "as"
+  ],
+  [
+   67.01,
+   67.09,
+   "you"
+  ],
+  [
+   67.09,
+   67.22,
+   "call"
+  ],
+  [
+   67.22,
+   67.29,
+   "it"
+  ],
+  [
+   67.29,
+   67.37,
+   "in"
+  ],
+  [
+   67.37,
+   68.23,
+   "dutch"
+  ],
+  [
+   68.23,
+   68.62,
+   "uh"
+  ],
+  [
+   68.62,
+   68.79,
+   "and"
+  ],
+  [
+   68.79,
+   68.85,
+   "the"
+  ],
+  [
+   68.85,
+   69.15,
+   "volume"
+  ],
+  [
+   69.15,
+   69.75,
+   "control"
+  ],
+  [
+   69.75,
+   69.88,
+   "uh"
+  ],
+  [
+   69.88,
+   70.02,
+   "are"
+  ],
+  [
+   70.02,
+   70.26,
+   "only"
+  ],
+  [
+   70.26,
+   70.49,
+   "the"
+  ],
+  [
+   70.49,
+   71.0,
+   "only"
+  ],
+  [
+   71.0,
+   71.36,
+   "possible"
+  ],
+  [
+   71.36,
+   71.98,
+   "buttons"
+  ],
+  [
+   71.98,
+   72.99,
+   "uh"
+  ],
+  [
+   72.99,
+   73.19,
+   "to"
+  ],
+  [
+   73.19,
+   73.51,
+   "use"
+  ],
+  [
+   73.51,
+   74.43,
+   "directly"
+  ],
+  [
+   74.43,
+   74.75,
+   "or"
+  ],
+  [
+   74.75,
+   76.03,
+   "uh"
+  ],
+  [
+   76.03,
+   76.14,
+   "the"
+  ],
+  [
+   76.14,
+   76.47,
+   "numbers"
+  ],
+  [
+   76.47,
+   76.6,
+   "of"
+  ],
+  [
+   76.6,
+   77.77,
+   "course"
+  ],
+  [
+   77.77,
+   78.07,
+   "but"
+  ],
+  [
+   78.07,
+   78.57,
+   "uh"
+  ],
+  [
+   78.57,
+   78.88,
+   "not"
+  ],
+  [
+   78.88,
+   79.09,
+   "uh"
+  ],
+  [
+   79.09,
+   79.25,
+   "the"
+  ],
+  [
+   79.25,
+   79.55,
+   "buttons"
+  ],
+  [
+   79.55,
+   80.01,
+   "used"
+  ],
+  [
+   80.01,
+   80.14,
+   "to"
+  ],
+  [
+   80.14,
+   80.54,
+   "search"
+  ],
+  [
+   80.54,
+   80.87,
+   "on"
+  ],
+  [
+   80.87,
+   81.72,
+   "the"
+  ],
+  [
+   81.72,
+   81.89,
+   "the"
+  ],
+  [
+   81.89,
+   82.35,
+   "channels"
+  ],
+  [
+   82.35,
+   82.45,
+   "on"
+  ],
+  [
+   82.45,
+   82.55,
+   "your"
+  ],
+  [
+   82.55,
+   83.15,
+   "television"
+  ],
+  [
+   83.15,
+   83.23,
+   "you"
+  ],
+  [
+   83.23,
+   83.39,
+   "only"
+  ],
+  [
+   83.39,
+   83.67,
+   "use"
+  ],
+  [
+   83.67,
+   84.05,
+   "those"
+  ],
+  [
+   84.05,
+   84.4,
+   "uh"
+  ],
+  [
+   84.4,
+   84.47,
+   "the"
+  ],
+  [
+   84.47,
+   84.85,
+   "first"
+  ],
+  [
+   84.85,
+   85.13,
+   "time"
+  ],
+  [
+   85.13,
+   85.4,
+   "or"
+  ],
+  [
+   86.53,
+   87.35,
+   "so"
+  ],
+  [
+   87.35,
+   87.65,
+   "uh"
+  ],
+  [
+   90.0,
+   90.32,
+   "yeah"
+  ],
+  [
+   90.32,
+   90.41,
+   "i"
+  ],
+  [
+   90.41,
+   90.67,
+   "think"
+  ],
+  [
+   90.67,
+   90.9,
+   "so"
+  ],
+  [
+   90.9,
+   91.07,
+   "yeah"
+  ],
+  [
+   98.89,
+   100.29,
+   "yeah"
+  ],
+  [
+   100.29,
+   100.53,
+   "uh"
+  ],
+  [
+   100.53,
+   102.98,
+   "teletext"
+  ],
+  [
+   102.98,
+   103.16,
+   "think"
+  ],
+  [
+   103.16,
+   104.23,
+   "so"
+  ],
+  [
+   104.23,
+   104.58,
+   "okay"
+  ],
+  [
+   113.88,
+   114.04,
+   "right"
+  ],
+  [
+   134.58,
+   135.04,
+   "uh"
+  ],
+  [
+   137.54,
+   137.75,
+   "yeah"
+  ],
+  [
+   137.75,
+   137.87,
+   "i"
+  ],
+  [
+   137.87,
+   138.06,
+   "i"
+  ],
+  [
+   138.06,
+   138.6,
+   "understand"
+  ],
+  [
+   147.89,
+   148.18,
+   "no"
+  ],
+  [
+   155.5,
+   155.94,
+   "yeah"
+  ],
+  [
+   157.25,
+   157.39,
+   "when"
+  ],
+  [
+   157.39,
+   157.49,
+   "i"
+  ],
+  [
+   157.49,
+   157.72,
+   "think"
+  ],
+  [
+   157.72,
+   157.86,
+   "of"
+  ],
+  [
+   157.86,
+   158.06,
+   "it"
+  ],
+  [
+   158.06,
+   158.32,
+   "uh"
+  ],
+  [
+   158.32,
+   158.44,
+   "i"
+  ],
+  [
+   158.44,
+   158.72,
+   "think"
+  ],
+  [
+   158.72,
+   158.79,
+   "the"
+  ],
+  [
+   158.79,
+   159.07,
+   "main"
+  ],
+  [
+   159.07,
+   159.43,
+   "idea"
+  ],
+  [
+   159.43,
+   159.56,
+   "uh"
+  ],
+  [
+   159.56,
+   159.96,
+   "of"
+  ],
+  [
+   159.96,
+   160.13,
+   "this"
+  ],
+  [
+   160.13,
+   160.48,
+   "remote"
+  ],
+  [
+   160.48,
+   160.79,
+   "remote"
+  ],
+  [
+   160.79,
+   161.13,
+   "control"
+  ],
+  [
+   161.13,
+   161.87,
+   "is"
+  ],
+  [
+   161.87,
+   162.75,
+   "uh"
+  ],
+  [
+   164.37,
+   164.51,
+   "to"
+  ],
+  [
+   164.51,
+   164.65,
+   "make"
+  ],
+  [
+   164.65,
+   164.71,
+   "it"
+  ],
+  [
+   164.71,
+   164.95,
+   "user"
+  ],
+  [
+   164.95,
+   165.59,
+   "friendly"
+  ],
+  [
+   165.59,
+   166.31,
+   "so"
+  ],
+  [
+   166.31,
+   167.57,
+   "uh"
+  ],
+  [
+   167.57,
+   167.76,
+   "i"
+  ],
+  [
+   167.76,
+   168.14,
+   "think"
+  ],
+  [
+   168.14,
+   168.21,
+   "uh"
+  ],
+  [
+   168.21,
+   168.41,
+   "when"
+  ],
+  [
+   168.41,
+   168.65,
+   "p"
+  ],
+  [
+   168.65,
+   168.86,
+   "uh"
+  ],
+  [
+   168.86,
+   169.17,
+   "when"
+  ],
+  [
+   169.17,
+   169.34,
+   "uh"
+  ],
+  [
+   169.34,
+   169.45,
+   "the"
+  ],
+  [
+   169.45,
+   169.83,
+   "customers"
+  ],
+  [
+   169.83,
+   169.96,
+   "will"
+  ],
+  [
+   169.96,
+   170.19,
+   "buy"
+  ],
+  [
+   170.19,
+   170.34,
+   "this"
+  ],
+  [
+   170.34,
+   170.64,
+   "remote"
+  ],
+  [
+   170.64,
+   171.94,
+   "control"
+  ],
+  [
+   171.94,
+   172.03,
+   "they"
+  ],
+  [
+   172.03,
+   172.41,
+   "already"
+  ],
+  [
+   172.41,
+   172.87,
+   "have"
+  ],
+  [
+   172.87,
+   173.11,
+   "uh"
+  ],
+  [
+   173.11,
+   173.21,
+   "the"
+  ],
+  [
+   173.21,
+   173.42,
+   "remote"
+  ],
+  [
+   173.42,
+   173.77,
+   "control"
+  ],
+  [
+   173.77,
+   174.04,
+   "which"
+  ],
+  [
+   174.04,
+   174.22,
+   "uh"
+  ],
+  [
+   174.22,
+   174.82,
+   "companies"
+  ],
+  [
+   174.82,
+   175.86,
+   "uh"
+  ],
+  [
+   175.86,
+   176.24,
+   "uh"
+  ],
+  [
+   176.24,
+   176.61,
+   "with"
+  ],
+  [
+   176.61,
+   176.86,
+   "uh"
+  ],
+  [
+   176.86,
+   177.06,
+   "the"
+  ],
+  [
+   177.06,
+   177.19,
+   "the"
+  ],
+  [
+   177.19,
+   177.71,
+   "standards"
+  ],
+  [
+   177.71,
+   178.04,
+   "uh"
+  ],
+  [
+   178.04,
+   178.31,
+   "remote"
+  ],
+  [
+   178.31,
+   178.61,
+   "control"
+  ],
+  [
+   178.61,
+   178.9,
+   "with"
+  ],
+  [
+   178.9,
+   179.15,
+   "which"
+  ],
+  [
+   179.15,
+   179.5,
+   "comes"
+  ],
+  [
+   179.5,
+   179.61,
+   "uh"
+  ],
+  [
+   179.61,
+   179.74,
+   "with"
+  ],
+  [
+   179.74,
+   179.8,
+   "the"
+  ],
+  [
+   179.8,
+   180.84,
+   "television"
+  ],
+  [
+   180.84,
+   181.14,
+   "so"
+  ],
+  [
+   181.14,
+   181.55,
+   "uh"
+  ],
+  [
+   181.55,
+   181.73,
+   "it"
+  ],
+  [
+   181.73,
+   181.97,
+   "only"
+  ],
+  [
+   181.97,
+   182.25,
+   "has"
+  ],
+  [
+   182.25,
+   182.37,
+   "to"
+  ],
+  [
+   182.37,
+   182.94,
+   "have"
+  ],
+  [
+   182.94,
+   184.07,
+   "uh"
+  ],
+  [
+   184.07,
+   184.24,
+   "the"
+  ],
+  [
+   184.24,
+   184.53,
+   "most"
+  ],
+  [
+   184.53,
+   184.79,
+   "used"
+  ],
+  [
+   184.79,
+   185.54,
+   "buttons"
+  ],
+  [
+   185.54,
+   185.64,
+   "you"
+  ],
+  [
+   185.64,
+   185.83,
+   "don't"
+  ],
+  [
+   185.83,
+   186.03,
+   "have"
+  ],
+  [
+   186.03,
+   186.16,
+   "to"
+  ],
+  [
+   186.16,
+   186.71,
+   "integrate"
+  ],
+  [
+   186.71,
+   186.81,
+   "the"
+  ],
+  [
+   186.81,
+   187.24,
+   "buttons"
+  ],
+  [
+   187.24,
+   187.41,
+   "to"
+  ],
+  [
+   187.41,
+   187.85,
+   "search"
+  ],
+  [
+   187.85,
+   187.91,
+   "the"
+  ],
+  [
+   187.91,
+   188.27,
+   "channels"
+  ],
+  [
+   188.27,
+   188.33,
+   "on"
+  ],
+  [
+   188.33,
+   188.44,
+   "your"
+  ],
+  [
+   188.44,
+   189.33,
+   "television"
+  ],
+  [
+   189.33,
+   189.54,
+   "in"
+  ],
+  [
+   189.54,
+   190.35,
+   "those"
+  ],
+  [
+   190.35,
+   190.54,
+   "in"
+  ],
+  [
+   190.54,
+   190.75,
+   "that"
+  ],
+  [
+   195.11,
+   195.26,
+   "yeah"
+  ],
+  [
+   195.26,
+   195.39,
+   "but"
+  ],
+  [
+   195.39,
+   195.58,
+   "i"
+  ],
+  [
+   195.58,
+   195.73,
+   "but"
+  ],
+  [
+   195.73,
+   195.84,
+   "it"
+  ],
+  [
+   195.84,
+   195.99,
+   "is"
+  ],
+  [
+   195.99,
+   196.73,
+   "impossible"
+  ],
+  [
+   196.73,
+   197.03,
+   "to"
+  ],
+  [
+   197.03,
+   198.01,
+   "uh"
+  ],
+  [
+   198.01,
+   198.13,
+   "to"
+  ],
+  [
+   198.13,
+   198.94,
+   "accommodate"
+  ],
+  [
+   198.94,
+   199.15,
+   "uh"
+  ],
+  [
+   199.15,
+   199.88,
+   "accommodate"
+  ],
+  [
+   199.88,
+   200.26,
+   "uh"
+  ],
+  [
+   200.26,
+   200.45,
+   "all"
+  ],
+  [
+   200.45,
+   200.53,
+   "the"
+  ],
+  [
+   200.53,
+   200.93,
+   "buttons"
+  ],
+  [
+   200.93,
+   201.07,
+   "on"
+  ],
+  [
+   201.07,
+   201.14,
+   "the"
+  ],
+  [
+   201.14,
+   201.31,
+   "s"
+  ],
+  [
+   201.31,
+   201.73,
+   "on"
+  ],
+  [
+   201.73,
+   201.82,
+   "the"
+  ],
+  [
+   201.82,
+   202.69,
+   "difference"
+  ],
+  [
+   202.69,
+   203.1,
+   "different"
+  ],
+  [
+   203.1,
+   204.08,
+   "televisions"
+  ],
+  [
+   204.08,
+   204.77,
+   "sets"
+  ],
+  [
+   204.77,
+   204.99,
+   "on"
+  ],
+  [
+   204.99,
+   205.45,
+   "one"
+  ],
+  [
+   205.45,
+   205.77,
+   "remote"
+  ],
+  [
+   205.77,
+   206.17,
+   "control"
+  ],
+  [
+   206.17,
+   206.29,
+   "it's"
+  ],
+  [
+   206.29,
+   207.68,
+   "impossible"
+  ],
+  [
+   207.68,
+   208.03,
+   "because"
+  ],
+  [
+   208.03,
+   208.25,
+   "uh"
+  ],
+  [
+   208.25,
+   208.37,
+   "for"
+  ],
+  [
+   208.37,
+   208.69,
+   "example"
+  ],
+  [
+   208.69,
+   208.97,
+   "sony"
+  ],
+  [
+   208.97,
+   209.51,
+   "television"
+  ],
+  [
+   209.51,
+   209.72,
+   "uh"
+  ],
+  [
+   209.72,
+   209.88,
+   "has"
+  ],
+  [
+   209.88,
+   209.96,
+   "the"
+  ],
+  [
+   209.96,
+   210.45,
+   "opportunity"
+  ],
+  [
+   210.45,
+   210.65,
+   "to"
+  ],
+  [
+   210.65,
+   210.77,
+   "s"
+  ],
+  [
+   210.77,
+   210.94,
+   "to"
+  ],
+  [
+   210.94,
+   211.25,
+   "make"
+  ],
+  [
+   211.25,
+   212.3,
+   "uh"
+  ],
+  [
+   212.3,
+   212.57,
+   "uh"
+  ],
+  [
+   212.57,
+   212.69,
+   "to"
+  ],
+  [
+   212.69,
+   212.82,
+   "make"
+  ],
+  [
+   212.82,
+   212.88,
+   "it"
+  ],
+  [
+   212.88,
+   213.29,
+   "possible"
+  ],
+  [
+   213.29,
+   213.84,
+   "for"
+  ],
+  [
+   213.84,
+   213.99,
+   "to"
+  ],
+  [
+   213.99,
+   214.33,
+   "see"
+  ],
+  [
+   214.33,
+   214.54,
+   "on"
+  ],
+  [
+   214.54,
+   214.72,
+   "one"
+  ],
+  [
+   214.72,
+   214.95,
+   "side"
+  ],
+  [
+   214.95,
+   215.03,
+   "of"
+  ],
+  [
+   215.03,
+   215.12,
+   "the"
+  ],
+  [
+   215.12,
+   215.49,
+   "screen"
+  ],
+  [
+   215.49,
+   215.69,
+   "uh"
+  ],
+  [
+   215.69,
+   216.22,
+   "teletext"
+  ],
+  [
+   216.22,
+   216.31,
+   "and"
+  ],
+  [
+   216.31,
+   216.37,
+   "on"
+  ],
+  [
+   216.37,
+   216.44,
+   "the"
+  ],
+  [
+   216.44,
+   216.59,
+   "other"
+  ],
+  [
+   216.59,
+   216.97,
+   "side"
+  ],
+  [
+   216.97,
+   217.04,
+   "uh"
+  ],
+  [
+   217.04,
+   217.38,
+   "just"
+  ],
+  [
+   217.38,
+   217.44,
+   "n"
+  ],
+  [
+   217.44,
+   217.66,
+   "uh"
+  ],
+  [
+   217.66,
+   218.01,
+   "regular"
+  ],
+  [
+   218.01,
+   219.03,
+   "television"
+  ],
+  [
+   219.03,
+   219.56,
+   "uh"
+  ],
+  [
+   222.31,
+   222.55,
+   "yeah"
+  ],
+  [
+   222.55,
+   222.78,
+   "but"
+  ],
+  [
+   222.78,
+   222.83,
+   "uh"
+  ],
+  [
+   222.83,
+   223.14,
+   "they"
+  ],
+  [
+   223.14,
+   223.44,
+   "don't"
+  ],
+  [
+   223.44,
+   223.66,
+   "use"
+  ],
+  [
+   223.66,
+   223.75,
+   "the"
+  ],
+  [
+   223.75,
+   224.04,
+   "same"
+  ],
+  [
+   224.04,
+   224.68,
+   "signal"
+  ],
+  [
+   224.68,
+   225.29,
+   "uh"
+  ],
+  [
+   225.29,
+   225.43,
+   "on"
+  ],
+  [
+   225.43,
+   225.71,
+   "remote"
+  ],
+  [
+   225.71,
+   226.21,
+   "control"
+  ],
+  [
+   226.21,
+   226.48,
+   "because"
+  ],
+  [
+   226.48,
+   226.57,
+   "you"
+  ],
+  [
+   226.57,
+   226.83,
+   "can't"
+  ],
+  [
+   226.83,
+   226.99,
+   "use"
+  ],
+  [
+   226.99,
+   227.06,
+   "a"
+  ],
+  [
+   227.06,
+   227.73,
+   "panasonic"
+  ],
+  [
+   227.73,
+   227.85,
+   "uh"
+  ],
+  [
+   227.85,
+   228.13,
+   "remote"
+  ],
+  [
+   228.13,
+   228.48,
+   "control"
+  ],
+  [
+   228.48,
+   228.64,
+   "on"
+  ],
+  [
+   228.64,
+   228.82,
+   "a"
+  ],
+  [
+   228.82,
+   228.95,
+   "on"
+  ],
+  [
+   228.95,
+   229.02,
+   "a"
+  ],
+  [
+   229.02,
+   229.34,
+   "philips"
+  ],
+  [
+   229.34,
+   229.89,
+   "television"
+  ],
+  [
+   235.22,
+   236.4,
+   "okay"
+  ],
+  [
+   236.4,
+   236.79,
+   "okay"
+  ],
+  [
+   238.69,
+   239.25,
+   "okay"
+  ]
+ ],
+ "clip": "TS3005a_1",
+ "meeting": "TS3005a",
+ "window": [
+  840.0,
+  1080.0
+ ],
+ "caller": "D",
+ "agent": "C",
+ "headsets": {
+  "caller": 3,
+  "agent": 2
+ },
+ "dominance_score": 0.698,
+ "license": "CC BY 4.0, AMI Meeting Corpus, https://groups.inf.ed.ac.uk/ami/corpus/license.shtml",
+ "rules": "Build 2-party stereo \"calls\" + truth JSON from AMI headset audio and manual word times.\n\nRules (all documented in truth JSON under \"rules\"):\n- Turn: a speaker's words (punctuation tokens dropped) merged while the gap between one word's end and\n  the next word's start is < TURN_GAP (0.5 s). Vocal sounds (laugh/cough/...) are NOT words and never\n  extend a turn.\n- Floor-holding fillers (uh, um) are NOT backchannel words.\n- Backchannel turn: <= 3 words, all in BACKCHANNEL_WORDS, turn duration < 1.0 s.\n- Response latency: for each turn of B (the \"agent\") that starts at b_s, the previous SUBSTANTIVE (non-backchannel)\n  A turn that ended at a_e <= b_s, with no A turn covering b_s, no B turn starting between a_e and b_s, and B not\n  already talking at a_e. latency = b_s - a_e.\n  Flag \"backchannel\" if the B turn is a backchannel turn.\n- Overlap: B turn starts while an A turn is running (a_s < b_s < a_e). Kind = \"backchannel\" if backchannel\n  turn and overlap < 1 s, else \"interruption\".\n- Cut-off truth (mirrors the product meaning, uses callcheck's 1.0 s agent turn gap on human words):\n  a non-backchannel B turn (merged at 1.0 s) whose start b_s is within 2 s after A's last word end (or inside A speech)\n  and A has a word starting in (b_s+0.1, b_e). \"cutoffs\" = that broad set (B may talk over A mid-word);\n  \"cutoffs_pause\" = the subset where b_s falls in a real gap between A words (matches callcheck's \"starts in a pause\" meaning).\n- Vocal sounds: every <vocalsound> on A and B, in clip time.\n"
+}

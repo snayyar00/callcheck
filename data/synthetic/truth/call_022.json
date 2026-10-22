@@ -118,11 +118,11 @@
     },
     {
       "turn": 10,
-      "latency_s": 0.473
+      "latency_s": 0.474
     },
     {
       "turn": 12,
-      "latency_s": 0.855
+      "latency_s": 0.854
     }
   ],
   "events": [

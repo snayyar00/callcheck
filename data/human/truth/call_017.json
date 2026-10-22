@@ -1,0 +1,151 @@
+{
+  "call_id": "call_017",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "librispeech:7976",
+  "caller_source": "LibriSpeech dev-clean (real human, read speech)",
+  "duration_s": 57.173,
+  "planted_faults": [
+    "dead_air",
+    "false_barge_in",
+    "slow_response"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {},
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.842,
+      "text": "Thanks for calling Harbor Insurance. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.538,
+      "end": 8.658,
+      "text": "and she got up and put her head into the oven"
+    },
+    {
+      "speaker": "agent",
+      "start": 11.971,
+      "end": 14.838,
+      "text": "Thanks. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 15.523,
+      "end": 20.479,
+      "text": "all my worries about you were foolish my own regiment was in the advance"
+    },
+    {
+      "speaker": "agent",
+      "start": 21.428,
+      "end": 23.489,
+      "text": "Let me read that back. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 24.174,
+      "end": 26.114,
+      "text": "see i could even get in myself"
+    },
+    {
+      "speaker": "agent",
+      "start": 28.346,
+      "end": 31.324,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 31.841,
+      "end": 39.784,
+      "text": "then they began to run and rushing into the house they fell upon their father's neck long ago there lived a merchant who had three daughters"
+    },
+    {
+      "speaker": "agent",
+      "start": 40.273,
+      "end": 41.791,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 42.591,
+      "end": 43.865,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 45.065,
+      "end": 47.155,
+      "text": "he is old as well as poor she said"
+    },
+    {
+      "speaker": "agent",
+      "start": 48.08,
+      "end": 51.326,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 52.109,
+      "end": 54.059,
+      "text": "you shall not come into my father's house"
+    },
+    {
+      "speaker": "agent",
+      "start": 54.95,
+      "end": 56.673,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 3.313
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.949
+    },
+    {
+      "turn": 6,
+      "latency_s": 2.232
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.489
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.925
+    },
+    {
+      "turn": 13,
+      "latency_s": 0.891
+    }
+  ],
+  "events": [
+    {
+      "type": "dead_air",
+      "time": 11.971,
+      "latency_s": 3.313
+    },
+    {
+      "type": "slow_response",
+      "time": 28.346,
+      "latency_s": 2.232
+    },
+    {
+      "type": "false_barge_in",
+      "time": 41.491,
+      "agent_stopped_at": 41.791
+    }
+  ]
+}

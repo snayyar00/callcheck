@@ -1,0 +1,132 @@
+{
+  "call_id": "call_011",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Moira",
+  "duration_s": 50.447,
+  "planted_faults": [
+    "cutoff",
+    "dead_air"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Tom Shah",
+    "phone_said": "2620674160",
+    "phone_read_back": "2620674160"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.547,
+      "text": "Thanks for calling Northside Clinic. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 5.854,
+      "end": 7.352,
+      "text": "Yeah, it's Tom Shah."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.144,
+      "end": 11.705,
+      "text": "Thanks, Tom. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.315,
+      "end": 18.608,
+      "text": "Sure, it's two six two, zero six seven, four one six zero."
+    },
+    {
+      "speaker": "agent",
+      "start": 14.607,
+      "end": 16.768,
+      "text": "Sorry, could you repeat the full number?",
+      "interrupts_caller": true
+    },
+    {
+      "speaker": "agent",
+      "start": 19.137,
+      "end": 24.76,
+      "text": "Let me read that back. two six two, zero six seven, four one six zero. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.105,
+      "end": 26.454,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 26.99,
+      "end": 29.969,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 30.408,
+      "end": 36.299,
+      "text": "Well, my car's been making a grinding noise, mostly when I brake on the highway."
+    },
+    {
+      "speaker": "agent",
+      "start": 40.395,
+      "end": 45.554,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 46.275,
+      "end": 47.765,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 48.225,
+      "end": 49.947,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.792
+    },
+    {
+      "turn": 5,
+      "latency_s": 0.529
+    },
+    {
+      "turn": 7,
+      "latency_s": 0.536
+    },
+    {
+      "turn": 9,
+      "latency_s": 4.096
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.46
+    }
+  ],
+  "events": [
+    {
+      "type": "cutoff",
+      "time": 14.607,
+      "caller_still_talking_until": 18.608
+    },
+    {
+      "type": "dead_air",
+      "time": 40.395,
+      "latency_s": 4.096
+    }
+  ]
+}

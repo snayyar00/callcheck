@@ -1,0 +1,136 @@
+{
+  "call_id": "call_028",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Karen",
+  "duration_s": 58.194,
+  "planted_faults": [
+    "wrong_readback"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Grace Carter",
+    "phone_said": "0500210818",
+    "phone_read_back": "0500210817"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.597,
+      "text": "Thanks for calling Summit Legal. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 5.932,
+      "end": 7.591,
+      "text": "Yeah, it's Grace Carter."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.08,
+      "end": 11.645,
+      "text": "Thanks, Grace. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.356,
+      "end": 18.328,
+      "text": "Sure, it's zero five zero, zero two one, zero eight one eight."
+    },
+    {
+      "speaker": "agent",
+      "start": 18.874,
+      "end": 24.734,
+      "text": "Let me read that back. zero five zero, zero two one, zero eight one seven. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.067,
+      "end": 29.629,
+      "text": "No, it's zero five zero, zero two one, zero eight one eight."
+    },
+    {
+      "speaker": "agent",
+      "start": 30.229,
+      "end": 34.866,
+      "text": "Sorry about that. zero five zero, zero two one, zero eight one eight."
+    },
+    {
+      "speaker": "caller",
+      "start": 35.625,
+      "end": 36.894,
+      "text": "Yes, that's it."
+    },
+    {
+      "speaker": "agent",
+      "start": 37.558,
+      "end": 40.537,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 40.838,
+      "end": 47.566,
+      "text": "Well, I was in a car accident last week, and the other driver's insurance won't call me back."
+    },
+    {
+      "speaker": "agent",
+      "start": 48.11,
+      "end": 53.269,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 53.965,
+      "end": 55.43,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 55.972,
+      "end": 57.694,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.489
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.546
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.6
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.664
+    },
+    {
+      "turn": 10,
+      "latency_s": 0.544
+    },
+    {
+      "turn": 12,
+      "latency_s": 0.542
+    }
+  ],
+  "events": [
+    {
+      "type": "wrong_readback",
+      "time": 18.874,
+      "said": "0500210818",
+      "read_back": "0500210817"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "call_id": "call_019",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Reed (English (US))",
+  "duration_s": 63.586,
+  "planted_faults": [
+    "false_barge_in",
+    "slow_response",
+    "wrong_readback"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Omar Haddad",
+    "phone_said": "1446668601",
+    "phone_read_back": "1446668681"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.547,
+      "text": "Thanks for calling Northside Clinic. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.342,
+      "end": 7.782,
+      "text": "Yeah, it's Omar Haddad."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.451,
+      "end": 11.961,
+      "text": "Thanks, Omar. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.268,
+      "end": 18.593,
+      "text": "Sure, it's one four four, six six six, eight six zero one."
+    },
+    {
+      "speaker": "agent",
+      "start": 19.415,
+      "end": 24.682,
+      "text": "Let me read that back. one four four, six six six, eight six eight one. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.252,
+      "end": 29.748,
+      "text": "No, it's one four four, six six six, eight six zero one."
+    },
+    {
+      "speaker": "agent",
+      "start": 30.287,
+      "end": 34.609,
+      "text": "Sorry about that. one four four, six six six, eight six zero one."
+    },
+    {
+      "speaker": "caller",
+      "start": 34.962,
+      "end": 36.065,
+      "text": "Yes, that's it."
+    },
+    {
+      "speaker": "agent",
+      "start": 36.621,
+      "end": 39.6,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 40.305,
+      "end": 46.279,
+      "text": "Well, I need to move my appointment, because I'm out of town on Thursday."
+    },
+    {
+      "speaker": "agent",
+      "start": 48.094,
+      "end": 49.502,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 50.302,
+      "end": 51.576,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 52.776,
+      "end": 54.966,
+      "text": "Oh, no, that was just a cough."
+    },
+    {
+      "speaker": "agent",
+      "start": 55.732,
+      "end": 58.977,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 59.283,
+      "end": 60.529,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 61.364,
+      "end": 63.086,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.669
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.822
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.539
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.556
+    },
+    {
+      "turn": 10,
+      "latency_s": 1.815
+    },
+    {
+      "turn": 13,
+      "latency_s": 0.766
+    },
+    {
+      "turn": 15,
+      "latency_s": 0.835
+    }
+  ],
+  "events": [
+    {
+      "type": "wrong_readback",
+      "time": 19.415,
+      "said": "1446668601",
+      "read_back": "1446668681"
+    },
+    {
+      "type": "slow_response",
+      "time": 48.094,
+      "latency_s": 1.815
+    },
+    {
+      "type": "false_barge_in",
+      "time": 49.202,
+      "agent_stopped_at": 49.502
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "call_id": "call_054",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Moira",
+  "duration_s": 58.36,
+  "planted_faults": [
+    "slow_response",
+    "wrong_readback"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Priya Rossi",
+    "phone_said": "6915635684",
+    "phone_read_back": "6925635684"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.547,
+      "text": "Thanks for calling Northside Clinic. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 5.917,
+      "end": 7.45,
+      "text": "Yeah, it's Priya Rossi."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.286,
+      "end": 11.701,
+      "text": "Thanks, Priya. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.235,
+      "end": 18.321,
+      "text": "Sure, it's six nine one, five six three, five six eight four."
+    },
+    {
+      "speaker": "agent",
+      "start": 18.959,
+      "end": 24.507,
+      "text": "Let me read that back. six nine two, five six three, five six eight four. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 24.943,
+      "end": 29.489,
+      "text": "No, it's six nine one, five six three, five six eight four."
+    },
+    {
+      "speaker": "agent",
+      "start": 30.268,
+      "end": 34.773,
+      "text": "Sorry about that. six nine one, five six three, five six eight four."
+    },
+    {
+      "speaker": "caller",
+      "start": 35.214,
+      "end": 36.374,
+      "text": "Yes, that's it."
+    },
+    {
+      "speaker": "agent",
+      "start": 38.083,
+      "end": 41.062,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 41.718,
+      "end": 47.501,
+      "text": "Well, I got a bill I don't understand, it's for a visit I never had."
+    },
+    {
+      "speaker": "agent",
+      "start": 48.07,
+      "end": 53.229,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 53.768,
+      "end": 55.258,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 56.138,
+      "end": 57.86,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.836
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.638
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.779
+    },
+    {
+      "turn": 8,
+      "latency_s": 1.709
+    },
+    {
+      "turn": 10,
+      "latency_s": 0.569
+    },
+    {
+      "turn": 12,
+      "latency_s": 0.88
+    }
+  ],
+  "events": [
+    {
+      "type": "wrong_readback",
+      "time": 18.959,
+      "said": "6915635684",
+      "read_back": "6925635684"
+    },
+    {
+      "type": "slow_response",
+      "time": 38.083,
+      "latency_s": 1.709
+    }
+  ]
+}

@@ -117,7 +117,7 @@
   "agent_latencies": [
     {
       "turn": 2,
-      "latency_s": 0.694
+      "latency_s": 0.695
     },
     {
       "turn": 4,
@@ -126,6 +126,10 @@
     {
       "turn": 6,
       "latency_s": 0.746
+    },
+    {
+      "turn": 9,
+      "latency_s": 0.557
     },
     {
       "turn": 12,

@@ -1,0 +1,164 @@
+{
+  "call_id": "call_035",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "librispeech:6345",
+  "caller_source": "LibriSpeech dev-clean (real human, read speech)",
+  "duration_s": 61.902,
+  "planted_faults": [
+    "cutoff",
+    "dead_air",
+    "false_barge_in",
+    "slow_response"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {},
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.597,
+      "text": "Thanks for calling Summit Legal. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.025,
+      "end": 8.335,
+      "text": "never had any act seemed so impossible"
+    },
+    {
+      "speaker": "agent",
+      "start": 8.841,
+      "end": 11.708,
+      "text": "Thanks. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.422,
+      "end": 19.367,
+      "text": "with that came a pang of intense pain i will catch the night train and bring my mother up to morrow then we will see what can be done"
+    },
+    {
+      "speaker": "agent",
+      "start": 19.819,
+      "end": 21.879,
+      "text": "Let me read that back. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 22.381,
+      "end": 23.641,
+      "text": "he checked the silly impulse"
+    },
+    {
+      "speaker": "agent",
+      "start": 28.045,
+      "end": 31.024,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 31.401,
+      "end": 42.634,
+      "text": "then there was silence then a sigh and the sound of light moving feet on the gravel but here the only thing that occurred to her was to stop and look in one of the shops till he should ask her what she was looking at"
+    },
+    {
+      "speaker": "agent",
+      "start": 36.442,
+      "end": 38.33,
+      "text": "Okay. I can help with that.",
+      "interrupts_caller": true
+    },
+    {
+      "speaker": "agent",
+      "start": 44.398,
+      "end": 45.669,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 46.469,
+      "end": 47.743,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 48.943,
+      "end": 52.393,
+      "text": "she was lost lost utterly with an eternal loss"
+    },
+    {
+      "speaker": "agent",
+      "start": 53.253,
+      "end": 56.499,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 56.863,
+      "end": 58.803,
+      "text": "he hurriedly cut cake and pressed it upon her"
+    },
+    {
+      "speaker": "agent",
+      "start": 59.68,
+      "end": 61.402,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.506
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.452
+    },
+    {
+      "turn": 6,
+      "latency_s": 4.404
+    },
+    {
+      "turn": 9,
+      "latency_s": 1.764
+    },
+    {
+      "turn": 12,
+      "latency_s": 0.86
+    },
+    {
+      "turn": 14,
+      "latency_s": 0.877
+    }
+  ],
+  "events": [
+    {
+      "type": "dead_air",
+      "time": 28.045,
+      "latency_s": 4.404
+    },
+    {
+      "type": "cutoff",
+      "time": 36.442,
+      "caller_still_talking_until": 42.634
+    },
+    {
+      "type": "slow_response",
+      "time": 44.398,
+      "latency_s": 1.764
+    },
+    {
+      "type": "false_barge_in",
+      "time": 45.369,
+      "agent_stopped_at": 45.669
+    }
+  ]
+}

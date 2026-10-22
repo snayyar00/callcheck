@@ -1,0 +1,132 @@
+{
+  "call_id": "call_042",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Daniel",
+  "duration_s": 53.136,
+  "planted_faults": [
+    "cutoff",
+    "dead_air"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Elena Okafor",
+    "phone_said": "5479409648",
+    "phone_read_back": "5479409648"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.597,
+      "text": "Thanks for calling Summit Legal. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.272,
+      "end": 8.04,
+      "text": "Yeah, it's Elena Okafor."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.692,
+      "end": 12.217,
+      "text": "Thanks, Elena. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.725,
+      "end": 19.154,
+      "text": "Sure, it's five four seven, nine four zero, nine six four eight."
+    },
+    {
+      "speaker": "agent",
+      "start": 19.651,
+      "end": 25.284,
+      "text": "Let me read that back. five four seven, nine four zero, nine six four eight. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.982,
+      "end": 27.457,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 32.453,
+      "end": 35.432,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 35.789,
+      "end": 42.503,
+      "text": "Well, I was in a car accident last week, and the other driver's insurance won't call me back."
+    },
+    {
+      "speaker": "agent",
+      "start": 38.927,
+      "end": 40.815,
+      "text": "Okay. I can help with that.",
+      "interrupts_caller": true
+    },
+    {
+      "speaker": "agent",
+      "start": 43.379,
+      "end": 48.538,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 48.99,
+      "end": 50.446,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 50.914,
+      "end": 52.636,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.652
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.497
+    },
+    {
+      "turn": 6,
+      "latency_s": 4.996
+    },
+    {
+      "turn": 9,
+      "latency_s": 0.876
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.468
+    }
+  ],
+  "events": [
+    {
+      "type": "dead_air",
+      "time": 32.453,
+      "latency_s": 4.996
+    },
+    {
+      "type": "cutoff",
+      "time": 38.927,
+      "caller_still_talking_until": 42.503
+    }
+  ]
+}

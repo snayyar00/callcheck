@@ -1,0 +1,132 @@
+{
+  "call_id": "call_012",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Rocko (English (US))",
+  "duration_s": 48.625,
+  "planted_faults": [
+    "cutoff",
+    "slow_response"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Tom Carter",
+    "phone_said": "0227602584",
+    "phone_read_back": "0227602584"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.662,
+      "text": "Thanks for calling Lakeview Dental. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.069,
+      "end": 7.661,
+      "text": "Yeah, it's Tom Carter."
+    },
+    {
+      "speaker": "agent",
+      "start": 10.098,
+      "end": 13.659,
+      "text": "Thanks, Tom. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 14.136,
+      "end": 20.303,
+      "text": "Sure, it's zero two two, seven six zero, two five eight four."
+    },
+    {
+      "speaker": "agent",
+      "start": 21.157,
+      "end": 26.838,
+      "text": "Let me read that back. zero two two, seven six zero, two five eight four. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 27.376,
+      "end": 28.602,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 29.16,
+      "end": 32.138,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 32.747,
+      "end": 37.986,
+      "text": "Well, I slipped on the stairs at my building, and my wrist still hurts."
+    },
+    {
+      "speaker": "agent",
+      "start": 35.83,
+      "end": 37.718,
+      "text": "Okay. I can help with that.",
+      "interrupts_caller": true
+    },
+    {
+      "speaker": "agent",
+      "start": 38.887,
+      "end": 44.046,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 44.681,
+      "end": 45.925,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 46.403,
+      "end": 48.125,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 2.437
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.854
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.558
+    },
+    {
+      "turn": 9,
+      "latency_s": 0.901
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.478
+    }
+  ],
+  "events": [
+    {
+      "type": "slow_response",
+      "time": 10.098,
+      "latency_s": 2.437
+    },
+    {
+      "type": "cutoff",
+      "time": 35.83,
+      "caller_still_talking_until": 37.986
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "call_id": "call_013",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "librispeech:2078",
+  "caller_source": "LibriSpeech dev-clean (real human, read speech)",
+  "duration_s": 54.673,
+  "planted_faults": [
+    "false_barge_in"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {},
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.877,
+      "text": "Thanks for calling Metro Auto Care. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.58,
+      "end": 8.86,
+      "text": "excellent rolls"
+    },
+    {
+      "speaker": "agent",
+      "start": 9.535,
+      "end": 12.402,
+      "text": "Thanks. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 13.154,
+      "end": 18.49,
+      "text": "seventeen twenty four seventeen eighteen"
+    },
+    {
+      "speaker": "agent",
+      "start": 19.089,
+      "end": 21.15,
+      "text": "Let me read that back. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 21.908,
+      "end": 24.378,
+      "text": "to make dry toast"
+    },
+    {
+      "speaker": "agent",
+      "start": 25.041,
+      "end": 28.019,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 28.677,
+      "end": 37.718,
+      "text": "from fifteen to twenty minutes will be required to bake them nicely plain buns seventeen twenty nine"
+    },
+    {
+      "speaker": "agent",
+      "start": 38.443,
+      "end": 39.677,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 40.477,
+      "end": 41.75,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 42.95,
+      "end": 44.49,
+      "text": "kirkleatham yeast"
+    },
+    {
+      "speaker": "agent",
+      "start": 45.433,
+      "end": 48.678,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 49.045,
+      "end": 51.695,
+      "text": "illustration buns"
+    },
+    {
+      "speaker": "agent",
+      "start": 52.451,
+      "end": 54.173,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.675
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.599
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.663
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.725
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.943
+    },
+    {
+      "turn": 13,
+      "latency_s": 0.756
+    }
+  ],
+  "events": [
+    {
+      "type": "false_barge_in",
+      "time": 39.377,
+      "agent_stopped_at": 39.677
+    }
+  ]
+}

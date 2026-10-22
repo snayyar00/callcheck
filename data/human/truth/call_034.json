@@ -1,0 +1,129 @@
+{
+  "call_id": "call_034",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "librispeech:2428",
+  "caller_source": "LibriSpeech dev-clean (real human, read speech)",
+  "duration_s": 49.785,
+  "planted_faults": [
+    "cutoff",
+    "dead_air"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {},
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.877,
+      "text": "Thanks for calling Metro Auto Care. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.517,
+      "end": 9.127,
+      "text": "the girl is fretting but you don't seem to notice it"
+    },
+    {
+      "speaker": "agent",
+      "start": 12.422,
+      "end": 15.289,
+      "text": "Thanks. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 15.69,
+      "end": 21.346,
+      "text": "from a cousin of ours who's in that line her father is a most remarkable person to say the least"
+    },
+    {
+      "speaker": "agent",
+      "start": 22.114,
+      "end": 24.174,
+      "text": "Let me read that back. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 24.794,
+      "end": 26.454,
+      "text": "he was impervious to reason"
+    },
+    {
+      "speaker": "agent",
+      "start": 26.98,
+      "end": 29.959,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 30.38,
+      "end": 39.429,
+      "text": "the reply was written in a sprawling feminine hand it was a little vague i found that as a woman of business she was beyond all my expectations"
+    },
+    {
+      "speaker": "agent",
+      "start": 34.679,
+      "end": 36.568,
+      "text": "Okay. I can help with that.",
+      "interrupts_caller": true
+    },
+    {
+      "speaker": "agent",
+      "start": 40.171,
+      "end": 45.33,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 45.715,
+      "end": 47.095,
+      "text": "i tolled the bell again"
+    },
+    {
+      "speaker": "agent",
+      "start": 47.563,
+      "end": 49.285,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 3.295
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.768
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.526
+    },
+    {
+      "turn": 9,
+      "latency_s": 0.742
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.468
+    }
+  ],
+  "events": [
+    {
+      "type": "dead_air",
+      "time": 12.422,
+      "latency_s": 3.295
+    },
+    {
+      "type": "cutoff",
+      "time": 34.679,
+      "caller_still_talking_until": 39.429
+    }
+  ]
+}

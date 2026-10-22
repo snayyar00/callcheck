@@ -1,0 +1,132 @@
+{
+  "call_id": "call_047",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Shelley (English (UK))",
+  "duration_s": 50.569,
+  "planted_faults": [
+    "cutoff",
+    "dead_air"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Priya Nguyen",
+    "phone_said": "0612715898",
+    "phone_read_back": "0612715898"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.877,
+      "text": "Thanks for calling Metro Auto Care. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.41,
+      "end": 8.019,
+      "text": "Yeah, it's Priya Nguyen."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.796,
+      "end": 12.212,
+      "text": "Thanks, Priya. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.97,
+      "end": 18.917,
+      "text": "Sure, it's zero six one, two seven one, five eight nine eight."
+    },
+    {
+      "speaker": "agent",
+      "start": 15.424,
+      "end": 17.585,
+      "text": "Sorry, could you repeat the full number?",
+      "interrupts_caller": true
+    },
+    {
+      "speaker": "agent",
+      "start": 19.696,
+      "end": 25.337,
+      "text": "Let me read that back. zero six one, two seven one, five eight nine eight. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.825,
+      "end": 27.022,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 27.49,
+      "end": 30.468,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 31.252,
+      "end": 36.268,
+      "text": "Well, I slipped on the stairs at my building, and my wrist still hurts."
+    },
+    {
+      "speaker": "agent",
+      "start": 40.558,
+      "end": 45.717,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 46.479,
+      "end": 47.722,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 48.347,
+      "end": 50.069,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.777
+    },
+    {
+      "turn": 5,
+      "latency_s": 0.779
+    },
+    {
+      "turn": 7,
+      "latency_s": 0.468
+    },
+    {
+      "turn": 9,
+      "latency_s": 4.29
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.625
+    }
+  ],
+  "events": [
+    {
+      "type": "cutoff",
+      "time": 15.424,
+      "caller_still_talking_until": 18.917
+    },
+    {
+      "type": "dead_air",
+      "time": 40.558,
+      "latency_s": 4.29
+    }
+  ]
+}

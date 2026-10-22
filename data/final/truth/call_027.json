@@ -1,0 +1,165 @@
+{
+  "call_id": "call_027",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Shelley (English (UK))",
+  "duration_s": 62.155,
+  "planted_faults": [
+    "false_barge_in",
+    "wrong_readback"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Elena Haddad",
+    "phone_said": "8503209405",
+    "phone_read_back": "8503259405"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.547,
+      "text": "Thanks for calling Northside Clinic. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 5.976,
+      "end": 7.5,
+      "text": "Yeah, it's Elena Haddad."
+    },
+    {
+      "speaker": "agent",
+      "start": 7.974,
+      "end": 11.499,
+      "text": "Thanks, Elena. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 11.856,
+      "end": 18.266,
+      "text": "Sure, it's eight five zero, three two zero, nine four zero five."
+    },
+    {
+      "speaker": "agent",
+      "start": 19.105,
+      "end": 24.786,
+      "text": "Let me read that back. eight five zero, three two five, nine four zero five. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.261,
+      "end": 29.99,
+      "text": "No, it's eight five zero, three two zero, nine four zero five."
+    },
+    {
+      "speaker": "agent",
+      "start": 30.472,
+      "end": 35.045,
+      "text": "Sorry about that. eight five zero, three two zero, nine four zero five."
+    },
+    {
+      "speaker": "caller",
+      "start": 35.554,
+      "end": 36.626,
+      "text": "Yes, that's it."
+    },
+    {
+      "speaker": "agent",
+      "start": 37.247,
+      "end": 40.226,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 40.734,
+      "end": 46.012,
+      "text": "Well, I slipped on the stairs at my building, and my wrist still hurts."
+    },
+    {
+      "speaker": "agent",
+      "start": 46.704,
+      "end": 47.835,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 48.635,
+      "end": 49.909,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 51.109,
+      "end": 53.113,
+      "text": "Oh, no, that was just a cough."
+    },
+    {
+      "speaker": "agent",
+      "start": 54.03,
+      "end": 57.276,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 58.032,
+      "end": 59.275,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 59.933,
+      "end": 61.655,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.474
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.839
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.482
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.621
+    },
+    {
+      "turn": 10,
+      "latency_s": 0.692
+    },
+    {
+      "turn": 13,
+      "latency_s": 0.917
+    },
+    {
+      "turn": 15,
+      "latency_s": 0.658
+    }
+  ],
+  "events": [
+    {
+      "type": "wrong_readback",
+      "time": 19.105,
+      "said": "8503209405",
+      "read_back": "8503259405"
+    },
+    {
+      "type": "false_barge_in",
+      "time": 47.535,
+      "agent_stopped_at": 47.835
+    }
+  ]
+}

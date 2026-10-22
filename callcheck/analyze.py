@@ -25,7 +25,11 @@ class Config:
     caller_turn_gap_s: float = 2.0   # caller pauses shorter than this stay in one turn
     agent_turn_gap_s: float = 1.0
     min_speech_s: float = 0.35       # shorter caller sounds are not treated as words
-    cutoff_window_s: float = 2.0     # agent start this soon after caller speech = started in a pause
+    cutoff_window_s: float = 1.0     # agent start this soon after caller speech = started in a pause
+    cutoff_resume_s: float = 1.5     # caller must resume this soon after the agent starts ...
+    cutoff_resume_min_s: float = 0.6 # ... with this much speech (a "mm-hm" or a click is not resuming)
+    talk_over_s: float = 0.5         # caller speech running at least this long past the agent's start
+    min_piece_s: float = 0.15        # energy-only blips shorter than this are line noise, not speech
     barge_stop_s: float = 1.0        # agent must stop within this long after the sound
     barge_quiet_s: float = 0.4       # and stay quiet at least this long
 
@@ -77,7 +81,8 @@ def analyze(caller, agent, cfg=Config(), vad=None):
     # as the caller holding the floor. Silero under-detects some voices, especially on phone audio.
     # Pieces of any length are joined into turns first; only whole turns shorter than min_speech_s
     # (a lone cough or bump) are dropped below. A short last word still extends its turn.
-    c_segs = union(vad.segments(caller) + sound_segments(caller, min_gap_s=0.25))
+    vad_c, snd_c = vad.segments(caller), sound_segments(caller, min_gap_s=0.25)
+    c_segs = union(vad_c + snd_c)
     a_segs = vad.segments(agent)
     # Caller turns: join pieces first, then drop turns too short to be words (a cough, a bump).
     # Judging length per piece would drop a quick "Yes, that's right" that VAD hears as two blips.
@@ -105,12 +110,24 @@ def analyze(caller, agent, cfg=Config(), vad=None):
         elif lat > cfg.slow_s:
             res.events.append({"type": "slow_response", "time": round(a_start, 3), "latency_s": round(lat, 3)})
 
-    # Cut-off: the agent started inside a caller pause, and the caller then kept talking over it.
+    # Cut-off, two ways (tuned on real SpokenWOZ phone calls, see realdata/telephone):
+    # - talk-over: the agent started while the caller was mid-word and the caller kept going;
+    # - pause jump: the agent started in a short caller pause and the caller resumed soon after.
+    # A caller reply that only starts late in a long agent turn is the caller answering early, not a cut-off.
+    c_speech = union(vad_c + [seg for seg in snd_c if seg[1] - seg[0] >= cfg.min_piece_s])
     for a_start, a_end in a_turns:
-        spoke_recently = any(a_start - cfg.cutoff_window_s <= e <= a_start for _, e in c_words)
-        resumed = [s for s, _ in c_words if a_start + 0.1 < s < a_end]
-        if spoke_recently and resumed:
-            res.events.append({"type": "cutoff", "time": round(a_start, 3), "caller_resumed_at": round(resumed[0], 3)})
+        if a_end - a_start < 0.3:
+            continue
+        over = any(s <= a_start - 0.1 and e >= a_start + cfg.talk_over_s for s, e in c_speech)
+        spoke_recently = any(a_start - cfg.cutoff_window_s <= e <= a_start for _, e in c_speech)
+        # Join words split by short gaps first: "to... the bank" resumes even if "to" alone is short.
+        resumed = [s for s, e in merge(c_speech, 0.6, []) if a_start + 0.1 < s < min(a_end, a_start + cfg.cutoff_resume_s)
+                   and e - s >= cfg.cutoff_resume_min_s]
+        if over:
+            res.events.append({"type": "cutoff", "time": round(a_start, 3), "kind": "talk_over"})
+        elif spoke_recently and resumed:
+            res.events.append({"type": "cutoff", "time": round(a_start, 3), "kind": "pause_jump",
+                               "caller_resumed_at": round(resumed[0], 3)})
 
     # False barge-in: a short sound that is not speech, then the agent stops and stays quiet.
     for s, e in sound_segments(caller):

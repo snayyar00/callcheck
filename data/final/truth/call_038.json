@@ -1,0 +1,142 @@
+{
+  "call_id": "call_038",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Moira",
+  "duration_s": 53.41,
+  "planted_faults": [
+    "false_barge_in"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Grace Rossi",
+    "phone_said": "6883781288",
+    "phone_read_back": "6883781288"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.877,
+      "text": "Thanks for calling Metro Auto Care. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.367,
+      "end": 7.992,
+      "text": "Yeah, it's Grace Rossi."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.94,
+      "end": 12.506,
+      "text": "Thanks, Grace. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 13.197,
+      "end": 18.709,
+      "text": "Sure, it's six eight eight, three seven eight, one two eight eight."
+    },
+    {
+      "speaker": "agent",
+      "start": 19.63,
+      "end": 24.819,
+      "text": "Let me read that back. six eight eight, three seven eight, one two eight eight. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.401,
+      "end": 26.751,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 27.666,
+      "end": 30.645,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 31.362,
+      "end": 36.964,
+      "text": "Well, I got a bill I don't understand, it's for a visit I never had."
+    },
+    {
+      "speaker": "agent",
+      "start": 37.619,
+      "end": 39.292,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 40.092,
+      "end": 41.366,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 42.566,
+      "end": 44.895,
+      "text": "Oh, no, that was just a cough."
+    },
+    {
+      "speaker": "agent",
+      "start": 45.499,
+      "end": 48.745,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 49.058,
+      "end": 50.548,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 51.188,
+      "end": 52.91,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.948
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.921
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.915
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.655
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.604
+    },
+    {
+      "turn": 13,
+      "latency_s": 0.64
+    }
+  ],
+  "events": [
+    {
+      "type": "false_barge_in",
+      "time": 38.992,
+      "agent_stopped_at": 39.292
+    }
+  ]
+}

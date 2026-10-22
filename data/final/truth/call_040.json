@@ -1,0 +1,142 @@
+{
+  "call_id": "call_040",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Karen",
+  "duration_s": 59.661,
+  "planted_faults": [
+    "slow_response",
+    "wrong_readback"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Elena Okafor",
+    "phone_said": "0574265208",
+    "phone_read_back": "0574265207"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.877,
+      "text": "Thanks for calling Metro Auto Care. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.347,
+      "end": 8.195,
+      "text": "Yeah, it's Elena Okafor."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.943,
+      "end": 12.468,
+      "text": "Thanks, Elena. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.935,
+      "end": 19.114,
+      "text": "Sure, it's zero five seven, four two six, five two zero eight."
+    },
+    {
+      "speaker": "agent",
+      "start": 19.761,
+      "end": 25.664,
+      "text": "Let me read that back. zero five seven, four two six, five two zero seven. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 26.012,
+      "end": 30.79,
+      "text": "No, it's zero five seven, four two six, five two zero eight."
+    },
+    {
+      "speaker": "agent",
+      "start": 31.71,
+      "end": 36.446,
+      "text": "Sorry about that. zero five seven, four two six, five two zero eight."
+    },
+    {
+      "speaker": "caller",
+      "start": 36.902,
+      "end": 38.17,
+      "text": "Yes, that's it."
+    },
+    {
+      "speaker": "agent",
+      "start": 38.763,
+      "end": 41.742,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 42.539,
+      "end": 47.987,
+      "text": "Well, I got a bill I don't understand, it's for a visit I never had."
+    },
+    {
+      "speaker": "agent",
+      "start": 49.803,
+      "end": 54.962,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 55.323,
+      "end": 56.788,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 57.439,
+      "end": 59.161,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.748
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.647
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.92
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.593
+    },
+    {
+      "turn": 10,
+      "latency_s": 1.816
+    },
+    {
+      "turn": 12,
+      "latency_s": 0.651
+    }
+  ],
+  "events": [
+    {
+      "type": "wrong_readback",
+      "time": 19.761,
+      "said": "0574265208",
+      "read_back": "0574265207"
+    },
+    {
+      "type": "slow_response",
+      "time": 49.803,
+      "latency_s": 1.816
+    }
+  ]
+}

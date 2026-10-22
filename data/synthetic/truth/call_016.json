@@ -139,7 +139,7 @@
     },
     {
       "turn": 10,
-      "latency_s": 2.499
+      "latency_s": 2.498
     },
     {
       "turn": 13,
@@ -160,7 +160,7 @@
     {
       "type": "slow_response",
       "time": 51.618,
-      "latency_s": 2.499
+      "latency_s": 2.498
     },
     {
       "type": "false_barge_in",

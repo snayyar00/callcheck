@@ -1,0 +1,108 @@
+{
+  "call_id": "call_000",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "librispeech:3170",
+  "caller_source": "LibriSpeech dev-clean (real human, read speech)",
+  "duration_s": 51.5,
+  "planted_faults": [],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {},
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.547,
+      "text": "Thanks for calling Northside Clinic. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.095,
+      "end": 9.245,
+      "text": "i obeyed implicitly and met your excellency"
+    },
+    {
+      "speaker": "agent",
+      "start": 9.84,
+      "end": 12.707,
+      "text": "Thanks. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 13.053,
+      "end": 20.783,
+      "text": "he entreated me to tell him the truth whoever you may be i am indebted to you for my life"
+    },
+    {
+      "speaker": "agent",
+      "start": 21.525,
+      "end": 23.585,
+      "text": "Let me read that back. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 24.296,
+      "end": 25.666,
+      "text": "where is my husband"
+    },
+    {
+      "speaker": "agent",
+      "start": 26.452,
+      "end": 29.431,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 30.116,
+      "end": 40.001,
+      "text": "never fear you shall see him again to morrow what extraordinary things will sometimes occur from mere chance or from the force of circumstances"
+    },
+    {
+      "speaker": "agent",
+      "start": 40.773,
+      "end": 45.932,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 46.593,
+      "end": 48.353,
+      "text": "the three friends were astounded"
+    },
+    {
+      "speaker": "agent",
+      "start": 49.278,
+      "end": 51.0,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.595
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.742
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.786
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.772
+    },
+    {
+      "turn": 10,
+      "latency_s": 0.925
+    }
+  ],
+  "events": []
+}

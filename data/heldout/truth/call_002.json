@@ -1,0 +1,111 @@
+{
+  "call_id": "call_002",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Shelley (English (UK))",
+  "duration_s": 46.426,
+  "planted_faults": [],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Aisha Walsh",
+    "phone_said": "5478484294",
+    "phone_read_back": "5478484294"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.877,
+      "text": "Thanks for calling Metro Auto Care. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.288,
+      "end": 7.756,
+      "text": "Yeah, it's Aisha Walsh."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.309,
+      "end": 11.885,
+      "text": "Thanks, Aisha. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.192,
+      "end": 18.003,
+      "text": "Sure, it's five four seven, eight four eight, four two nine four."
+    },
+    {
+      "speaker": "agent",
+      "start": 18.485,
+      "end": 23.857,
+      "text": "Let me read that back. five four seven, eight four eight, four two nine four. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 24.348,
+      "end": 25.544,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 26.187,
+      "end": 29.165,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 29.553,
+      "end": 36.03,
+      "text": "Well, my car's been making a grinding noise, mostly when I brake on the highway."
+    },
+    {
+      "speaker": "agent",
+      "start": 36.558,
+      "end": 41.717,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 42.398,
+      "end": 43.641,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 44.203,
+      "end": 45.926,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.553
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.482
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.643
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.528
+    },
+    {
+      "turn": 10,
+      "latency_s": 0.562
+    }
+  ],
+  "events": []
+}

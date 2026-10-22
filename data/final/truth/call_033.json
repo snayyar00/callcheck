@@ -1,0 +1,154 @@
+{
+  "call_id": "call_033",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Reed (English (US))",
+  "duration_s": 60.699,
+  "planted_faults": [
+    "dead_air",
+    "false_barge_in",
+    "slow_response"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Daniel Okafor",
+    "phone_said": "6085515685",
+    "phone_read_back": "6085515685"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.547,
+      "text": "Thanks for calling Northside Clinic. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.066,
+      "end": 7.797,
+      "text": "Yeah, it's Daniel Okafor."
+    },
+    {
+      "speaker": "agent",
+      "start": 9.727,
+      "end": 13.313,
+      "text": "Thanks, Daniel. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 14.091,
+      "end": 20.665,
+      "text": "Sure, it's six zero eight, five five one, five six eight five."
+    },
+    {
+      "speaker": "agent",
+      "start": 21.251,
+      "end": 26.967,
+      "text": "Let me read that back. six zero eight, five five one, five six eight five. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 27.697,
+      "end": 28.923,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 33.611,
+      "end": 36.59,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 37.091,
+      "end": 44.141,
+      "text": "Well, I was in a car accident last week, and the other driver's insurance won't call me back."
+    },
+    {
+      "speaker": "agent",
+      "start": 44.918,
+      "end": 46.413,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 47.213,
+      "end": 48.487,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 49.687,
+      "end": 51.877,
+      "text": "Oh, no, that was just a cough."
+    },
+    {
+      "speaker": "agent",
+      "start": 52.778,
+      "end": 56.023,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 56.499,
+      "end": 57.745,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 58.476,
+      "end": 60.199,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 1.93
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.586
+    },
+    {
+      "turn": 6,
+      "latency_s": 4.688
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.777
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.901
+    },
+    {
+      "turn": 13,
+      "latency_s": 0.731
+    }
+  ],
+  "events": [
+    {
+      "type": "slow_response",
+      "time": 9.727,
+      "latency_s": 1.93
+    },
+    {
+      "type": "dead_air",
+      "time": 33.611,
+      "latency_s": 4.688
+    },
+    {
+      "type": "false_barge_in",
+      "time": 46.113,
+      "agent_stopped_at": 46.413
+    }
+  ]
+}

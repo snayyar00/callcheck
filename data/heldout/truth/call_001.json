@@ -1,0 +1,111 @@
+{
+  "call_id": "call_001",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Reed (English (US))",
+  "duration_s": 47.904,
+  "planted_faults": [],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Daniel Rossi",
+    "phone_said": "0079120832",
+    "phone_read_back": "0079120832"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.547,
+      "text": "Thanks for calling Northside Clinic. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.072,
+      "end": 7.714,
+      "text": "Yeah, it's Daniel Rossi."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.186,
+      "end": 11.772,
+      "text": "Thanks, Daniel. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.485,
+      "end": 18.942,
+      "text": "Sure, it's zero zero seven, nine one two, zero eight three two."
+    },
+    {
+      "speaker": "agent",
+      "start": 19.521,
+      "end": 25.233,
+      "text": "Let me read that back. zero zero seven, nine one two, zero eight three two. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.889,
+      "end": 27.114,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 27.813,
+      "end": 30.791,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 31.506,
+      "end": 36.873,
+      "text": "Well, I slipped on the stairs at my building, and my wrist still hurts."
+    },
+    {
+      "speaker": "agent",
+      "start": 37.603,
+      "end": 42.761,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 43.487,
+      "end": 44.732,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 45.682,
+      "end": 47.405,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.472
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.579
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.699
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.73
+    },
+    {
+      "turn": 10,
+      "latency_s": 0.95
+    }
+  ],
+  "events": []
+}

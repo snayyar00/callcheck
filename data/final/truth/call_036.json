@@ -1,0 +1,155 @@
+{
+  "call_id": "call_036",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Reed (English (US))",
+  "duration_s": 53.543,
+  "planted_faults": [
+    "cutoff",
+    "false_barge_in"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Omar Haddad",
+    "phone_said": "3229212899",
+    "phone_read_back": "3229212899"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.842,
+      "text": "Thanks for calling Harbor Insurance. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.466,
+      "end": 7.906,
+      "text": "Yeah, it's Omar Haddad."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.778,
+      "end": 12.289,
+      "text": "Thanks, Omar. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.858,
+      "end": 18.808,
+      "text": "Sure, it's three two two, nine two one, two eight nine nine."
+    },
+    {
+      "speaker": "agent",
+      "start": 15.055,
+      "end": 17.216,
+      "text": "Sorry, could you repeat the full number?",
+      "interrupts_caller": true
+    },
+    {
+      "speaker": "agent",
+      "start": 19.738,
+      "end": 25.08,
+      "text": "Let me read that back. three two two, nine two one, two eight nine nine. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.516,
+      "end": 26.741,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 27.532,
+      "end": 30.511,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 30.904,
+      "end": 37.182,
+      "text": "Well, my car's been making a grinding noise, mostly when I brake on the highway."
+    },
+    {
+      "speaker": "agent",
+      "start": 38.112,
+      "end": 39.479,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 40.279,
+      "end": 41.553,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 42.753,
+      "end": 44.943,
+      "text": "Oh, no, that was just a cough."
+    },
+    {
+      "speaker": "agent",
+      "start": 45.488,
+      "end": 48.734,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 49.436,
+      "end": 50.681,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 51.321,
+      "end": 53.043,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.872
+    },
+    {
+      "turn": 5,
+      "latency_s": 0.93
+    },
+    {
+      "turn": 7,
+      "latency_s": 0.791
+    },
+    {
+      "turn": 9,
+      "latency_s": 0.93
+    },
+    {
+      "turn": 12,
+      "latency_s": 0.545
+    },
+    {
+      "turn": 14,
+      "latency_s": 0.64
+    }
+  ],
+  "events": [
+    {
+      "type": "cutoff",
+      "time": 15.055,
+      "caller_still_talking_until": 18.808
+    },
+    {
+      "type": "false_barge_in",
+      "time": 39.179,
+      "agent_stopped_at": 39.479
+    }
+  ]
+}

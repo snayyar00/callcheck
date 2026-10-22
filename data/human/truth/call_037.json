@@ -1,0 +1,116 @@
+{
+  "call_id": "call_037",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "librispeech:6295",
+  "caller_source": "LibriSpeech dev-clean (real human, read speech)",
+  "duration_s": 54.627,
+  "planted_faults": [
+    "dead_air"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {},
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.662,
+      "text": "Thanks for calling Lakeview Dental. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.324,
+      "end": 9.014,
+      "text": "chapter seven the homecoming"
+    },
+    {
+      "speaker": "agent",
+      "start": 13.069,
+      "end": 15.936,
+      "text": "Thanks. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 16.653,
+      "end": 23.637,
+      "text": "but he saw nothing that moved there no signal lights twinkled earth was gone and heaven was all"
+    },
+    {
+      "speaker": "agent",
+      "start": 24.492,
+      "end": 26.553,
+      "text": "Let me read that back. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 27.019,
+      "end": 29.339,
+      "text": "but the negotiations were soon completed"
+    },
+    {
+      "speaker": "agent",
+      "start": 29.965,
+      "end": 32.944,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 33.377,
+      "end": 43.337,
+      "text": "he felt the difference as soon as he reached the hills of his native state nor was this exactly the shape the thing took to the consciousness of the musician"
+    },
+    {
+      "speaker": "agent",
+      "start": 44.193,
+      "end": 49.352,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 49.749,
+      "end": 51.639,
+      "text": "there was not a single note of gloom"
+    },
+    {
+      "speaker": "agent",
+      "start": 52.405,
+      "end": 54.127,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 4.055
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.855
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.626
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.856
+    },
+    {
+      "turn": 10,
+      "latency_s": 0.766
+    }
+  ],
+  "events": [
+    {
+      "type": "dead_air",
+      "time": 13.069,
+      "latency_s": 4.055
+    }
+  ]
+}

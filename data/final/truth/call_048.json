@@ -1,0 +1,155 @@
+{
+  "call_id": "call_048",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Rocko (English (US))",
+  "duration_s": 54.23,
+  "planted_faults": [
+    "cutoff",
+    "false_barge_in"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Elena Carter",
+    "phone_said": "3112837476",
+    "phone_read_back": "3112837476"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.842,
+      "text": "Thanks for calling Harbor Insurance. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.601,
+      "end": 8.146,
+      "text": "Yeah, it's Elena Carter."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.87,
+      "end": 12.395,
+      "text": "Thanks, Elena. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 13.124,
+      "end": 19.349,
+      "text": "Sure, it's three one one, two eight three, seven four seven six."
+    },
+    {
+      "speaker": "agent",
+      "start": 15.328,
+      "end": 17.49,
+      "text": "Sorry, could you repeat the full number?",
+      "interrupts_caller": true
+    },
+    {
+      "speaker": "agent",
+      "start": 20.005,
+      "end": 25.626,
+      "text": "Let me read that back. three one one, two eight three, seven four seven six. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 26.382,
+      "end": 27.609,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 28.34,
+      "end": 31.319,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 32.113,
+      "end": 37.749,
+      "text": "Well, I got a bill I don't understand, it's for a visit I never had."
+    },
+    {
+      "speaker": "agent",
+      "start": 38.41,
+      "end": 40.052,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 40.852,
+      "end": 42.126,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 43.326,
+      "end": 45.515,
+      "text": "Oh, no, that was just a cough."
+    },
+    {
+      "speaker": "agent",
+      "start": 46.233,
+      "end": 49.479,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 49.922,
+      "end": 51.166,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 52.008,
+      "end": 53.73,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.724
+    },
+    {
+      "turn": 5,
+      "latency_s": 0.656
+    },
+    {
+      "turn": 7,
+      "latency_s": 0.731
+    },
+    {
+      "turn": 9,
+      "latency_s": 0.661
+    },
+    {
+      "turn": 12,
+      "latency_s": 0.718
+    },
+    {
+      "turn": 14,
+      "latency_s": 0.842
+    }
+  ],
+  "events": [
+    {
+      "type": "cutoff",
+      "time": 15.328,
+      "caller_still_talking_until": 19.349
+    },
+    {
+      "type": "false_barge_in",
+      "time": 39.752,
+      "agent_stopped_at": 40.052
+    }
+  ]
+}

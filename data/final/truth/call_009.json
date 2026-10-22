@@ -1,0 +1,111 @@
+{
+  "call_id": "call_009",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Shelley (English (UK))",
+  "duration_s": 47.34,
+  "planted_faults": [],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "James Carter",
+    "phone_said": "0019750161",
+    "phone_read_back": "0019750161"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.597,
+      "text": "Thanks for calling Summit Legal. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 5.909,
+      "end": 7.539,
+      "text": "Yeah, it's James Carter."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.12,
+      "end": 11.73,
+      "text": "Thanks, James. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.216,
+      "end": 18.826,
+      "text": "Sure, it's zero zero one, nine seven five, zero one six one."
+    },
+    {
+      "speaker": "agent",
+      "start": 19.281,
+      "end": 25.216,
+      "text": "Let me read that back. zero zero one, nine seven five, zero one six one. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.756,
+      "end": 26.952,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 27.638,
+      "end": 30.617,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 31.068,
+      "end": 36.898,
+      "text": "Well, I got a bill I don't understand, it's for a visit I never had."
+    },
+    {
+      "speaker": "agent",
+      "start": 37.626,
+      "end": 42.785,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 43.116,
+      "end": 44.359,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 45.118,
+      "end": 46.84,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.581
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.455
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.686
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.728
+    },
+    {
+      "turn": 10,
+      "latency_s": 0.759
+    }
+  ],
+  "events": []
+}

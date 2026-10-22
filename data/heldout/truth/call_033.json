@@ -1,0 +1,171 @@
+{
+  "call_id": "call_033",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Daniel",
+  "duration_s": 69.537,
+  "planted_faults": [
+    "dead_air",
+    "false_barge_in",
+    "wrong_readback"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Kevin Okafor",
+    "phone_said": "6819507457",
+    "phone_read_back": "6819507257"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.877,
+      "text": "Thanks for calling Metro Auto Care. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.341,
+      "end": 8.102,
+      "text": "Yeah, it's Kevin Okafor."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.753,
+      "end": 12.274,
+      "text": "Thanks, Kevin. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.863,
+      "end": 19.328,
+      "text": "Sure, it's six eight one, nine five zero, seven four five seven."
+    },
+    {
+      "speaker": "agent",
+      "start": 19.955,
+      "end": 25.663,
+      "text": "Let me read that back. six eight one, nine five zero, seven two five seven. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 26.219,
+      "end": 31.053,
+      "text": "No, it's six eight one, nine five zero, seven four five seven."
+    },
+    {
+      "speaker": "agent",
+      "start": 31.941,
+      "end": 36.61,
+      "text": "Sorry about that. six eight one, nine five zero, seven four five seven."
+    },
+    {
+      "speaker": "caller",
+      "start": 37.386,
+      "end": 38.685,
+      "text": "Yes, that's it."
+    },
+    {
+      "speaker": "agent",
+      "start": 39.607,
+      "end": 42.586,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 42.916,
+      "end": 48.7,
+      "text": "Well, I need to move my appointment, because I'm out of town on Thursday."
+    },
+    {
+      "speaker": "agent",
+      "start": 53.449,
+      "end": 54.839,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 55.639,
+      "end": 56.913,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 58.113,
+      "end": 60.531,
+      "text": "Oh, no, that was just a cough."
+    },
+    {
+      "speaker": "agent",
+      "start": 61.355,
+      "end": 64.601,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 64.997,
+      "end": 66.453,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 67.314,
+      "end": 69.037,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.651
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.627
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.888
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.922
+    },
+    {
+      "turn": 10,
+      "latency_s": 4.749
+    },
+    {
+      "turn": 13,
+      "latency_s": 0.824
+    },
+    {
+      "turn": 15,
+      "latency_s": 0.861
+    }
+  ],
+  "events": [
+    {
+      "type": "wrong_readback",
+      "time": 19.955,
+      "said": "6819507457",
+      "read_back": "6819507257"
+    },
+    {
+      "type": "dead_air",
+      "time": 53.449,
+      "latency_s": 4.749
+    },
+    {
+      "type": "false_barge_in",
+      "time": 54.539,
+      "agent_stopped_at": 54.839
+    }
+  ]
+}

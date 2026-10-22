@@ -104,7 +104,7 @@
     },
     {
       "turn": 10,
-      "latency_s": 0.755
+      "latency_s": 0.754
     }
   ],
   "events": []

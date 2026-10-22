@@ -1,0 +1,108 @@
+{
+  "call_id": "call_005",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "librispeech:3752",
+  "caller_source": "LibriSpeech dev-clean (real human, read speech)",
+  "duration_s": 44.765,
+  "planted_faults": [],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {},
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.842,
+      "text": "Thanks for calling Harbor Insurance. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.179,
+      "end": 9.289,
+      "text": "he is just married you know is he said burgess"
+    },
+    {
+      "speaker": "agent",
+      "start": 9.86,
+      "end": 12.727,
+      "text": "Thanks. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 13.09,
+      "end": 18.032,
+      "text": "if you please said meekin gravely you have not been long in the colony mister meekin"
+    },
+    {
+      "speaker": "agent",
+      "start": 18.642,
+      "end": 20.702,
+      "text": "Let me read that back. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 21.007,
+      "end": 22.337,
+      "text": "so he's a friend of yours eh"
+    },
+    {
+      "speaker": "agent",
+      "start": 22.923,
+      "end": 25.902,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 26.382,
+      "end": 34.054,
+      "text": "in the valley of the shadow of death he is with us mister meekin expressed some alarm but doctor macklewain re assured him"
+    },
+    {
+      "speaker": "agent",
+      "start": 34.587,
+      "end": 39.746,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 40.423,
+      "end": 41.683,
+      "text": "i've given my orders sir"
+    },
+    {
+      "speaker": "agent",
+      "start": 42.543,
+      "end": 44.265,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.571
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.61
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.586
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.533
+    },
+    {
+      "turn": 10,
+      "latency_s": 0.86
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,165 @@
+{
+  "call_id": "call_017",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Moira",
+  "duration_s": 65.03,
+  "planted_faults": [
+    "false_barge_in",
+    "wrong_readback"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Kevin Okafor",
+    "phone_said": "0929886940",
+    "phone_read_back": "0929886340"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.842,
+      "text": "Thanks for calling Harbor Insurance. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.502,
+      "end": 8.276,
+      "text": "Yeah, it's Kevin Okafor."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.828,
+      "end": 12.349,
+      "text": "Thanks, Kevin. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 13.141,
+      "end": 19.403,
+      "text": "Sure, it's zero nine two, nine eight eight, six nine four zero."
+    },
+    {
+      "speaker": "agent",
+      "start": 20.175,
+      "end": 25.685,
+      "text": "Let me read that back. zero nine two, nine eight eight, six three four zero. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 26.304,
+      "end": 30.706,
+      "text": "No, it's zero nine two, nine eight eight, six nine four zero."
+    },
+    {
+      "speaker": "agent",
+      "start": 31.489,
+      "end": 36.016,
+      "text": "Sorry about that. zero nine two, nine eight eight, six nine four zero."
+    },
+    {
+      "speaker": "caller",
+      "start": 36.347,
+      "end": 37.508,
+      "text": "Yes, that's it."
+    },
+    {
+      "speaker": "agent",
+      "start": 38.035,
+      "end": 41.014,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 41.795,
+      "end": 48.656,
+      "text": "Well, I was in a car accident last week, and the other driver's insurance won't call me back."
+    },
+    {
+      "speaker": "agent",
+      "start": 49.33,
+      "end": 50.452,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 51.252,
+      "end": 52.526,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 53.726,
+      "end": 56.055,
+      "text": "Oh, no, that was just a cough."
+    },
+    {
+      "speaker": "agent",
+      "start": 56.885,
+      "end": 60.13,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 60.646,
+      "end": 62.136,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 62.808,
+      "end": 64.53,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.552
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.772
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.783
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.527
+    },
+    {
+      "turn": 10,
+      "latency_s": 0.674
+    },
+    {
+      "turn": 13,
+      "latency_s": 0.83
+    },
+    {
+      "turn": 15,
+      "latency_s": 0.672
+    }
+  ],
+  "events": [
+    {
+      "type": "wrong_readback",
+      "time": 20.175,
+      "said": "0929886940",
+      "read_back": "0929886340"
+    },
+    {
+      "type": "false_barge_in",
+      "time": 50.152,
+      "agent_stopped_at": 50.452
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "call_id": "call_024",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "librispeech:2086",
+  "caller_source": "LibriSpeech dev-clean (real human, read speech)",
+  "duration_s": 49.424,
+  "planted_faults": [
+    "false_barge_in"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {},
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.877,
+      "text": "Thanks for calling Metro Auto Care. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.45,
+      "end": 8.34,
+      "text": "i turn up the earth by way of pastime"
+    },
+    {
+      "speaker": "agent",
+      "start": 8.982,
+      "end": 11.849,
+      "text": "Thanks. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.367,
+      "end": 17.025,
+      "text": "what an instrument is the human voice phoebe merely glanced at it and gave it back"
+    },
+    {
+      "speaker": "agent",
+      "start": 17.796,
+      "end": 19.857,
+      "text": "Let me read that back. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 20.468,
+      "end": 21.908,
+      "text": "she did not altogether like him"
+    },
+    {
+      "speaker": "agent",
+      "start": 22.5,
+      "end": 25.479,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.814,
+      "end": 31.964,
+      "text": "it is like a bandage over one's eyes to come into it i will sit in the parlor awhile and collect my thoughts"
+    },
+    {
+      "speaker": "agent",
+      "start": 32.469,
+      "end": 34.139,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 34.939,
+      "end": 36.213,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 37.413,
+      "end": 39.853,
+      "text": "pray go to bed for i am sure you must need rest"
+    },
+    {
+      "speaker": "agent",
+      "start": 40.454,
+      "end": 43.7,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 44.115,
+      "end": 46.365,
+      "text": "but put it on the table in the corner of the passage"
+    },
+    {
+      "speaker": "agent",
+      "start": 47.202,
+      "end": 48.924,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.642
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.771
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.592
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.505
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.601
+    },
+    {
+      "turn": 13,
+      "latency_s": 0.837
+    }
+  ],
+  "events": [
+    {
+      "type": "false_barge_in",
+      "time": 33.839,
+      "agent_stopped_at": 34.139
+    }
+  ]
+}

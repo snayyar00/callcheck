@@ -1,0 +1,158 @@
+{
+  "call_id": "call_031",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "librispeech:6313",
+  "caller_source": "LibriSpeech dev-clean (real human, read speech)",
+  "duration_s": 54.694,
+  "planted_faults": [
+    "cutoff",
+    "false_barge_in",
+    "slow_response"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {},
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.597,
+      "text": "Thanks for calling Summit Legal. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.117,
+      "end": 7.877,
+      "text": "yes the country is full of caves"
+    },
+    {
+      "speaker": "agent",
+      "start": 8.614,
+      "end": 11.481,
+      "text": "Thanks. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 11.919,
+      "end": 17.242,
+      "text": "i protest shouted the professor tad is an experienced rider"
+    },
+    {
+      "speaker": "agent",
+      "start": 15.014,
+      "end": 17.176,
+      "text": "Sorry, could you repeat the full number?",
+      "interrupts_caller": true
+    },
+    {
+      "speaker": "agent",
+      "start": 18.117,
+      "end": 20.177,
+      "text": "Let me read that back. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 20.661,
+      "end": 22.781,
+      "text": "none of you will be fit for duty to morrow"
+    },
+    {
+      "speaker": "agent",
+      "start": 23.315,
+      "end": 26.293,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 26.749,
+      "end": 36.04,
+      "text": "the pony did most of it admitted the lad i just gave him his head and that's all there was to it and that tumble's enough to knock the sense out of a full grown man"
+    },
+    {
+      "speaker": "agent",
+      "start": 38.242,
+      "end": 39.813,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 40.613,
+      "end": 41.887,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 43.087,
+      "end": 45.257,
+      "text": "humph grunted curley adams"
+    },
+    {
+      "speaker": "agent",
+      "start": 45.973,
+      "end": 49.219,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 49.611,
+      "end": 51.791,
+      "text": "you'll all be over if you don't have a care"
+    },
+    {
+      "speaker": "agent",
+      "start": 52.472,
+      "end": 54.194,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.737
+    },
+    {
+      "turn": 5,
+      "latency_s": 0.875
+    },
+    {
+      "turn": 7,
+      "latency_s": 0.534
+    },
+    {
+      "turn": 9,
+      "latency_s": 2.202
+    },
+    {
+      "turn": 12,
+      "latency_s": 0.716
+    },
+    {
+      "turn": 14,
+      "latency_s": 0.681
+    }
+  ],
+  "events": [
+    {
+      "type": "cutoff",
+      "time": 15.014,
+      "caller_still_talking_until": 17.242
+    },
+    {
+      "type": "slow_response",
+      "time": 38.242,
+      "latency_s": 2.202
+    },
+    {
+      "type": "false_barge_in",
+      "time": 39.513,
+      "agent_stopped_at": 39.813
+    }
+  ]
+}

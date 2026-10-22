@@ -1,0 +1,152 @@
+{
+  "call_id": "call_027",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "librispeech:1988",
+  "caller_source": "LibriSpeech dev-clean (real human, read speech)",
+  "duration_s": 61.326,
+  "planted_faults": [
+    "cutoff",
+    "false_barge_in"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {},
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.662,
+      "text": "Thanks for calling Lakeview Dental. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.133,
+      "end": 9.983,
+      "text": "i remembered what the conductor had said about her eyes"
+    },
+    {
+      "speaker": "agent",
+      "start": 10.584,
+      "end": 13.451,
+      "text": "Thanks. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 13.949,
+      "end": 19.988,
+      "text": "he was born like that the others are smart ambrosch he make good farmer"
+    },
+    {
+      "speaker": "agent",
+      "start": 20.92,
+      "end": 22.981,
+      "text": "Let me read that back. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 23.404,
+      "end": 25.614,
+      "text": "i look at my watch it's a quarter to eleven"
+    },
+    {
+      "speaker": "agent",
+      "start": 26.193,
+      "end": 29.172,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 29.882,
+      "end": 43.002,
+      "text": "we stood panting on the edge of the ravine looking down at the trees and bushes that grew below us when i came up he touched my shoulder and looked searchingly down into my face for several seconds"
+    },
+    {
+      "speaker": "agent",
+      "start": 36.469,
+      "end": 38.358,
+      "text": "Okay. I can help with that.",
+      "interrupts_caller": true
+    },
+    {
+      "speaker": "agent",
+      "start": 43.465,
+      "end": 44.936,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 45.736,
+      "end": 47.01,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 48.21,
+      "end": 51.38,
+      "text": "at that moment the father came out of the hole in the bank"
+    },
+    {
+      "speaker": "agent",
+      "start": 52.251,
+      "end": 55.497,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 56.074,
+      "end": 58.484,
+      "text": "she was quick and very eager"
+    },
+    {
+      "speaker": "agent",
+      "start": 59.104,
+      "end": 60.826,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.601
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.932
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.579
+    },
+    {
+      "turn": 9,
+      "latency_s": 0.463
+    },
+    {
+      "turn": 12,
+      "latency_s": 0.871
+    },
+    {
+      "turn": 14,
+      "latency_s": 0.62
+    }
+  ],
+  "events": [
+    {
+      "type": "cutoff",
+      "time": 36.469,
+      "caller_still_talking_until": 43.002
+    },
+    {
+      "type": "false_barge_in",
+      "time": 44.636,
+      "agent_stopped_at": 44.936
+    }
+  ]
+}

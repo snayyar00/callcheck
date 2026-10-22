@@ -1,0 +1,152 @@
+{
+  "call_id": "call_011",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "librispeech:2902",
+  "caller_source": "LibriSpeech dev-clean (real human, read speech)",
+  "duration_s": 56.35,
+  "planted_faults": [
+    "cutoff",
+    "false_barge_in"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {},
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.597,
+      "text": "Thanks for calling Summit Legal. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.119,
+      "end": 7.599,
+      "text": "what do i care for food"
+    },
+    {
+      "speaker": "agent",
+      "start": 8.129,
+      "end": 10.996,
+      "text": "Thanks. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 11.368,
+      "end": 17.941,
+      "text": "the mens sana must have a corpus sanum to inhabit his excellency madam the prefect"
+    },
+    {
+      "speaker": "agent",
+      "start": 18.631,
+      "end": 20.692,
+      "text": "Let me read that back. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 21.059,
+      "end": 23.499,
+      "text": "and why should that disturb me let him enter"
+    },
+    {
+      "speaker": "agent",
+      "start": 24.078,
+      "end": 27.057,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 27.842,
+      "end": 37.9,
+      "text": "one who writes of such an era labours under a troublesome disadvantage if they have ceased to guide nations they have not ceased to speak to their own elect"
+    },
+    {
+      "speaker": "agent",
+      "start": 32.53,
+      "end": 34.418,
+      "text": "Okay. I can help with that.",
+      "interrupts_caller": true
+    },
+    {
+      "speaker": "agent",
+      "start": 38.565,
+      "end": 40.128,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 40.928,
+      "end": 42.202,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 43.402,
+      "end": 46.512,
+      "text": "but if the emperors had become christian the empire had not"
+    },
+    {
+      "speaker": "agent",
+      "start": 47.004,
+      "end": 50.25,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 50.68,
+      "end": 53.61,
+      "text": "the very emperors had arrayed themselves on her side"
+    },
+    {
+      "speaker": "agent",
+      "start": 54.128,
+      "end": 55.85,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.53
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.69
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.579
+    },
+    {
+      "turn": 9,
+      "latency_s": 0.665
+    },
+    {
+      "turn": 12,
+      "latency_s": 0.492
+    },
+    {
+      "turn": 14,
+      "latency_s": 0.518
+    }
+  ],
+  "events": [
+    {
+      "type": "cutoff",
+      "time": 32.53,
+      "caller_still_talking_until": 37.9
+    },
+    {
+      "type": "false_barge_in",
+      "time": 39.828,
+      "agent_stopped_at": 40.128
+    }
+  ]
+}

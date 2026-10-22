@@ -111,11 +111,11 @@
   "agent_latencies": [
     {
       "turn": 2,
-      "latency_s": 2.117
+      "latency_s": 2.116
     },
     {
       "turn": 4,
-      "latency_s": 0.716
+      "latency_s": 0.717
     },
     {
       "turn": 6,
@@ -126,15 +126,19 @@
       "latency_s": 0.523
     },
     {
+      "turn": 11,
+      "latency_s": 0.787
+    },
+    {
       "turn": 13,
-      "latency_s": 0.529
+      "latency_s": 0.528
     }
   ],
   "events": [
     {
       "type": "slow_response",
       "time": 10.474,
-      "latency_s": 2.117
+      "latency_s": 2.116
     },
     {
       "type": "wrong_readback",

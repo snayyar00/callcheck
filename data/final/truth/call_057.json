@@ -1,0 +1,132 @@
+{
+  "call_id": "call_057",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Moira",
+  "duration_s": 50.015,
+  "planted_faults": [
+    "cutoff",
+    "slow_response"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Priya Brooks",
+    "phone_said": "3905644938",
+    "phone_read_back": "3905644938"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.597,
+      "text": "Thanks for calling Summit Legal. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.162,
+      "end": 7.763,
+      "text": "Yeah, it's Priya Brooks."
+    },
+    {
+      "speaker": "agent",
+      "start": 9.808,
+      "end": 13.224,
+      "text": "Thanks, Priya. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 13.818,
+      "end": 19.843,
+      "text": "Sure, it's three nine zero, five six four, four nine three eight."
+    },
+    {
+      "speaker": "agent",
+      "start": 20.678,
+      "end": 26.288,
+      "text": "Let me read that back. three nine zero, five six four, four nine three eight. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 26.843,
+      "end": 28.192,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 28.799,
+      "end": 31.778,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 32.344,
+      "end": 39.457,
+      "text": "Well, I was in a car accident last week, and the other driver's insurance won't call me back."
+    },
+    {
+      "speaker": "agent",
+      "start": 35.695,
+      "end": 37.584,
+      "text": "Okay. I can help with that.",
+      "interrupts_caller": true
+    },
+    {
+      "speaker": "agent",
+      "start": 40.02,
+      "end": 45.179,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 45.766,
+      "end": 47.256,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 47.793,
+      "end": 49.515,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 2.045
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.835
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.607
+    },
+    {
+      "turn": 9,
+      "latency_s": 0.563
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.537
+    }
+  ],
+  "events": [
+    {
+      "type": "slow_response",
+      "time": 9.808,
+      "latency_s": 2.045
+    },
+    {
+      "type": "cutoff",
+      "time": 35.695,
+      "caller_still_talking_until": 39.457
+    }
+  ]
+}

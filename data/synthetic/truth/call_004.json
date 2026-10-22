@@ -108,7 +108,7 @@
     },
     {
       "turn": 4,
-      "latency_s": 0.891
+      "latency_s": 0.89
     },
     {
       "turn": 6,
@@ -120,11 +120,11 @@
     },
     {
       "turn": 10,
-      "latency_s": 3.886
+      "latency_s": 3.885
     },
     {
       "turn": 12,
-      "latency_s": 0.501
+      "latency_s": 0.5
     }
   ],
   "events": [
@@ -142,7 +142,7 @@
     {
       "type": "dead_air",
       "time": 54.323,
-      "latency_s": 3.886
+      "latency_s": 3.885
     }
   ]
 }

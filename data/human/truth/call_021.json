@@ -1,0 +1,139 @@
+{
+  "call_id": "call_021",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "librispeech:3081",
+  "caller_source": "LibriSpeech dev-clean (real human, read speech)",
+  "duration_s": 60.237,
+  "planted_faults": [
+    "false_barge_in"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {},
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.597,
+      "text": "Thanks for calling Summit Legal. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 6.131,
+      "end": 8.151,
+      "text": "george nodded"
+    },
+    {
+      "speaker": "agent",
+      "start": 8.968,
+      "end": 11.835,
+      "text": "Thanks. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.172,
+      "end": 20.958,
+      "text": "i am looking at him now that is we have not been able to find any perhaps you can"
+    },
+    {
+      "speaker": "agent",
+      "start": 21.782,
+      "end": 23.843,
+      "text": "Let me read that back. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 24.59,
+      "end": 27.1,
+      "text": "but they'll put a man on for you"
+    },
+    {
+      "speaker": "agent",
+      "start": 27.726,
+      "end": 30.705,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 31.225,
+      "end": 41.774,
+      "text": "he wants me to stand ready to obey any summons the police may send me very good manage it as you will"
+    },
+    {
+      "speaker": "agent",
+      "start": 42.439,
+      "end": 43.883,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now.",
+      "truncated": true
+    },
+    {
+      "speaker": "agent",
+      "start": 44.683,
+      "end": 45.957,
+      "text": "Sorry, go ahead."
+    },
+    {
+      "speaker": "caller",
+      "start": 47.157,
+      "end": 50.727,
+      "text": "the boys belong to the gentleman who is a widower"
+    },
+    {
+      "speaker": "agent",
+      "start": 51.274,
+      "end": 54.52,
+      "text": "No problem. I'll connect you with someone on our team now."
+    },
+    {
+      "speaker": "caller",
+      "start": 55.101,
+      "end": 57.471,
+      "text": "at least that is what we hope"
+    },
+    {
+      "speaker": "agent",
+      "start": 58.015,
+      "end": 59.737,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.817
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.824
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.626
+    },
+    {
+      "turn": 8,
+      "latency_s": 0.665
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.547
+    },
+    {
+      "turn": 13,
+      "latency_s": 0.544
+    }
+  ],
+  "events": [
+    {
+      "type": "false_barge_in",
+      "time": 43.583,
+      "agent_stopped_at": 43.883
+    }
+  ]
+}

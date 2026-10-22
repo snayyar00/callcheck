@@ -3,3 +3,16 @@ __pycache__/
 .venv/
 models/
 reports/
+data/.stt_cache/
+data/.corpora/
+data/real_tel/
+data/real/
+callcheck.egg-info/
+data/real_tel_holdout/
+data/ami_pairs/cc_cache*/
+realdata/telephone/out/
+research/endpointing/cache/
+realdata/telephone/out_diagnose.txt
+data/ami_pairs/score_all.txt
+data/ami_pairs/score_clean.txt
+data/ami_pairs/score_leaky.txt

@@ -1,0 +1,4000 @@
+{
+ "duration_s": 240.0,
+ "A_turns": [
+  {
+   "start": 0.05,
+   "end": 4.23,
+   "backchannel": false,
+   "words": [
+    "be",
+    "able",
+    "to",
+    "hold",
+    "it",
+    "'cause",
+    "i",
+    "think"
+   ],
+   "n_words": 14
+  },
+  {
+   "start": 6.57,
+   "end": 7.46,
+   "backchannel": false,
+   "words": [
+    "harder",
+    "to",
+    "push"
+   ],
+   "n_words": 3
+  },
+  {
+   "start": 13.72,
+   "end": 15.58,
+   "backchannel": false,
+   "words": [
+    "i",
+    "usually",
+    "hold",
+    "it",
+    "in",
+    "one",
+    "hand",
+    "maybe"
+   ],
+   "n_words": 8
+  },
+  {
+   "start": 21.33,
+   "end": 25.0,
+   "backchannel": false,
+   "words": [
+    "but",
+    "then",
+    "the",
+    "buttons",
+    "would",
+    "have",
+    "to",
+    "be"
+   ],
+   "n_words": 13
+  },
+  {
+   "start": 27.37,
+   "end": 30.04,
+   "backchannel": false,
+   "words": [
+    "but",
+    "i",
+    "mean",
+    "in",
+    "order",
+    "to",
+    "get",
+    "to"
+   ],
+   "n_words": 13
+  },
+  {
+   "start": 30.86,
+   "end": 33.57,
+   "backchannel": false,
+   "words": [
+    "they",
+    "would",
+    "have",
+    "to",
+    "be",
+    "within",
+    "a",
+    "certain"
+   ],
+   "n_words": 14
+  },
+  {
+   "start": 42.21,
+   "end": 42.72,
+   "backchannel": true,
+   "words": [
+    "mm-hmm"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 46.15,
+   "end": 46.51,
+   "backchannel": true,
+   "words": [
+    "mm-hmm"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 53.21,
+   "end": 53.78,
+   "backchannel": true,
+   "words": [
+    "mm-hmm"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 61.18,
+   "end": 62.85,
+   "backchannel": false,
+   "words": [
+    "it's",
+    "a",
+    "scroll",
+    "yeah",
+    "it's",
+    "a",
+    "wheel"
+   ],
+   "n_words": 7
+  },
+  {
+   "start": 67.32,
+   "end": 72.16,
+   "backchannel": false,
+   "words": [
+    "the",
+    "one",
+    "i",
+    "have",
+    "doesn't",
+    "have",
+    "the",
+    "four"
+   ],
+   "n_words": 16
+  },
+  {
+   "start": 120.41,
+   "end": 121.02,
+   "backchannel": true,
+   "words": [
+    "mm"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 137.79,
+   "end": 142.91,
+   "backchannel": false,
+   "words": [
+    "okay",
+    "um",
+    "we",
+    "have",
+    "we've",
+    "about",
+    "fifteen",
+    "minutes"
+   ],
+   "n_words": 13
+  },
+  {
+   "start": 144.11,
+   "end": 154.08,
+   "backchannel": false,
+   "words": [
+    "continue",
+    "with",
+    "my",
+    "pres",
+    "presentation",
+    "um",
+    "i've",
+    "one"
+   ],
+   "n_words": 40
+  },
+  {
+   "start": 155.17,
+   "end": 159.69,
+   "backchannel": false,
+   "words": [
+    "before",
+    "we",
+    "move",
+    "on",
+    "um"
+   ],
+   "n_words": 5
+  },
+  {
+   "start": 174.47,
+   "end": 180.74,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "and",
+    "then",
+    "like",
+    "the",
+    "the",
+    "covers",
+    "could"
+   ],
+   "n_words": 19
+  },
+  {
+   "start": 198.91,
+   "end": 201.22,
+   "backchannel": false,
+   "words": [
+    "ah",
+    "hmm",
+    "hmm",
+    "hmm"
+   ],
+   "n_words": 4
+  },
+  {
+   "start": 210.05,
+   "end": 216.66,
+   "backchannel": false,
+   "words": [
+    "okay",
+    "um",
+    "components",
+    "concept",
+    "energy",
+    "chip",
+    "on",
+    "print"
+   ],
+   "n_words": 8
+  },
+  {
+   "start": 217.67,
+   "end": 217.73,
+   "backchannel": false,
+   "words": [
+    "g"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 222.38,
+   "end": 226.07,
+   "backchannel": false,
+   "words": [
+    "that's",
+    "th",
+    "th",
+    "this",
+    "is",
+    "the",
+    "agenda",
+    "they"
+   ],
+   "n_words": 20
+  },
+  {
+   "start": 232.02,
+   "end": 232.49,
+   "backchannel": true,
+   "words": [
+    "mm-hmm"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 237.19,
+   "end": 239.22,
+   "backchannel": false,
+   "words": [
+    "i",
+    "think",
+    "it's",
+    "awesome",
+    "i",
+    "think",
+    "it's",
+    "really"
+   ],
+   "n_words": 9
+  }
+ ],
+ "B_turns": [
+  {
+   "start": 1.71,
+   "end": 6.9,
+   "backchannel": false,
+   "words": [
+    "be",
+    "harder",
+    "to",
+    "f",
+    "bu",
+    "uh",
+    "buttons",
+    "i"
+   ],
+   "n_words": 15
+  },
+  {
+   "start": 12.87,
+   "end": 13.2,
+   "backchannel": false,
+   "words": [
+    "um"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 16.6,
+   "end": 16.83,
+   "backchannel": false,
+   "words": [
+    "i"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 21.32,
+   "end": 23.55,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "that's",
+    "ts",
+    "how",
+    "i",
+    "tend",
+    "to",
+    "do"
+   ],
+   "n_words": 9
+  },
+  {
+   "start": 24.65,
+   "end": 27.66,
+   "backchannel": false,
+   "words": [
+    "no",
+    "just",
+    "thumb-sized",
+    "jus"
+   ],
+   "n_words": 4
+  },
+  {
+   "start": 30.45,
+   "end": 30.83,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 32.19,
+   "end": 32.79,
+   "backchannel": false,
+   "words": [
+    "that's",
+    "true"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 36.27,
+   "end": 36.51,
+   "backchannel": true,
+   "words": [
+    "right"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 37.71,
+   "end": 44.22,
+   "backchannel": false,
+   "words": [
+    "i",
+    "when",
+    "i'm",
+    "when",
+    "i'm",
+    "pressing",
+    "buttons",
+    "on"
+   ],
+   "n_words": 22
+  },
+  {
+   "start": 45.96,
+   "end": 50.63,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "or",
+    "in",
+    "and",
+    "use",
+    "my",
+    "thumb",
+    "or"
+   ],
+   "n_words": 16
+  },
+  {
+   "start": 52.3,
+   "end": 52.65,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 61.89,
+   "end": 67.94,
+   "backchannel": false,
+   "words": [
+    "it",
+    "wel",
+    "well",
+    "yeah",
+    "it",
+    "would",
+    "i",
+    "mean"
+   ],
+   "n_words": 19
+  },
+  {
+   "start": 70.87,
+   "end": 73.97,
+   "backchannel": false,
+   "words": [
+    "oh",
+    "yeah",
+    "you",
+    "had",
+    "one",
+    "of",
+    "the",
+    "in-between"
+   ],
+   "n_words": 15
+  },
+  {
+   "start": 87.06,
+   "end": 91.77,
+   "backchannel": false,
+   "words": [
+    "ts",
+    "and",
+    "you",
+    "press",
+    "the",
+    "centre",
+    "button",
+    "that's"
+   ],
+   "n_words": 15
+  },
+  {
+   "start": 92.71,
+   "end": 95.1,
+   "backchannel": false,
+   "words": [
+    "since",
+    "it's",
+    "the",
+    "one",
+    "in",
+    "the",
+    "centre",
+    "that's"
+   ],
+   "n_words": 11
+  },
+  {
+   "start": 103.46,
+   "end": 103.82,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 107.18,
+   "end": 108.02,
+   "backchannel": false,
+   "words": [
+    "uh",
+    "uh",
+    "t"
+   ],
+   "n_words": 3
+  },
+  {
+   "start": 115.67,
+   "end": 115.94,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 117.95,
+   "end": 118.31,
+   "backchannel": true,
+   "words": [
+    "hmm"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 121.09,
+   "end": 121.36,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 122.47,
+   "end": 129.22,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "i",
+    "think",
+    "an",
+    "lcd",
+    "screen",
+    "might",
+    "be"
+   ],
+   "n_words": 17
+  },
+  {
+   "start": 130.31,
+   "end": 130.56,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 134.01,
+   "end": 134.37,
+   "backchannel": true,
+   "words": [
+    "right"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 136.09,
+   "end": 136.5,
+   "backchannel": false,
+   "words": [
+    "um"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 139.41,
+   "end": 141.01,
+   "backchannel": false,
+   "words": [
+    "oh",
+    "we",
+    "probably",
+    "have",
+    "to",
+    "get",
+    "going",
+    "don't"
+   ],
+   "n_words": 9
+  },
+  {
+   "start": 151.95,
+   "end": 152.24,
+   "backchannel": true,
+   "words": [
+    "'kay"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 161.57,
+   "end": 161.79,
+   "backchannel": false,
+   "words": [
+    "could"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 164.15,
+   "end": 171.27,
+   "backchannel": false,
+   "words": [
+    "could",
+    "we",
+    "uh",
+    "could",
+    "we",
+    "have",
+    "changeable",
+    "covers"
+   ],
+   "n_words": 19
+  },
+  {
+   "start": 177.62,
+   "end": 178.86,
+   "backchannel": false,
+   "words": [
+    "exactly"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 181.04,
+   "end": 186.98,
+   "backchannel": false,
+   "words": [
+    "and",
+    "you",
+    "could",
+    "co-ordinate",
+    "with",
+    "your",
+    "house",
+    "or"
+   ],
+   "n_words": 12
+  },
+  {
+   "start": 193.46,
+   "end": 194.5,
+   "backchannel": false,
+   "words": [
+    "ooh"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 198.47,
+   "end": 200.32,
+   "backchannel": false,
+   "words": [
+    "oh"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 203.76,
+   "end": 204.04,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 206.37,
+   "end": 207.86,
+   "backchannel": false,
+   "words": [
+    "mm",
+    "options"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 215.47,
+   "end": 219.81,
+   "backchannel": false,
+   "words": [
+    "uh-hu",
+    "oh",
+    "oh",
+    "yes",
+    "right",
+    "i",
+    "had",
+    "sort"
+   ],
+   "n_words": 16
+  },
+  {
+   "start": 220.9,
+   "end": 222.32,
+   "backchannel": false,
+   "words": [
+    "be",
+    "necessary",
+    "but",
+    "um"
+   ],
+   "n_words": 4
+  },
+  {
+   "start": 224.42,
+   "end": 237.09,
+   "backchannel": false,
+   "words": [
+    "alright",
+    "so",
+    "um",
+    "decisions",
+    "what",
+    "the",
+    "okay",
+    "deci"
+   ],
+   "n_words": 30
+  },
+  {
+   "start": 238.19,
+   "end": 238.78,
+   "backchannel": false,
+   "words": [
+    "am",
+    "i"
+   ],
+   "n_words": 2
+  }
+ ],
+ "B_agent_turns": [
+  {
+   "start": 1.71,
+   "end": 6.9,
+   "backchannel": false,
+   "words": [
+    "be",
+    "harder",
+    "to",
+    "f",
+    "bu",
+    "uh",
+    "buttons",
+    "i"
+   ],
+   "n_words": 15
+  },
+  {
+   "start": 12.87,
+   "end": 13.2,
+   "backchannel": false,
+   "words": [
+    "um"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 16.6,
+   "end": 16.83,
+   "backchannel": false,
+   "words": [
+    "i"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 21.32,
+   "end": 23.55,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "that's",
+    "ts",
+    "how",
+    "i",
+    "tend",
+    "to",
+    "do"
+   ],
+   "n_words": 9
+  },
+  {
+   "start": 24.65,
+   "end": 27.66,
+   "backchannel": false,
+   "words": [
+    "no",
+    "just",
+    "thumb-sized",
+    "jus"
+   ],
+   "n_words": 4
+  },
+  {
+   "start": 30.45,
+   "end": 30.83,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 32.19,
+   "end": 32.79,
+   "backchannel": false,
+   "words": [
+    "that's",
+    "true"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 36.27,
+   "end": 36.51,
+   "backchannel": true,
+   "words": [
+    "right"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 37.71,
+   "end": 44.22,
+   "backchannel": false,
+   "words": [
+    "i",
+    "when",
+    "i'm",
+    "when",
+    "i'm",
+    "pressing",
+    "buttons",
+    "on"
+   ],
+   "n_words": 22
+  },
+  {
+   "start": 45.96,
+   "end": 50.63,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "or",
+    "in",
+    "and",
+    "use",
+    "my",
+    "thumb",
+    "or"
+   ],
+   "n_words": 16
+  },
+  {
+   "start": 52.3,
+   "end": 52.65,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 61.89,
+   "end": 67.94,
+   "backchannel": false,
+   "words": [
+    "it",
+    "wel",
+    "well",
+    "yeah",
+    "it",
+    "would",
+    "i",
+    "mean"
+   ],
+   "n_words": 19
+  },
+  {
+   "start": 70.87,
+   "end": 73.97,
+   "backchannel": false,
+   "words": [
+    "oh",
+    "yeah",
+    "you",
+    "had",
+    "one",
+    "of",
+    "the",
+    "in-between"
+   ],
+   "n_words": 15
+  },
+  {
+   "start": 87.06,
+   "end": 95.1,
+   "backchannel": false,
+   "words": [
+    "ts",
+    "and",
+    "you",
+    "press",
+    "the",
+    "centre",
+    "button",
+    "that's"
+   ],
+   "n_words": 26
+  },
+  {
+   "start": 103.46,
+   "end": 103.82,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 107.18,
+   "end": 108.02,
+   "backchannel": false,
+   "words": [
+    "uh",
+    "uh",
+    "t"
+   ],
+   "n_words": 3
+  },
+  {
+   "start": 115.67,
+   "end": 115.94,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 117.95,
+   "end": 118.31,
+   "backchannel": true,
+   "words": [
+    "hmm"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 121.09,
+   "end": 121.36,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 122.47,
+   "end": 129.22,
+   "backchannel": false,
+   "words": [
+    "yeah",
+    "i",
+    "think",
+    "an",
+    "lcd",
+    "screen",
+    "might",
+    "be"
+   ],
+   "n_words": 17
+  },
+  {
+   "start": 130.31,
+   "end": 130.56,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 134.01,
+   "end": 134.37,
+   "backchannel": true,
+   "words": [
+    "right"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 136.09,
+   "end": 136.5,
+   "backchannel": false,
+   "words": [
+    "um"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 139.41,
+   "end": 141.01,
+   "backchannel": false,
+   "words": [
+    "oh",
+    "we",
+    "probably",
+    "have",
+    "to",
+    "get",
+    "going",
+    "don't"
+   ],
+   "n_words": 9
+  },
+  {
+   "start": 151.95,
+   "end": 152.24,
+   "backchannel": true,
+   "words": [
+    "'kay"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 161.57,
+   "end": 161.79,
+   "backchannel": false,
+   "words": [
+    "could"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 164.15,
+   "end": 171.27,
+   "backchannel": false,
+   "words": [
+    "could",
+    "we",
+    "uh",
+    "could",
+    "we",
+    "have",
+    "changeable",
+    "covers"
+   ],
+   "n_words": 19
+  },
+  {
+   "start": 177.62,
+   "end": 178.86,
+   "backchannel": false,
+   "words": [
+    "exactly"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 181.04,
+   "end": 186.98,
+   "backchannel": false,
+   "words": [
+    "and",
+    "you",
+    "could",
+    "co-ordinate",
+    "with",
+    "your",
+    "house",
+    "or"
+   ],
+   "n_words": 12
+  },
+  {
+   "start": 193.46,
+   "end": 194.5,
+   "backchannel": false,
+   "words": [
+    "ooh"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 198.47,
+   "end": 200.32,
+   "backchannel": false,
+   "words": [
+    "oh"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 203.76,
+   "end": 204.04,
+   "backchannel": true,
+   "words": [
+    "yeah"
+   ],
+   "n_words": 1
+  },
+  {
+   "start": 206.37,
+   "end": 207.86,
+   "backchannel": false,
+   "words": [
+    "mm",
+    "options"
+   ],
+   "n_words": 2
+  },
+  {
+   "start": 215.47,
+   "end": 219.81,
+   "backchannel": false,
+   "words": [
+    "uh-hu",
+    "oh",
+    "oh",
+    "yes",
+    "right",
+    "i",
+    "had",
+    "sort"
+   ],
+   "n_words": 16
+  },
+  {
+   "start": 220.9,
+   "end": 222.32,
+   "backchannel": false,
+   "words": [
+    "be",
+    "necessary",
+    "but",
+    "um"
+   ],
+   "n_words": 4
+  },
+  {
+   "start": 224.42,
+   "end": 237.09,
+   "backchannel": false,
+   "words": [
+    "alright",
+    "so",
+    "um",
+    "decisions",
+    "what",
+    "the",
+    "okay",
+    "deci"
+   ],
+   "n_words": 30
+  },
+  {
+   "start": 238.19,
+   "end": 238.78,
+   "backchannel": false,
+   "words": [
+    "am",
+    "i"
+   ],
+   "n_words": 2
+  }
+ ],
+ "latencies": [
+  {
+   "b_start": 12.87,
+   "a_end": 7.46,
+   "latency_s": 5.41,
+   "backchannel": false,
+   "b_words": [
+    "um"
+   ]
+  },
+  {
+   "b_start": 16.6,
+   "a_end": 15.58,
+   "latency_s": 1.02,
+   "backchannel": false,
+   "b_words": [
+    "i"
+   ]
+  },
+  {
+   "b_start": 30.45,
+   "a_end": 30.04,
+   "latency_s": 0.41,
+   "backchannel": true,
+   "b_words": [
+    "yeah"
+   ]
+  },
+  {
+   "b_start": 36.27,
+   "a_end": 33.57,
+   "latency_s": 2.7,
+   "backchannel": true,
+   "b_words": [
+    "right"
+   ]
+  },
+  {
+   "b_start": 161.57,
+   "a_end": 159.69,
+   "latency_s": 1.88,
+   "backchannel": false,
+   "b_words": [
+    "could"
+   ]
+  },
+  {
+   "b_start": 181.04,
+   "a_end": 180.74,
+   "latency_s": 0.3,
+   "backchannel": false,
+   "b_words": [
+    "and",
+    "you",
+    "could",
+    "co-ordinate",
+    "with",
+    "your"
+   ]
+  },
+  {
+   "b_start": 203.76,
+   "a_end": 201.22,
+   "latency_s": 2.54,
+   "backchannel": true,
+   "b_words": [
+    "yeah"
+   ]
+  }
+ ],
+ "overlaps": [
+  {
+   "b_start": 1.71,
+   "b_end": 6.9,
+   "overlap_s": 2.52,
+   "kind": "interruption",
+   "a_turn": [
+    0.05,
+    4.23
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "be",
+    "harder",
+    "to",
+    "f",
+    "bu",
+    "uh",
+    "buttons",
+    "i",
+    "think",
+    "it'd",
+    "be",
+    "harder",
+    "to",
+    "press",
+    "button"
+   ]
+  },
+  {
+   "b_start": 24.65,
+   "b_end": 27.66,
+   "overlap_s": 0.35,
+   "kind": "interruption",
+   "a_turn": [
+    21.33,
+    25.0
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "no",
+    "just",
+    "thumb-sized",
+    "jus"
+   ]
+  },
+  {
+   "b_start": 32.19,
+   "b_end": 32.79,
+   "overlap_s": 0.6,
+   "kind": "interruption",
+   "a_turn": [
+    30.86,
+    33.57
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "that's",
+    "true"
+   ]
+  },
+  {
+   "b_start": 61.89,
+   "b_end": 67.94,
+   "overlap_s": 0.96,
+   "kind": "interruption",
+   "a_turn": [
+    61.18,
+    62.85
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "it",
+    "wel",
+    "well",
+    "yeah",
+    "it",
+    "would",
+    "i",
+    "mean",
+    "each",
+    "version",
+    "of",
+    "it",
+    "has",
+    "been",
+    "a",
+    "little",
+    "bit",
+    "different",
+    "but"
+   ]
+  },
+  {
+   "b_start": 70.87,
+   "b_end": 73.97,
+   "overlap_s": 1.29,
+   "kind": "interruption",
+   "a_turn": [
+    67.32,
+    72.16
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "oh",
+    "yeah",
+    "you",
+    "had",
+    "one",
+    "of",
+    "the",
+    "in-between",
+    "ones",
+    "when",
+    "they",
+    "weren't",
+    "doing",
+    "that",
+    "anymore"
+   ]
+  },
+  {
+   "b_start": 139.41,
+   "b_end": 141.01,
+   "overlap_s": 1.6,
+   "kind": "interruption",
+   "a_turn": [
+    137.79,
+    142.91
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "oh",
+    "we",
+    "probably",
+    "have",
+    "to",
+    "get",
+    "going",
+    "don't",
+    "we"
+   ]
+  },
+  {
+   "b_start": 151.95,
+   "b_end": 152.24,
+   "overlap_s": 0.29,
+   "kind": "backchannel",
+   "a_turn": [
+    144.11,
+    154.08
+   ],
+   "a_resumes_after": false,
+   "b_words": [
+    "'kay"
+   ]
+  },
+  {
+   "b_start": 177.62,
+   "b_end": 178.86,
+   "overlap_s": 1.24,
+   "kind": "interruption",
+   "a_turn": [
+    174.47,
+    180.74
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "exactly"
+   ]
+  },
+  {
+   "b_start": 215.47,
+   "b_end": 219.81,
+   "overlap_s": 1.19,
+   "kind": "interruption",
+   "a_turn": [
+    210.05,
+    216.66
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "uh-hu",
+    "oh",
+    "oh",
+    "yes",
+    "right",
+    "i",
+    "had",
+    "sort",
+    "of",
+    "skipped",
+    "over",
+    "that",
+    "hoping",
+    "it",
+    "wouldn't",
+    "get"
+   ]
+  },
+  {
+   "b_start": 224.42,
+   "b_end": 237.09,
+   "overlap_s": 1.65,
+   "kind": "interruption",
+   "a_turn": [
+    222.38,
+    226.07
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "alright",
+    "so",
+    "um",
+    "decisions",
+    "what",
+    "the",
+    "okay",
+    "deci",
+    "decisions",
+    "on",
+    "energy",
+    "i'm",
+    "thinking",
+    "is",
+    "based",
+    "on",
+    "the",
+    "battery",
+    "um",
+    "i",
+    "dunno",
+    "what",
+    "do",
+    "people",
+    "think",
+    "about",
+    "this",
+    "kinetic",
+    "battery",
+    "idea"
+   ]
+  },
+  {
+   "b_start": 238.19,
+   "b_end": 238.78,
+   "overlap_s": 0.59,
+   "kind": "interruption",
+   "a_turn": [
+    237.19,
+    239.22
+   ],
+   "a_resumes_after": true,
+   "b_words": [
+    "am",
+    "i"
+   ]
+  }
+ ],
+ "cutoffs": [
+  {
+   "b_start": 1.71,
+   "a_resumes_at": 1.98
+  },
+  {
+   "b_start": 24.65,
+   "a_resumes_at": 27.37
+  },
+  {
+   "b_start": 32.19,
+   "a_resumes_at": 32.44
+  },
+  {
+   "b_start": 61.89,
+   "a_resumes_at": 62.0
+  },
+  {
+   "b_start": 70.87,
+   "a_resumes_at": 71.26
+  },
+  {
+   "b_start": 139.41,
+   "a_resumes_at": 139.61
+  },
+  {
+   "b_start": 177.62,
+   "a_resumes_at": 178.15
+  },
+  {
+   "b_start": 215.47,
+   "a_resumes_at": 215.72
+  },
+  {
+   "b_start": 224.42,
+   "a_resumes_at": 224.56
+  },
+  {
+   "b_start": 238.19,
+   "a_resumes_at": 238.38
+  }
+ ],
+ "cutoffs_pause": [],
+ "vocal_sounds": {
+  "A": [
+   {
+    "start": 158.5,
+    "end": 158.5,
+    "type": "other"
+   },
+   {
+    "start": 211.61,
+    "end": 211.61,
+    "type": "other"
+   },
+   {
+    "start": 236.898,
+    "end": 236.898,
+    "type": "other"
+   }
+  ],
+  "B": [
+   {
+    "start": 63.01,
+    "end": 63.01,
+    "type": "other"
+   },
+   {
+    "start": 123.05,
+    "end": 123.05,
+    "type": "other"
+   },
+   {
+    "start": 151.36,
+    "end": 151.36,
+    "type": "other"
+   },
+   {
+    "start": 172.224,
+    "end": 174.381,
+    "type": "laugh"
+   },
+   {
+    "start": 183.73,
+    "end": 183.73,
+    "type": "laugh"
+   },
+   {
+    "start": 200.32,
+    "end": 200.429,
+    "type": "laugh"
+   },
+   {
+    "start": 209.088,
+    "end": 211.112,
+    "type": "laugh"
+   }
+  ]
+ },
+ "false_barge_candidates": [],
+ "A_words": [
+  [
+   0.05,
+   0.14,
+   "be"
+  ],
+  [
+   0.14,
+   0.24,
+   "able"
+  ],
+  [
+   0.24,
+   0.34,
+   "to"
+  ],
+  [
+   0.34,
+   0.6,
+   "hold"
+  ],
+  [
+   0.6,
+   0.78,
+   "it"
+  ],
+  [
+   0.78,
+   0.92,
+   "'cause"
+  ],
+  [
+   0.92,
+   0.96,
+   "i"
+  ],
+  [
+   0.96,
+   1.19,
+   "think"
+  ],
+  [
+   1.19,
+   1.28,
+   "the"
+  ],
+  [
+   1.28,
+   1.52,
+   "reason"
+  ],
+  [
+   1.52,
+   1.69,
+   "they're"
+  ],
+  [
+   1.69,
+   1.98,
+   "long"
+  ],
+  [
+   1.98,
+   3.69,
+   "is"
+  ],
+  [
+   3.69,
+   4.23,
+   "yeah"
+  ],
+  [
+   6.57,
+   6.83,
+   "harder"
+  ],
+  [
+   6.83,
+   6.92,
+   "to"
+  ],
+  [
+   6.92,
+   7.46,
+   "push"
+  ],
+  [
+   13.72,
+   13.84,
+   "i"
+  ],
+  [
+   13.84,
+   14.09,
+   "usually"
+  ],
+  [
+   14.09,
+   14.28,
+   "hold"
+  ],
+  [
+   14.28,
+   14.34,
+   "it"
+  ],
+  [
+   14.34,
+   14.4,
+   "in"
+  ],
+  [
+   14.4,
+   14.53,
+   "one"
+  ],
+  [
+   14.53,
+   15.17,
+   "hand"
+  ],
+  [
+   15.17,
+   15.58,
+   "maybe"
+  ],
+  [
+   21.33,
+   21.44,
+   "but"
+  ],
+  [
+   21.44,
+   21.56,
+   "then"
+  ],
+  [
+   21.56,
+   21.64,
+   "the"
+  ],
+  [
+   21.64,
+   21.87,
+   "buttons"
+  ],
+  [
+   21.87,
+   21.97,
+   "would"
+  ],
+  [
+   21.97,
+   22.11,
+   "have"
+  ],
+  [
+   22.11,
+   22.19,
+   "to"
+  ],
+  [
+   22.19,
+   22.26,
+   "be"
+  ],
+  [
+   22.26,
+   22.51,
+   "very"
+  ],
+  [
+   22.51,
+   24.41,
+   "small"
+  ],
+  [
+   24.41,
+   24.57,
+   "don't"
+  ],
+  [
+   24.57,
+   24.65,
+   "you"
+  ],
+  [
+   24.65,
+   25.0,
+   "think"
+  ],
+  [
+   27.37,
+   27.56,
+   "but"
+  ],
+  [
+   27.56,
+   27.61,
+   "i"
+  ],
+  [
+   27.61,
+   27.79,
+   "mean"
+  ],
+  [
+   27.79,
+   27.94,
+   "in"
+  ],
+  [
+   27.94,
+   28.15,
+   "order"
+  ],
+  [
+   28.15,
+   28.29,
+   "to"
+  ],
+  [
+   28.29,
+   28.56,
+   "get"
+  ],
+  [
+   28.56,
+   28.66,
+   "to"
+  ],
+  [
+   28.66,
+   28.93,
+   "all"
+  ],
+  [
+   28.93,
+   29.03,
+   "of"
+  ],
+  [
+   29.03,
+   29.66,
+   "them"
+  ],
+  [
+   29.66,
+   29.74,
+   "you"
+  ],
+  [
+   29.74,
+   30.04,
+   "know"
+  ],
+  [
+   30.86,
+   30.94,
+   "they"
+  ],
+  [
+   30.94,
+   31.03,
+   "would"
+  ],
+  [
+   31.03,
+   31.13,
+   "have"
+  ],
+  [
+   31.13,
+   31.21,
+   "to"
+  ],
+  [
+   31.21,
+   31.28,
+   "be"
+  ],
+  [
+   31.28,
+   31.73,
+   "within"
+  ],
+  [
+   31.73,
+   31.8,
+   "a"
+  ],
+  [
+   31.8,
+   32.05,
+   "certain"
+  ],
+  [
+   32.05,
+   32.26,
+   "amount"
+  ],
+  [
+   32.26,
+   32.44,
+   "of"
+  ],
+  [
+   32.44,
+   32.84,
+   "space"
+  ],
+  [
+   32.84,
+   33.07,
+   "with"
+  ],
+  [
+   33.07,
+   33.17,
+   "each"
+  ],
+  [
+   33.17,
+   33.57,
+   "other"
+  ],
+  [
+   42.21,
+   42.72,
+   "mm-hmm"
+  ],
+  [
+   46.15,
+   46.51,
+   "mm-hmm"
+  ],
+  [
+   53.21,
+   53.78,
+   "mm-hmm"
+  ],
+  [
+   61.18,
+   61.31,
+   "it's"
+  ],
+  [
+   61.31,
+   61.37,
+   "a"
+  ],
+  [
+   61.37,
+   62.0,
+   "scroll"
+  ],
+  [
+   62.0,
+   62.18,
+   "yeah"
+  ],
+  [
+   62.18,
+   62.33,
+   "it's"
+  ],
+  [
+   62.33,
+   62.46,
+   "a"
+  ],
+  [
+   62.46,
+   62.85,
+   "wheel"
+  ],
+  [
+   67.32,
+   67.4,
+   "the"
+  ],
+  [
+   67.4,
+   67.57,
+   "one"
+  ],
+  [
+   67.57,
+   67.7,
+   "i"
+  ],
+  [
+   67.7,
+   68.0,
+   "have"
+  ],
+  [
+   68.0,
+   68.37,
+   "doesn't"
+  ],
+  [
+   68.37,
+   69.19,
+   "have"
+  ],
+  [
+   69.19,
+   69.5,
+   "the"
+  ],
+  [
+   69.5,
+   69.93,
+   "four"
+  ],
+  [
+   69.93,
+   70.1,
+   "on"
+  ],
+  [
+   70.1,
+   70.63,
+   "i"
+  ],
+  [
+   70.63,
+   71.26,
+   "like"
+  ],
+  [
+   71.26,
+   71.51,
+   "around"
+  ],
+  [
+   71.51,
+   71.6,
+   "it"
+  ],
+  [
+   71.6,
+   71.65,
+   "i"
+  ],
+  [
+   71.65,
+   71.82,
+   "don't"
+  ],
+  [
+   71.82,
+   72.16,
+   "think"
+  ],
+  [
+   120.41,
+   121.02,
+   "mm"
+  ],
+  [
+   137.79,
+   138.17,
+   "okay"
+  ],
+  [
+   138.17,
+   139.61,
+   "um"
+  ],
+  [
+   139.61,
+   139.97,
+   "we"
+  ],
+  [
+   139.97,
+   140.66,
+   "have"
+  ],
+  [
+   140.66,
+   140.84,
+   "we've"
+  ],
+  [
+   140.84,
+   141.01,
+   "about"
+  ],
+  [
+   141.01,
+   141.34,
+   "fifteen"
+  ],
+  [
+   141.34,
+   141.65,
+   "minutes"
+  ],
+  [
+   141.65,
+   141.96,
+   "left"
+  ],
+  [
+   141.96,
+   142.08,
+   "so"
+  ],
+  [
+   142.08,
+   142.43,
+   "i'm"
+  ],
+  [
+   142.43,
+   142.54,
+   "i'm"
+  ],
+  [
+   142.54,
+   142.91,
+   "gonna"
+  ],
+  [
+   144.11,
+   144.51,
+   "continue"
+  ],
+  [
+   144.51,
+   144.62,
+   "with"
+  ],
+  [
+   144.62,
+   144.73,
+   "my"
+  ],
+  [
+   144.73,
+   145.12,
+   "pres"
+  ],
+  [
+   145.12,
+   145.9,
+   "presentation"
+  ],
+  [
+   145.9,
+   146.4,
+   "um"
+  ],
+  [
+   146.4,
+   146.55,
+   "i've"
+  ],
+  [
+   146.55,
+   146.72,
+   "one"
+  ],
+  [
+   146.72,
+   146.92,
+   "more"
+  ],
+  [
+   146.92,
+   147.35,
+   "slide"
+  ],
+  [
+   147.35,
+   147.6,
+   "before"
+  ],
+  [
+   147.6,
+   147.7,
+   "we"
+  ],
+  [
+   147.7,
+   148.39,
+   "close"
+  ],
+  [
+   148.39,
+   148.64,
+   "but"
+  ],
+  [
+   148.64,
+   148.78,
+   "in"
+  ],
+  [
+   148.78,
+   148.93,
+   "that"
+  ],
+  [
+   148.93,
+   149.19,
+   "slide"
+  ],
+  [
+   149.19,
+   149.37,
+   "is"
+  ],
+  [
+   149.37,
+   149.51,
+   "when"
+  ],
+  [
+   149.51,
+   149.6,
+   "we"
+  ],
+  [
+   149.6,
+   149.73,
+   "need"
+  ],
+  [
+   149.73,
+   149.82,
+   "to"
+  ],
+  [
+   149.82,
+   149.96,
+   "make"
+  ],
+  [
+   149.96,
+   150.41,
+   "decisions"
+  ],
+  [
+   150.41,
+   150.58,
+   "about"
+  ],
+  [
+   150.58,
+   150.82,
+   "this"
+  ],
+  [
+   150.82,
+   150.98,
+   "these"
+  ],
+  [
+   150.98,
+   151.2,
+   "kinds"
+  ],
+  [
+   151.2,
+   151.26,
+   "of"
+  ],
+  [
+   151.26,
+   151.58,
+   "things"
+  ],
+  [
+   151.58,
+   151.74,
+   "so"
+  ],
+  [
+   151.74,
+   151.8,
+   "i'll"
+  ],
+  [
+   151.8,
+   152.37,
+   "just"
+  ],
+  [
+   152.37,
+   152.52,
+   "bring"
+  ],
+  [
+   152.52,
+   152.68,
+   "that"
+  ],
+  [
+   152.68,
+   152.81,
+   "up"
+  ],
+  [
+   152.81,
+   153.37,
+   "and"
+  ],
+  [
+   153.37,
+   153.61,
+   "show"
+  ],
+  [
+   153.61,
+   153.72,
+   "you"
+  ],
+  [
+   153.72,
+   154.08,
+   "all"
+  ],
+  [
+   155.17,
+   155.35,
+   "before"
+  ],
+  [
+   155.35,
+   155.42,
+   "we"
+  ],
+  [
+   155.42,
+   155.6,
+   "move"
+  ],
+  [
+   155.6,
+   158.5,
+   "on"
+  ],
+  [
+   158.5,
+   159.69,
+   "um"
+  ],
+  [
+   174.47,
+   174.72,
+   "yeah"
+  ],
+  [
+   174.72,
+   174.98,
+   "and"
+  ],
+  [
+   174.98,
+   175.12,
+   "then"
+  ],
+  [
+   175.12,
+   175.38,
+   "like"
+  ],
+  [
+   175.38,
+   175.64,
+   "the"
+  ],
+  [
+   175.64,
+   175.72,
+   "the"
+  ],
+  [
+   175.72,
+   176.33,
+   "covers"
+  ],
+  [
+   176.33,
+   176.49,
+   "could"
+  ],
+  [
+   176.49,
+   176.61,
+   "be"
+  ],
+  [
+   176.61,
+   177.03,
+   "spongy"
+  ],
+  [
+   177.03,
+   178.15,
+   "latex"
+  ],
+  [
+   178.15,
+   178.67,
+   "wherea"
+  ],
+  [
+   178.67,
+   178.84,
+   "but"
+  ],
+  [
+   178.84,
+   179.09,
+   "the"
+  ],
+  [
+   179.09,
+   179.49,
+   "actual"
+  ],
+  [
+   179.49,
+   179.85,
+   "model"
+  ],
+  [
+   179.85,
+   180.0,
+   "could"
+  ],
+  [
+   180.0,
+   180.11,
+   "be"
+  ],
+  [
+   180.11,
+   180.74,
+   "titanium"
+  ],
+  [
+   198.91,
+   199.07,
+   "ah"
+  ],
+  [
+   199.07,
+   199.82,
+   "hmm"
+  ],
+  [
+   199.82,
+   200.79,
+   "hmm"
+  ],
+  [
+   200.79,
+   201.22,
+   "hmm"
+  ],
+  [
+   210.05,
+   210.66,
+   "okay"
+  ],
+  [
+   210.66,
+   211.61,
+   "um"
+  ],
+  [
+   211.61,
+   212.08,
+   "components"
+  ],
+  [
+   212.08,
+   213.61,
+   "concept"
+  ],
+  [
+   213.61,
+   215.35,
+   "energy"
+  ],
+  [
+   215.35,
+   215.72,
+   "chip"
+  ],
+  [
+   215.72,
+   215.98,
+   "on"
+  ],
+  [
+   215.98,
+   216.66,
+   "print"
+  ],
+  [
+   217.67,
+   217.73,
+   "g"
+  ],
+  [
+   222.38,
+   222.59,
+   "that's"
+  ],
+  [
+   222.59,
+   222.64,
+   "th"
+  ],
+  [
+   222.64,
+   222.85,
+   "th"
+  ],
+  [
+   222.85,
+   223.04,
+   "this"
+  ],
+  [
+   223.04,
+   223.31,
+   "is"
+  ],
+  [
+   223.31,
+   223.48,
+   "the"
+  ],
+  [
+   223.48,
+   223.79,
+   "agenda"
+  ],
+  [
+   223.79,
+   223.9,
+   "they"
+  ],
+  [
+   223.9,
+   224.1,
+   "gave"
+  ],
+  [
+   224.1,
+   224.27,
+   "me"
+  ],
+  [
+   224.27,
+   224.56,
+   "so"
+  ],
+  [
+   224.56,
+   224.72,
+   "can"
+  ],
+  [
+   224.72,
+   224.82,
+   "you"
+  ],
+  [
+   224.82,
+   225.04,
+   "just"
+  ],
+  [
+   225.04,
+   225.32,
+   "explain"
+  ],
+  [
+   225.32,
+   225.41,
+   "what"
+  ],
+  [
+   225.41,
+   225.55,
+   "that"
+  ],
+  [
+   225.55,
+   225.67,
+   "is"
+  ],
+  [
+   225.67,
+   225.82,
+   "real"
+  ],
+  [
+   225.82,
+   226.07,
+   "quick"
+  ],
+  [
+   232.02,
+   232.49,
+   "mm-hmm"
+  ],
+  [
+   237.19,
+   237.33,
+   "i"
+  ],
+  [
+   237.33,
+   237.49,
+   "think"
+  ],
+  [
+   237.49,
+   237.58,
+   "it's"
+  ],
+  [
+   237.58,
+   238.18,
+   "awesome"
+  ],
+  [
+   238.18,
+   238.25,
+   "i"
+  ],
+  [
+   238.25,
+   238.38,
+   "think"
+  ],
+  [
+   238.38,
+   238.52,
+   "it's"
+  ],
+  [
+   238.52,
+   238.82,
+   "really"
+  ],
+  [
+   238.82,
+   239.22,
+   "cool"
+  ]
+ ],
+ "B_words": [
+  [
+   1.71,
+   1.84,
+   "be"
+  ],
+  [
+   1.84,
+   2.32,
+   "harder"
+  ],
+  [
+   2.32,
+   2.8,
+   "to"
+  ],
+  [
+   2.8,
+   2.94,
+   "f"
+  ],
+  [
+   2.94,
+   3.06,
+   "bu"
+  ],
+  [
+   3.06,
+   3.32,
+   "uh"
+  ],
+  [
+   3.32,
+   4.76,
+   "buttons"
+  ],
+  [
+   4.76,
+   4.86,
+   "i"
+  ],
+  [
+   4.86,
+   5.43,
+   "think"
+  ],
+  [
+   5.43,
+   5.78,
+   "it'd"
+  ],
+  [
+   5.78,
+   5.92,
+   "be"
+  ],
+  [
+   5.92,
+   6.2,
+   "harder"
+  ],
+  [
+   6.2,
+   6.29,
+   "to"
+  ],
+  [
+   6.29,
+   6.55,
+   "press"
+  ],
+  [
+   6.55,
+   6.9,
+   "button"
+  ],
+  [
+   12.87,
+   13.2,
+   "um"
+  ],
+  [
+   16.6,
+   16.83,
+   "i"
+  ],
+  [
+   21.32,
+   21.91,
+   "yeah"
+  ],
+  [
+   21.91,
+   22.52,
+   "that's"
+  ],
+  [
+   22.52,
+   22.67,
+   "ts"
+  ],
+  [
+   22.67,
+   22.77,
+   "how"
+  ],
+  [
+   22.77,
+   22.88,
+   "i"
+  ],
+  [
+   22.88,
+   23.1,
+   "tend"
+  ],
+  [
+   23.1,
+   23.19,
+   "to"
+  ],
+  [
+   23.19,
+   23.35,
+   "do"
+  ],
+  [
+   23.35,
+   23.55,
+   "it"
+  ],
+  [
+   24.65,
+   24.81,
+   "no"
+  ],
+  [
+   24.81,
+   25.09,
+   "just"
+  ],
+  [
+   25.09,
+   25.83,
+   "thumb-sized"
+  ],
+  [
+   25.83,
+   27.66,
+   "jus"
+  ],
+  [
+   30.45,
+   30.83,
+   "yeah"
+  ],
+  [
+   32.19,
+   32.41,
+   "that's"
+  ],
+  [
+   32.41,
+   32.79,
+   "true"
+  ],
+  [
+   36.27,
+   36.51,
+   "right"
+  ],
+  [
+   37.71,
+   38.13,
+   "i"
+  ],
+  [
+   38.13,
+   38.33,
+   "when"
+  ],
+  [
+   38.33,
+   38.78,
+   "i'm"
+  ],
+  [
+   38.78,
+   38.92,
+   "when"
+  ],
+  [
+   38.92,
+   39.01,
+   "i'm"
+  ],
+  [
+   39.01,
+   39.32,
+   "pressing"
+  ],
+  [
+   39.32,
+   39.56,
+   "buttons"
+  ],
+  [
+   39.56,
+   39.68,
+   "on"
+  ],
+  [
+   39.68,
+   39.86,
+   "my"
+  ],
+  [
+   39.86,
+   40.21,
+   "ipod"
+  ],
+  [
+   40.21,
+   40.4,
+   "that's"
+  ],
+  [
+   40.4,
+   40.51,
+   "how"
+  ],
+  [
+   40.51,
+   40.59,
+   "i"
+  ],
+  [
+   40.59,
+   40.77,
+   "do"
+  ],
+  [
+   40.77,
+   40.89,
+   "it"
+  ],
+  [
+   40.89,
+   41.17,
+   "hold"
+  ],
+  [
+   41.17,
+   41.32,
+   "it"
+  ],
+  [
+   41.32,
+   41.74,
+   "and"
+  ],
+  [
+   41.74,
+   42.22,
+   "press"
+  ],
+  [
+   42.22,
+   42.34,
+   "the"
+  ],
+  [
+   42.34,
+   43.51,
+   "four"
+  ],
+  [
+   43.51,
+   44.22,
+   "yeah"
+  ],
+  [
+   45.96,
+   46.2,
+   "yeah"
+  ],
+  [
+   46.2,
+   46.38,
+   "or"
+  ],
+  [
+   46.38,
+   46.54,
+   "in"
+  ],
+  [
+   46.54,
+   46.72,
+   "and"
+  ],
+  [
+   46.72,
+   47.91,
+   "use"
+  ],
+  [
+   47.91,
+   48.11,
+   "my"
+  ],
+  [
+   48.11,
+   48.37,
+   "thumb"
+  ],
+  [
+   48.37,
+   48.45,
+   "or"
+  ],
+  [
+   48.45,
+   48.57,
+   "my"
+  ],
+  [
+   48.57,
+   48.84,
+   "pointer"
+  ],
+  [
+   48.84,
+   49.12,
+   "finger"
+  ],
+  [
+   49.12,
+   49.25,
+   "on"
+  ],
+  [
+   49.25,
+   49.35,
+   "the"
+  ],
+  [
+   49.35,
+   49.74,
+   "touch"
+  ],
+  [
+   49.74,
+   50.04,
+   "scroll"
+  ],
+  [
+   50.04,
+   50.63,
+   "wheel"
+  ],
+  [
+   52.3,
+   52.65,
+   "yeah"
+  ],
+  [
+   61.89,
+   62.09,
+   "it"
+  ],
+  [
+   62.09,
+   62.75,
+   "wel"
+  ],
+  [
+   62.75,
+   63.01,
+   "well"
+  ],
+  [
+   63.01,
+   63.73,
+   "yeah"
+  ],
+  [
+   63.73,
+   63.83,
+   "it"
+  ],
+  [
+   63.83,
+   64.15,
+   "would"
+  ],
+  [
+   64.15,
+   64.24,
+   "i"
+  ],
+  [
+   64.24,
+   64.42,
+   "mean"
+  ],
+  [
+   64.42,
+   65.35,
+   "each"
+  ],
+  [
+   65.35,
+   65.64,
+   "version"
+  ],
+  [
+   65.64,
+   65.75,
+   "of"
+  ],
+  [
+   65.75,
+   65.84,
+   "it"
+  ],
+  [
+   65.84,
+   65.98,
+   "has"
+  ],
+  [
+   65.98,
+   66.14,
+   "been"
+  ],
+  [
+   66.14,
+   66.2,
+   "a"
+  ],
+  [
+   66.2,
+   66.33,
+   "little"
+  ],
+  [
+   66.33,
+   66.45,
+   "bit"
+  ],
+  [
+   66.45,
+   67.76,
+   "different"
+  ],
+  [
+   67.76,
+   67.94,
+   "but"
+  ],
+  [
+   70.87,
+   71.06,
+   "oh"
+  ],
+  [
+   71.06,
+   71.26,
+   "yeah"
+  ],
+  [
+   71.26,
+   71.39,
+   "you"
+  ],
+  [
+   71.39,
+   71.56,
+   "had"
+  ],
+  [
+   71.56,
+   71.73,
+   "one"
+  ],
+  [
+   71.73,
+   71.8,
+   "of"
+  ],
+  [
+   71.8,
+   72.13,
+   "the"
+  ],
+  [
+   72.13,
+   72.6,
+   "in-between"
+  ],
+  [
+   72.6,
+   72.84,
+   "ones"
+  ],
+  [
+   72.84,
+   72.97,
+   "when"
+  ],
+  [
+   72.97,
+   73.04,
+   "they"
+  ],
+  [
+   73.04,
+   73.23,
+   "weren't"
+  ],
+  [
+   73.23,
+   73.41,
+   "doing"
+  ],
+  [
+   73.41,
+   73.57,
+   "that"
+  ],
+  [
+   73.57,
+   73.97,
+   "anymore"
+  ],
+  [
+   87.06,
+   87.62,
+   "ts"
+  ],
+  [
+   87.62,
+   87.71,
+   "and"
+  ],
+  [
+   87.71,
+   87.8,
+   "you"
+  ],
+  [
+   87.8,
+   88.09,
+   "press"
+  ],
+  [
+   88.09,
+   88.17,
+   "the"
+  ],
+  [
+   88.17,
+   88.74,
+   "centre"
+  ],
+  [
+   88.74,
+   89.14,
+   "button"
+  ],
+  [
+   89.14,
+   89.49,
+   "that's"
+  ],
+  [
+   89.49,
+   89.72,
+   "that's"
+  ],
+  [
+   89.72,
+   89.9,
+   "your"
+  ],
+  [
+   89.9,
+   90.52,
+   "all-purpose"
+  ],
+  [
+   90.52,
+   90.95,
+   "select"
+  ],
+  [
+   90.95,
+   91.26,
+   "button"
+  ],
+  [
+   91.26,
+   91.44,
+   "right"
+  ],
+  [
+   91.44,
+   91.77,
+   "there"
+  ],
+  [
+   92.71,
+   92.87,
+   "since"
+  ],
+  [
+   92.87,
+   93.03,
+   "it's"
+  ],
+  [
+   93.03,
+   93.11,
+   "the"
+  ],
+  [
+   93.11,
+   93.25,
+   "one"
+  ],
+  [
+   93.25,
+   93.36,
+   "in"
+  ],
+  [
+   93.36,
+   93.46,
+   "the"
+  ],
+  [
+   93.46,
+   93.77,
+   "centre"
+  ],
+  [
+   93.77,
+   94.01,
+   "that's"
+  ],
+  [
+   94.01,
+   94.21,
+   "not"
+  ],
+  [
+   94.21,
+   94.72,
+   "marked"
+  ],
+  [
+   94.72,
+   95.1,
+   "yeah"
+  ],
+  [
+   103.46,
+   103.82,
+   "yeah"
+  ],
+  [
+   107.18,
+   107.59,
+   "uh"
+  ],
+  [
+   107.59,
+   107.75,
+   "uh"
+  ],
+  [
+   107.75,
+   108.02,
+   "t"
+  ],
+  [
+   115.67,
+   115.94,
+   "yeah"
+  ],
+  [
+   117.95,
+   118.31,
+   "hmm"
+  ],
+  [
+   121.09,
+   121.36,
+   "yeah"
+  ],
+  [
+   122.47,
+   122.56,
+   "yeah"
+  ],
+  [
+   122.56,
+   122.62,
+   "i"
+  ],
+  [
+   122.62,
+   122.81,
+   "think"
+  ],
+  [
+   122.81,
+   123.05,
+   "an"
+  ],
+  [
+   123.05,
+   123.58,
+   "lcd"
+  ],
+  [
+   123.58,
+   124.06,
+   "screen"
+  ],
+  [
+   124.06,
+   124.33,
+   "might"
+  ],
+  [
+   124.33,
+   125.15,
+   "be"
+  ],
+  [
+   125.15,
+   125.45,
+   "good"
+  ],
+  [
+   125.45,
+   126.44,
+   "in"
+  ],
+  [
+   126.44,
+   126.96,
+   "theory"
+  ],
+  [
+   126.96,
+   127.16,
+   "but"
+  ],
+  [
+   127.16,
+   127.4,
+   "not"
+  ],
+  [
+   127.4,
+   127.77,
+   "as"
+  ],
+  [
+   127.77,
+   128.29,
+   "useful"
+  ],
+  [
+   128.29,
+   128.42,
+   "in"
+  ],
+  [
+   128.42,
+   129.22,
+   "practice"
+  ],
+  [
+   130.31,
+   130.56,
+   "yeah"
+  ],
+  [
+   134.01,
+   134.37,
+   "right"
+  ],
+  [
+   136.09,
+   136.5,
+   "um"
+  ],
+  [
+   139.41,
+   139.59,
+   "oh"
+  ],
+  [
+   139.59,
+   139.7,
+   "we"
+  ],
+  [
+   139.7,
+   139.95,
+   "probably"
+  ],
+  [
+   139.95,
+   140.07,
+   "have"
+  ],
+  [
+   140.07,
+   140.16,
+   "to"
+  ],
+  [
+   140.16,
+   140.31,
+   "get"
+  ],
+  [
+   140.31,
+   140.64,
+   "going"
+  ],
+  [
+   140.64,
+   140.82,
+   "don't"
+  ],
+  [
+   140.82,
+   141.01,
+   "we"
+  ],
+  [
+   151.95,
+   152.24,
+   "'kay"
+  ],
+  [
+   161.57,
+   161.79,
+   "could"
+  ],
+  [
+   164.15,
+   164.35,
+   "could"
+  ],
+  [
+   164.35,
+   164.56,
+   "we"
+  ],
+  [
+   164.56,
+   165.17,
+   "uh"
+  ],
+  [
+   165.17,
+   165.31,
+   "could"
+  ],
+  [
+   165.31,
+   165.41,
+   "we"
+  ],
+  [
+   165.41,
+   166.11,
+   "have"
+  ],
+  [
+   166.11,
+   166.72,
+   "changeable"
+  ],
+  [
+   166.72,
+   167.27,
+   "covers"
+  ],
+  [
+   167.27,
+   167.46,
+   "like"
+  ],
+  [
+   167.46,
+   167.6,
+   "for"
+  ],
+  [
+   167.6,
+   167.76,
+   "your"
+  ],
+  [
+   167.76,
+   169.01,
+   "mobile"
+  ],
+  [
+   169.01,
+   169.15,
+   "in"
+  ],
+  [
+   169.15,
+   169.49,
+   "different"
+  ],
+  [
+   169.49,
+   169.67,
+   "fruit"
+  ],
+  [
+   169.67,
+   169.78,
+   "and"
+  ],
+  [
+   169.78,
+   170.21,
+   "vegetable"
+  ],
+  [
+   170.21,
+   170.87,
+   "colours"
+  ],
+  [
+   170.87,
+   171.27,
+   "yeah"
+  ],
+  [
+   177.62,
+   178.86,
+   "exactly"
+  ],
+  [
+   181.04,
+   181.13,
+   "and"
+  ],
+  [
+   181.13,
+   181.26,
+   "you"
+  ],
+  [
+   181.26,
+   182.04,
+   "could"
+  ],
+  [
+   182.04,
+   182.49,
+   "co-ordinate"
+  ],
+  [
+   182.49,
+   182.68,
+   "with"
+  ],
+  [
+   182.68,
+   183.07,
+   "your"
+  ],
+  [
+   183.07,
+   183.73,
+   "house"
+  ],
+  [
+   183.73,
+   184.07,
+   "or"
+  ],
+  [
+   184.07,
+   186.07,
+   "whatever"
+  ],
+  [
+   186.07,
+   186.25,
+   "all"
+  ],
+  [
+   186.25,
+   186.45,
+   "these"
+  ],
+  [
+   186.45,
+   186.98,
+   "options"
+  ],
+  [
+   193.46,
+   194.5,
+   "ooh"
+  ],
+  [
+   198.47,
+   200.32,
+   "oh"
+  ],
+  [
+   203.76,
+   204.04,
+   "yeah"
+  ],
+  [
+   206.37,
+   207.54,
+   "mm"
+  ],
+  [
+   207.54,
+   207.86,
+   "options"
+  ],
+  [
+   215.47,
+   215.71,
+   "uh-hu"
+  ],
+  [
+   215.71,
+   216.44,
+   "oh"
+  ],
+  [
+   216.44,
+   216.66,
+   "oh"
+  ],
+  [
+   216.66,
+   217.61,
+   "yes"
+  ],
+  [
+   217.61,
+   217.92,
+   "right"
+  ],
+  [
+   217.92,
+   218.04,
+   "i"
+  ],
+  [
+   218.04,
+   218.16,
+   "had"
+  ],
+  [
+   218.16,
+   218.34,
+   "sort"
+  ],
+  [
+   218.34,
+   218.44,
+   "of"
+  ],
+  [
+   218.44,
+   218.69,
+   "skipped"
+  ],
+  [
+   218.69,
+   218.88,
+   "over"
+  ],
+  [
+   218.88,
+   219.04,
+   "that"
+  ],
+  [
+   219.04,
+   219.34,
+   "hoping"
+  ],
+  [
+   219.34,
+   219.42,
+   "it"
+  ],
+  [
+   219.42,
+   219.63,
+   "wouldn't"
+  ],
+  [
+   219.63,
+   219.81,
+   "get"
+  ],
+  [
+   220.9,
+   220.96,
+   "be"
+  ],
+  [
+   220.96,
+   221.52,
+   "necessary"
+  ],
+  [
+   221.52,
+   221.87,
+   "but"
+  ],
+  [
+   221.87,
+   222.32,
+   "um"
+  ],
+  [
+   224.42,
+   225.1,
+   "alright"
+  ],
+  [
+   225.1,
+   225.45,
+   "so"
+  ],
+  [
+   225.45,
+   226.29,
+   "um"
+  ],
+  [
+   226.29,
+   227.05,
+   "decisions"
+  ],
+  [
+   227.05,
+   227.31,
+   "what"
+  ],
+  [
+   227.31,
+   228.01,
+   "the"
+  ],
+  [
+   228.01,
+   228.26,
+   "okay"
+  ],
+  [
+   228.26,
+   229.05,
+   "deci"
+  ],
+  [
+   229.05,
+   229.49,
+   "decisions"
+  ],
+  [
+   229.49,
+   229.73,
+   "on"
+  ],
+  [
+   229.73,
+   230.19,
+   "energy"
+  ],
+  [
+   230.19,
+   230.35,
+   "i'm"
+  ],
+  [
+   230.35,
+   230.72,
+   "thinking"
+  ],
+  [
+   230.72,
+   230.91,
+   "is"
+  ],
+  [
+   230.91,
+   231.22,
+   "based"
+  ],
+  [
+   231.22,
+   231.31,
+   "on"
+  ],
+  [
+   231.31,
+   231.41,
+   "the"
+  ],
+  [
+   231.41,
+   232.47,
+   "battery"
+  ],
+  [
+   232.47,
+   233.88,
+   "um"
+  ],
+  [
+   233.88,
+   233.97,
+   "i"
+  ],
+  [
+   233.97,
+   234.21,
+   "dunno"
+  ],
+  [
+   234.21,
+   234.37,
+   "what"
+  ],
+  [
+   234.37,
+   234.47,
+   "do"
+  ],
+  [
+   234.47,
+   234.79,
+   "people"
+  ],
+  [
+   234.79,
+   235.05,
+   "think"
+  ],
+  [
+   235.05,
+   235.36,
+   "about"
+  ],
+  [
+   235.36,
+   235.85,
+   "this"
+  ],
+  [
+   235.85,
+   236.27,
+   "kinetic"
+  ],
+  [
+   236.27,
+   236.61,
+   "battery"
+  ],
+  [
+   236.61,
+   237.09,
+   "idea"
+  ],
+  [
+   238.19,
+   238.36,
+   "am"
+  ],
+  [
+   238.36,
+   238.78,
+   "i"
+  ]
+ ],
+ "clip": "ES2008c_2",
+ "meeting": "ES2008c",
+ "window": [
+  1380.0,
+  1620.0
+ ],
+ "caller": "A",
+ "agent": "B",
+ "headsets": {
+  "caller": 0,
+  "agent": 1
+ },
+ "dominance_score": 0.574,
+ "license": "CC BY 4.0, AMI Meeting Corpus, https://groups.inf.ed.ac.uk/ami/corpus/license.shtml",
+ "rules": "Build 2-party stereo \"calls\" + truth JSON from AMI headset audio and manual word times.\n\nRules (all documented in truth JSON under \"rules\"):\n- Turn: a speaker's words (punctuation tokens dropped) merged while the gap between one word's end and\n  the next word's start is < TURN_GAP (0.5 s). Vocal sounds (laugh/cough/...) are NOT words and never\n  extend a turn.\n- Floor-holding fillers (uh, um) are NOT backchannel words.\n- Backchannel turn: <= 3 words, all in BACKCHANNEL_WORDS, turn duration < 1.0 s.\n- Response latency: for each turn of B (the \"agent\") that starts at b_s, the previous SUBSTANTIVE (non-backchannel)\n  A turn that ended at a_e <= b_s, with no A turn covering b_s, no B turn starting between a_e and b_s, and B not\n  already talking at a_e. latency = b_s - a_e.\n  Flag \"backchannel\" if the B turn is a backchannel turn.\n- Overlap: B turn starts while an A turn is running (a_s < b_s < a_e). Kind = \"backchannel\" if backchannel\n  turn and overlap < 1 s, else \"interruption\".\n- Cut-off truth (mirrors the product meaning, uses callcheck's 1.0 s agent turn gap on human words):\n  a non-backchannel B turn (merged at 1.0 s) whose start b_s is within 2 s after A's last word end (or inside A speech)\n  and A has a word starting in (b_s+0.1, b_e). \"cutoffs\" = that broad set (B may talk over A mid-word);\n  \"cutoffs_pause\" = the subset where b_s falls in a real gap between A words (matches callcheck's \"starts in a pause\" meaning).\n- Vocal sounds: every <vocalsound> on A and B, in clip time.\n"
+}

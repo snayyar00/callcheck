@@ -1,0 +1,107 @@
+analyzed MUL0023
+analyzed MUL0074
+analyzed MUL0291
+analyzed MUL0542
+analyzed MUL0549
+analyzed MUL0595
+analyzed MUL0681
+analyzed MUL0755
+analyzed MUL0901
+analyzed MUL0907
+analyzed MUL1115
+analyzed MUL1550
+analyzed MUL1686
+analyzed MUL1968
+analyzed MUL2138
+analyzed MUL2271
+analyzed MUL2419
+analyzed MUL2459
+analyzed MUL2505
+analyzed MUL2564
+analyzed MUL2609
+analyzed MUL2795
+analyzed MUL3445
+analyzed MUL3502
+analyzed MUL3545
+analyzed SNG0382
+analyzed SNG0599
+analyzed SNG0669
+analyzed SNG0848
+analyzed SNG0853
+analyzed SNG1485
+analyzed SNG1511
+calls=32  hard=9  total_audio_min=87.7
+
+===== truth variant: CAL (pad-corrected, primary) =====
+LATENCY error (detected - annotated), seconds, over matched agent turns:
+   n=506 median=-0.090 p90_abs=0.265 max_abs=2.415 mean_abs=0.148 | truth latencies missed by callcheck=37, callcheck latencies with no truth=39
+  abs error <=0.25s: 90%  <=0.5s: 96%
+OVERLAP/cutoff (truth: agent starts >=0.3s into a caller turn with >=0.3s left; detected: 'cutoff'):
+   vs all overlaps         TP=2 FP=33 FN=15 precision=0.06 recall=0.12
+   vs non-backchannel only TP=2 FP=33 FN=10 precision=0.06 recall=0.17 (backchannel = agent turn <=2 words)
+GAPS >1.5 s (slow_response|dead_air): TP=147 FP=14 FN=59 precision=0.91 recall=0.71
+GAPS >3.0 s (dead_air):              TP=13 FP=1 FN=9 precision=0.93 recall=0.59
+Truth >3 s mutual-silences in corpus: 50
+  truth counts: latencies=543 overlaps=17 (non-bc 12) gaps>1.5=206 gaps>3=22
+
+===== truth variant: RAW (annotation as published) =====
+LATENCY error (detected - annotated), seconds, over matched agent turns:
+   n=440 median=+0.594 p90_abs=0.676 max_abs=2.050 mean_abs=0.570 | truth latencies missed by callcheck=30, callcheck latencies with no truth=105
+  abs error <=0.25s: 5%  <=0.5s: 16%
+OVERLAP/cutoff (truth: agent starts >=0.3s into a caller turn with >=0.3s left; detected: 'cutoff'):
+   vs all overlaps         TP=5 FP=30 FN=26 precision=0.14 recall=0.16
+   vs non-backchannel only TP=5 FP=30 FN=18 precision=0.14 recall=0.22 (backchannel = agent turn <=2 words)
+GAPS >1.5 s (slow_response|dead_air): TP=60 FP=101 FN=7 precision=0.37 recall=0.90
+GAPS >3.0 s (dead_air):              TP=8 FP=6 FN=2 precision=0.57 recall=0.80
+Truth >3 s mutual-silences in corpus: 27
+
+===== FALSE BARGE-IN events (no truth; listen at these times) =====
+  MUL3545 t=136.26s agent_stopped_at=137.18s annotated turns near: ['agent:134.5-148.2']
+  total: 1 in 87.7 min of real speech
+
+===== event totals =====
+  {'slow_response': 147, 'dead_air': 14, 'cutoff': 35, 'false_barge_in': 1}
+
+===== 5 WORST disagreements (CAL truth) =====
+
+--- MUL0549 latency {'t': 7.59, 'truth': 3.375, 'det': 0.96}
+  VAD caller segs : [(0.8, 1.31), (4.35, 6.66), (9.66, 12.8)]
+  VAD agent segs : [(2.27, 3.81), (7.62, 9.15)]
+  VAD caller_turns: [(0.8, 1.31), (4.35, 6.66), (9.66, 12.8)]
+  ANN caller 0.80-1.22  yes , i'm looking for a place to go in town .
+  ANN agent  2.27-3.64  okay , any requirement .
+  ANN caller 4.02-4.21  yes .
+  ANN agent  7.59-9.08  okay . there is a swimming pool called . abbey pool and astroturf pitc
+  ANN caller 9.66-12.64  yes , and have a star of a four will be good .
+
+--- MUL2609 latency {'t': 92.93, 'truth': 2.43, 'det': 0.588}
+  VAD caller segs : [(89.41, 90.56), (92.1, 92.34), (95.68, 98.34)]
+  VAD agent segs : [(84.54, 86.11), (86.59, 87.97), (92.93, 94.56)]
+  VAD caller_turns: [(89.41, 92.34), (95.68, 98.34)]
+  ANN agent  84.54-87.88  so the price of the dream is . £12.80 .
+  ANN caller 89.40-90.50  thank you very much , ma'am .
+  ANN agent  92.93-94.51  is it easy also to help with .
+  ANN caller 95.70-98.24  yes , i am also looking for places to go in town , man .
+
+--- MUL2505 latency {'t': 61.85, 'truth': 1.93, 'det': 0.352}
+  VAD caller segs : [(54.7, 54.74), (55.04, 55.1), (57.06, 60.13), (60.32, 60.5), (61.58, 61.6)]
+  VAD agent segs : [(52.9, 54.14), (54.4, 55.62), (55.78, 56.32), (61.95, 65.92)]
+  VAD caller_turns: [(54.7, 55.1), (57.06, 61.6)]
+  ANN agent  52.90-56.21  okay , i found one michaelhouse cafe .
+  ANN caller 57.16-59.92  alright , sir , can you please provide me with the address .
+  ANN agent  61.85-67.25  okay , the address is saint michael's church , trinity . city centre .
+
+--- SNG0848 latency {'t': 15.09, 'truth': 1.57, 'det': 0.104}
+  VAD caller segs : [(6.22, 11.87), (12.44, 13.5), (14.62, 15.0), (16.9, 19.84)]
+  VAD agent segs : [(15.1, 16.1)]
+  VAD caller_turns: [(6.22, 15.0), (16.9, 19.84)]
+  ANN caller 6.25-13.52  i'm good . thank you . i would like to book a taxi from regents galler
+  ANN agent  15.09-15.99  okay . what time .
+  ANN caller 16.98-19.82  it should arrive by 7 15 pm .
+
+--- MUL3545 latency {'t': 122.87, 'truth': 1.83, 'det': 0.428}
+  VAD caller segs : [(114.6, 118.27), (118.68, 121.02), (121.32, 122.1)]
+  VAD agent segs : [(122.53, 123.81), (124.0, 128.38)]
+  VAD caller_turns: [(104.08, 122.1)]
+  ANN caller 104.08-121.04  okay , so i need a place that is in the same price range as the restau
+  ANN agent  122.87-127.46  okay , no problem . um , but unfortunately we don't have one that does

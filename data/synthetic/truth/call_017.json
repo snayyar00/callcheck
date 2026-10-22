@@ -111,7 +111,7 @@
   "agent_latencies": [
     {
       "turn": 2,
-      "latency_s": 4.909
+      "latency_s": 4.908
     },
     {
       "turn": 4,
@@ -131,14 +131,14 @@
     },
     {
       "turn": 13,
-      "latency_s": 0.529
+      "latency_s": 0.528
     }
   ],
   "events": [
     {
       "type": "dead_air",
       "time": 12.785,
-      "latency_s": 4.909
+      "latency_s": 4.908
     },
     {
       "type": "slow_response",

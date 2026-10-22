@@ -113,7 +113,7 @@
     },
     {
       "turn": 4,
-      "latency_s": 0.551
+      "latency_s": 0.552
     },
     {
       "turn": 6,
@@ -125,7 +125,7 @@
     },
     {
       "turn": 11,
-      "latency_s": 0.655
+      "latency_s": 0.654
     },
     {
       "turn": 13,

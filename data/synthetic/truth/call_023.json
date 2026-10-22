@@ -134,12 +134,16 @@
       "latency_s": 2.42
     },
     {
+      "turn": 5,
+      "latency_s": 0.455
+    },
+    {
       "turn": 7,
-      "latency_s": 0.571
+      "latency_s": 0.572
     },
     {
       "turn": 9,
-      "latency_s": 0.566
+      "latency_s": 0.567
     },
     {
       "turn": 11,

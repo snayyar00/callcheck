@@ -1,0 +1,126 @@
+{
+  "call_id": "call_039",
+  "sample_rate": 16000,
+  "channels": {
+    "left": "caller",
+    "right": "agent"
+  },
+  "caller_voice": "Daniel",
+  "duration_s": 46.832,
+  "planted_faults": [
+    "cutoff"
+  ],
+  "thresholds": {
+    "slow_response_s": 1.5,
+    "dead_air_s": 3.0
+  },
+  "entities": {
+    "name": "Aisha Carter",
+    "phone_said": "1253404339",
+    "phone_read_back": "1253404339"
+  },
+  "turns": [
+    {
+      "speaker": "agent",
+      "start": 0.3,
+      "end": 5.547,
+      "text": "Thanks for calling Northside Clinic. I'm an AI assistant. Can I get your first and last name?"
+    },
+    {
+      "speaker": "caller",
+      "start": 5.951,
+      "end": 7.706,
+      "text": "Yeah, it's Aisha Carter."
+    },
+    {
+      "speaker": "agent",
+      "start": 8.172,
+      "end": 11.748,
+      "text": "Thanks, Aisha. And what's the best phone number to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "start": 12.371,
+      "end": 18.279,
+      "text": "Sure, it's one two five, three four zero, four three three nine."
+    },
+    {
+      "speaker": "agent",
+      "start": 19.193,
+      "end": 24.679,
+      "text": "Let me read that back. one two five, three four zero, four three three nine. Is that right?"
+    },
+    {
+      "speaker": "caller",
+      "start": 25.342,
+      "end": 26.816,
+      "text": "Yes, that's right."
+    },
+    {
+      "speaker": "agent",
+      "start": 27.359,
+      "end": 30.338,
+      "text": "Got it. And briefly, what's the reason for your call?"
+    },
+    {
+      "speaker": "caller",
+      "start": 30.693,
+      "end": 36.137,
+      "text": "Well, I slipped on the stairs at my building, and my wrist still hurts."
+    },
+    {
+      "speaker": "agent",
+      "start": 33.814,
+      "end": 35.702,
+      "text": "Okay. I can help with that.",
+      "interrupts_caller": true
+    },
+    {
+      "speaker": "agent",
+      "start": 36.951,
+      "end": 42.11,
+      "text": "I'm sorry to hear that. I'm going to connect you with someone on our team who can help right now."
+    },
+    {
+      "speaker": "caller",
+      "start": 42.685,
+      "end": 44.141,
+      "text": "Okay, thanks."
+    },
+    {
+      "speaker": "agent",
+      "start": 44.61,
+      "end": 46.332,
+      "text": "Thanks for calling. Goodbye."
+    }
+  ],
+  "agent_latencies": [
+    {
+      "turn": 2,
+      "latency_s": 0.466
+    },
+    {
+      "turn": 4,
+      "latency_s": 0.914
+    },
+    {
+      "turn": 6,
+      "latency_s": 0.543
+    },
+    {
+      "turn": 9,
+      "latency_s": 0.814
+    },
+    {
+      "turn": 11,
+      "latency_s": 0.469
+    }
+  ],
+  "events": [
+    {
+      "type": "cutoff",
+      "time": 33.814,
+      "caller_still_talking_until": 36.137
+    }
+  ]
+}

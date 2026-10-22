@@ -18,3 +18,4 @@ data/ami_pairs/score_clean.txt
 data/ami_pairs/score_leaky.txt
 research/endpointing/models/
 research/endpointing/smartturn_P.npy
+audit/out/

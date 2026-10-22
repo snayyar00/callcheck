@@ -8,7 +8,7 @@ Grade voice-agent call recordings for the turn-taking failures callers notice:
 - **false_barge_in**: a cough or bump on the line made the agent stop mid-sentence
 - **wrong_readback**: the agent read back a different phone number than the caller said (optional, needs speech-to-text)
 
-It works on a two-channel recording (caller on one channel, agent on the other) from any platform. No vendor API, no call IDs. The use I built it for: take a sample of calls from a customer's current voice stack, get a baseline, and run the same report after a migration.
+It works on a two-channel recording (caller on one channel, agent on the other) from any platform. No vendor API, no call IDs. Two halves of onboarding a customer onto a voice agent: before, read their call transcripts and work out what can be automated (`audit/`); after, grade the agent's real calls for the failures callers notice (`callcheck`).
 
 ```
 pip install -e . && callcheck call.wav
@@ -66,6 +66,20 @@ AMI meeting corpus, 29 four-minute windows of two people talking, individual hea
 | Latency within 0.5 s | 78% | |
 | Cut-off | precision 43%, recall 27% | precision 51%, recall 33% |
 
+## Before the migration: transcript audit
+
+`audit/run.py` is the step before any agent exists. Give it a customer's call transcripts and it reports what people call about, which call types a voice agent could handle end to end, which back-office systems each one needs, and a savings estimate with every assumption printed. One LLM pass per conversation (Claude Sonnet via Vercel AI Gateway), then one pass to group the reasons into call types.
+
+Tested on ABCD (ASAPP, MIT licence): human customer-service conversations labelled with what the customer wanted and every system action the human agent took. The model sees only the spoken lines, as in a real transcript, and is scored against the hidden labels. Prompts were adjusted on 40 dev conversations; the numbers below are from one run on 300 *untouched* test conversations (about $1 of API calls). Full output: `audit/SAMPLE_REPORT.md`.
+
+| Check | Result |
+|---|---|
+| Systems an agent would need (account lookup, identity check, orders, refunds, ...) | precision 71%, recall 89% |
+| Call types found vs the 10 true top-level reasons | 12 types, purity 70%, NMI 0.66 |
+| Calls the human agent escalated: audit said "partial" | 12 of 22 (vs 5% of other calls) |
+
+It leans toward listing a system when unsure, which is the safer mistake when scoping an integration. It is too optimistic about automation: 10 of the 22 calls a human escalated were still marked fully automatable. Treat its automation split as a first pass for a person to review, not a number to quote.
+
 ## Side study: can audio alone tell when the caller is done?
 
 The same real calls give a clean test of endpointing, the decision every voice agent makes at each caller pause. On 99 held-out SpokenWOZ calls (2328 caller pauses), I compared a plain silence timeout with a gradient-boosted model on prosody features and with the open smart-turn v3.2 model run zero-shot.
@@ -114,6 +128,7 @@ Audio is not in the repo. The scripts download or generate it.
 - Human caller voices: LibriSpeech (CC BY 4.0).
 - SpokenWOZ (CC BY-NC 4.0): used for evaluation only; audio and derived labels stay local.
 - AMI Meeting Corpus (CC BY 4.0), University of Edinburgh.
+- ABCD (MIT), ASAPP Research; download `abcd_v1.1.json.gz` from github.com/asappresearch/abcd into `data/.corpora/abcd/`.
 - Silero VAD (MIT), downloaded on first run.
 
 Code: MIT.

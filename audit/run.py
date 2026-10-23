@@ -31,7 +31,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ABCD = ROOT / "data/.corpora/abcd/abcd_v1.1.json.gz"
 OUT = ROOT / "audit/out"
-MODEL = os.environ.get("AI_GATEWAY_MODEL", "anthropic/claude-sonnet-5.5")
+MODEL = os.environ.get("AI_GATEWAY_MODEL", "deepseek/deepseek-v4.1-flash")
 URL = "https://ai-gateway.vercel.sh/v1/chat/completions"
 
 # Back-office systems an agent may need. ABCD's own action names map onto them, which is the truth.
@@ -83,7 +83,7 @@ Every id must appear exactly once.
 %s"""
 
 
-def llm(prompt, max_tokens=600):
+def llm(prompt, max_tokens=4000, timeout=120):  # reasoning models spend tokens thinking before the JSON
     key = os.environ.get("AI_GATEWAY_API_KEY") or os.environ.get("VERCEL_AI_GATEWAY_API_KEY")
     if not key:
         sys.exit("set AI_GATEWAY_API_KEY (Vercel AI Gateway)")
@@ -92,7 +92,7 @@ def llm(prompt, max_tokens=600):
     for attempt in range(5):
         try:
             req = urllib.request.Request(URL, body, {"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
-            r = json.load(urllib.request.urlopen(req, timeout=120))
+            r = json.load(urllib.request.urlopen(req, timeout=timeout))
             text = r["choices"][0]["message"]["content"]
             return json.loads(re.search(r"\{.*\}", text, re.S).group(0)), r.get("usage", {})
         except Exception as e:  # rate limits, provider blips, a malformed reply
@@ -124,7 +124,13 @@ def extract(convos, cache):
 
     def one(c):
         prompt = EXTRACT_PROMPT % (list(SYSTEMS), json.dumps(SYSTEMS), transcript(c))
-        ans, usage = llm(prompt)
+        for _ in range(3):  # cheaper models sometimes drop a field; ask again rather than guess it
+            ans, usage = llm(prompt)
+            if {"reason", "automatable", "systems"} <= ans.keys() and ans["automatable"] in ("full", "partial", "no"):
+                break
+        else:
+            ans.setdefault("reason", "unclear"); ans["automatable"] = "unknown"; ans.setdefault("systems", [])
+        ans.setdefault("why", ""); ans.setdefault("info_needed", [])
         ans["systems"] = [s for s in ans.get("systems", []) if s in SYSTEMS]
         return dict(id=str(c["convo_id"]), pred=ans, usage=usage)
 
@@ -141,7 +147,7 @@ def taxonomy(rows, cache, max_types=12):
     if cache.exists():
         return json.load(cache.open())
     lines = "\n".join(f"{i}: {r['pred']['reason']}" for i, r in enumerate(rows))
-    ans, _ = llm(TAXONOMY_PROMPT % (max_types, lines), max_tokens=8000)
+    ans, _ = llm(TAXONOMY_PROMPT % (max_types, lines), max_tokens=16000, timeout=900)
     label = {}
     for t in ans["types"]:
         for i in t["ids"]:
@@ -182,7 +188,7 @@ def main():
     data = json.load(gzip.open(ABCD))[a.split]
     convos = random.Random(a.seed).sample(data, a.n)
     OUT.mkdir(parents=True, exist_ok=True)
-    tag = f"{a.split}_{a.n}_s{a.seed}"
+    tag = f"{a.split}_{a.n}_s{a.seed}_{MODEL.split('/')[-1]}"
     rows = extract(convos, OUT / f"extract_{tag}.jsonl")
     label = taxonomy(rows, OUT / f"taxonomy_{tag}.json")
     gold = [truth(c) for c in convos]

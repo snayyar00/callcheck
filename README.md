@@ -20,12 +20,12 @@ flowchart LR
     C --> E
 ```
 
-Both parts were tested on labelled public data held out from tuning. The one exception, a prompt change after a first audit test run, is noted under Limits. Each number below names the file in `results/` or `audit/` it comes from.
+Both parts were scored on labelled public data held out from tuning. Two held-out sets were scored more than once, and the sections below say where. Each number names the file in `results/` or `audit/` it comes from.
 
 | Question | Tool | Tested on | Result |
 |---|---|---|---|
 | Which systems will the agent need? | `audit/run.py` | 300 held-out support conversations (ABCD) | precision 75%, recall 87% |
-| How fast does the call center answer today? | `callcheck` | 40 held-out real phone calls, 131 min (SpokenWOZ) | 90% of 731 turns within 0.21 s of the human-marked time |
+| How fast does the call center answer today? | `callcheck` | 40 held-out real phone calls, 131 min (SpokenWOZ) | 90% of 731 turns within 0.21 s of the human-marked time, after removing a constant annotation offset |
 | How often are callers left waiting over 1.5 s? | `callcheck` | same 40 calls | precision 85%, recall 78% |
 | How often are callers talked over? | `callcheck` | same 40 calls | precision 57%, recall 39% (first version 13% and 13%) |
 
@@ -40,7 +40,7 @@ Both parts were tested on labelled public data held out from tuning. The one exc
 
 ### How it was tested
 
-ABCD (ASAPP, MIT licence) is a set of human customer-service conversations. Each one is labelled with what the customer wanted and every system action the human agent took. The model sees only the spoken lines, as a real transcript would show them, and is scored against the hidden labels. The action labels map to eight systems: account lookup, identity check, account changes, orders, refunds, membership and billing, FAQ, and handoff to a human. Prompts were adjusted on 40 dev conversations. The numbers below come from 300 test conversations that were not used for tuning, scored on the second test run (see Limits). The full output is `audit/SAMPLE_REPORT.md`.
+ABCD (ASAPP, MIT licence) is a set of human customer-service conversations. Each one is labelled with what the customer wanted and every system action the human agent took. The model sees only the spoken lines, as a real transcript would show them, and is scored against the hidden labels. The action labels map to eight systems: account lookup, identity check, account changes, orders, refunds, membership and billing, FAQ, and handoff to a human. Prompts were adjusted on 40 dev conversations. The numbers below come from 300 test conversations that were not used for tuning. This test set was run three times (see Limits). The full output is `audit/SAMPLE_REPORT.md`.
 
 | Check | Result |
 |---|---|
@@ -71,7 +71,7 @@ What the report shows for each call type (first rows of `audit/SAMPLE_REPORT.md`
 - It lists a system when unsure. That is the safer mistake when you scope integrations, but it lowers precision.
 - It was tested on transcripts, not end to end from audio. A real onboarding adds a speech-to-text step first.
 - The savings range depends entirely on four inputs: calls per month, handle time, agent cost per hour and AI cost per minute. They are command-line flags, and the report prints them next to the result.
-- The first DeepSeek test run used an earlier prompt. It scored systems precision 73% and recall 82% and marked 88% of calls fully automatable. The prompt was then changed on dev only, to judge automation from what happened in the call, and rerun once on test. The numbers above are from that rerun.
+- The test set was run three times. The first two runs used an earlier prompt: Sonnet 5.5 scored systems precision 71% and recall 89%, and DeepSeek scored 73% and 82%. In the DeepSeek run, 10 of the 22 calls a human escalated were still marked fully automatable, so I changed the prompt on dev only, to judge automation from what happened in the call, and ran DeepSeek once more on test. The numbers above are from that third run. The earlier reports are in `audit/earlier_runs/`.
 
 ## 2. callcheck: how callers' experience looks today
 
@@ -84,10 +84,10 @@ What the report shows for each call type (first rows of `audit/SAMPLE_REPORT.md`
 - wrong_readback: the agent read back a different number than the caller said (needs speech-to-text)
 
 ```
-pip install -e . && callcheck call.wav
+pip install -e . && callcheck call.wav --html report.html
 ```
 
-The Silero VAD model (MIT) downloads once on first run and is checked against a pinned SHA-256.
+Needs ffmpeg on the PATH. `--json` writes the raw results, and `--html` writes a one-page report with a timeline of each call. The Silero VAD model (MIT) downloads once on first run and is checked against a pinned SHA-256.
 
 ### How it works
 
@@ -104,55 +104,27 @@ A false barge-in is a short non-speech sound on the caller line followed by the 
 
 SpokenWOZ is a set of real two-party customer-service phone calls: 8 kHz stereo, one speaker per channel, utterance times marked by annotators. Both sides are human, so this is the "today" case exactly: a human call center before any agent goes live.
 
-The annotators pad every utterance by about 0.33 s at the start and 0.35 s at the end (medians over about 1130 turns, `results/real_phone_annotation_pad.txt`, from `realdata/telephone/measure_pad.py`). That constant is removed before scoring. Without the correction, every latency looks 0.6 s too short, and the raw scores are in the same file as the main ones.
+The annotators pad every utterance by about a third of a second on each side. The code removes 0.34 s from each start and 0.35 s from each end, measured first on 1090 turns; a later remeasure over 1131 turns gives medians of 0.33 s and 0.35 s (`results/real_phone_annotation_pad.txt`, from `realdata/telephone/measure_pad.py`). Without the correction, every latency looks 0.6 s too short, and the raw scores are in the same file as the main ones.
 
-The analyzer was tuned on 32 calls (`results/real_phone_dev.txt`) and scored once on 40 other calls, 131 minutes in all (`results/real_phone_holdout.txt`). 22 of the 40 were picked because they have many overlaps, so the set has enough cut-offs to score. The other 18 are random.
+The analyzer was tuned on 32 calls (`results/real_phone_dev.txt`) and scored on 40 other calls, 131 minutes in all (`results/real_phone_holdout.txt`). 22 of the 40 were picked because they have many overlaps, so the set has enough cut-offs to score. The other 18 are random.
 
 | Check | Result |
 |---|---|
 | Response latency, 731 turns | median error -0.08 s, 90% within 0.21 s, 98% within 0.5 s |
 | Gaps over 1.5 s | precision 85%, recall 78% |
 | Gaps over 3 s | precision 64%, recall 82% |
-| Cut-off, 61 true cases | precision 57%, recall 39% |
+| Cut-off, 61 true cases (short "mm-hm" replies excluded) | precision 57%, recall 39% |
 | Cut-off, 95% interval (bootstrap over calls) | precision 41% to 74%, recall 28% to 53% |
 
-Cut-off recall fell from 75% on the 32 tuning calls to 39% on the held-out calls. The tuning set had only 12 true cut-offs, so the dev number was too small to trust. Most misses are talk-overs where the caller never pauses. The first cut-off detector (`results/real_phone_holdout_first_version.txt`) scored 13% and 13%: it counted line clicks as the caller resuming, and it missed every case where the caller never paused.
+Cut-off recall fell from 75% on the 32 tuning calls to 39% on the held-out calls. The tuning set had only 12 true cut-offs, so the dev number was too small to trust. Most misses are talk-overs where the caller never pauses. The held-out calls were scored twice: once with the first cut-off detector, which scored 13% and 13% (`results/real_phone_holdout_first_version.txt`), and once after the rewrite. The first version counted line clicks as the caller resuming and missed every case where the caller never paused. I had seen the first held-out score before the rewrite, so 57% and 39% is not a clean first look.
 
-### Real meetings
+### More results
 
-The AMI meeting corpus (CC BY 4.0) gives 29 four-minute windows of two people on individual headset mics. Meetings are harder than phone calls: many short "yeah" and "mm-hm" replies, laughter, and voice bleed between mics. Latency is within 0.5 s on 78% of matched turns. Cut-off precision is 43% and recall 27%, up from 29% and 28% for the first version (`results/ami.txt`, `results/ami_first_version.txt`).
-
-### Synthetic calls with planted faults
-
-60 synthetic calls with exact ground truth (seed 2026, generated once and not used for tuning). Every fault type is found with no false alarms on both the wideband and the 8 kHz phone copy: slow 21, dead air 16, cut-off 17, false barge-in 22. Median latency error is 52 ms (`results/synthetic_final_*.txt`). Readback finds 15 of 15 wrong numbers on phone audio, and 13 of 15 with 1 false alarm on wideband (`results/synthetic_final_readback.txt`). The same check with real human caller voices from LibriSpeech also finds every fault (`results/synthetic_human_callers_*.txt`). Synthetic calls are clean, so treat this as an upper bound.
-
-### The same calls with noise, echo and codecs
-
-`synth/harden.py` adds background noise (traffic, TV, fan, car at 5 to 20 dB SNR), echo of the agent into the caller line, quiet callers, clipping, Opus at 8 to 12 kbps and packet loss to the 60 synthetic calls. Timing does not change, so the same ground truth applies.
-
-| 60 calls | Wideband recall / precision | Phone recall / precision |
-|---|---|---|
-| slow_response | 62% / 93% | 76% / 100% |
-| dead_air | 62% / 100% | 94% / 100% |
-| cutoff | 76% / 8% | 76% / 14% |
-| false_barge_in | 32% / 100% | 59% / 93% |
-
-Sources: `results/hard_wideband.txt`, `results/hard_phone.txt`. The per-condition split is in `results/hard_by_condition_wideband.txt`. Each call has several conditions at once. Calls with echo or noise under 10 dB SNR score worst: on echo calls, cut-off recall is 20% and false barge-in recall 0%. The energy fallback uses a fixed loudness threshold, so steady noise reads as caller speech and creates false cut-offs. Echo puts the agent's voice on the caller channel.
-
-## Side study: can audio alone tell when the caller is done?
-
-The same real calls give a clean test of endpointing, the decision a voice agent makes at every caller pause. On 99 held-out SpokenWOZ calls (2328 caller pauses), I compared a plain silence timeout with a gradient-boosted model on prosody features and with the open smart-turn v3.2 model run zero-shot.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/endpointing-dark.png">
-  <img alt="Share of mid-turn pauses where the agent would cut in, by wait time. At 0.3 s: timeout 80%, prosody model 71%, smart-turn 66%. At 0.8 s: timeout 31%, prosody model 32%, smart-turn 35%." src="docs/endpointing-light.png" width="720">
-</picture>
-
-The models only help when the agent answers very fast. At the waits a production agent would use, the plain timeout does as well. Most of what the model learned was pause length and how long this caller usually pauses. Pitch and energy added little. Human operators in these calls answer a median 1.0 s after the caller stops. Details, confidence intervals and limits are in `research/endpointing/RESULTS.md`. The next thing to try is adding what the caller said, from the transcript, to the audio features.
+Real meetings (AMI), synthetic calls with planted faults, the same calls with noise, echo and codecs, and a side study on endpointing (can audio alone tell when the caller is done?) are in [docs/RESULTS.md](docs/RESULTS.md). Short version: on clean synthetic calls every fault is found; noise and echo cut precision badly; and a plain 0.8 s silence timeout did as well as two trained endpointing models.
 
 ## Where it breaks
 
-- Background noise. Steady noise defeats the fixed loudness threshold (table above). Fix: set the threshold relative to each channel's own noise floor.
+- Background noise. Steady noise defeats the fixed loudness threshold (see docs/RESULTS.md). Fix: set the threshold relative to each channel's own noise floor.
 - Echo and bleed. If one side's voice leaks into the other channel, callcheck sees phantom turns.
 - Backchannels. A caller "mm-hm" is not a turn, but there is no class for it yet, so it can reset the latency timer.
 - Talk-over recall. It still misses most interruptions where the caller never pauses.
@@ -168,17 +140,7 @@ The models only help when the agent answers very fast. At the waits a production
 
 ## Repo layout
 
-| Path | What it is |
-|---|---|
-| `callcheck/` | the call grader (`analyze.py` holds the detectors and thresholds) |
-| `audit/` | the transcript audit and its sample report |
-| `synth/` | synthetic call generator, label checker (`verify.py`) and noise/codec hardening |
-| `score.py`, `score_entities.py`, `score_by_condition.py` | scoring on synthetic sets |
-| `realdata/telephone/`, `realdata/ami/` | build and score the real-call sets |
-| `research/endpointing/` | the endpointing study |
-| `results/` | every score output the README cites |
-| `tools/` | debugging helpers for single calls and clips |
-| `tests/` | unit tests for the detectors and the CLI (run in CI) |
+`callcheck/` is the call grader, `audit/` the transcript audit, `synth/` the synthetic call generator and noise hardening, `realdata/` the real-call pipelines, `research/endpointing/` the side study, `results/` every score the README cites, `tools/` single-call debugging helpers, and `tests/` the unit tests that run in CI.
 
 Synthetic data sets: `data/synthetic` and `data/heldout` were used while building; `data/final` (seed 2026) was generated once at the end for the final score; `data/human` swaps in LibriSpeech caller voices. None of the audio is committed.
 

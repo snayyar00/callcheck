@@ -1,0 +1,132 @@
+call_000  ok
+call_001  ok
+call_002  ok
+call_003  ok
+call_004  ok
+call_005  ok
+call_006  ok
+call_007  ok
+call_008  ok
+call_009  ok
+call_010  ok
+call_011  ok
+call_012  ok
+call_013  ok
+call_014  ok
+call_015  TTI missing (truth 35.827)
+call_016  ok
+call_017  ok
+call_018  ok
+call_019  ok
+call_020  ok
+call_021  TTI missing (truth 38.145)
+call_022  ok
+call_023  ok
+call_024  ok
+call_025  ok
+call_026  ok
+call_027  ok
+call_028  ok
+call_029  ok
+call_030  ok
+call_031  ok
+call_032  ok
+call_033  ok
+call_034  ok
+call_035  ok
+call_036  ok
+call_037  ok
+call_038  ok
+call_039  ok
+call_040  ok
+call_041  ok
+call_042  ok
+call_043  ok
+call_044  ok
+call_045  ok
+call_046  ok
+call_047  ok
+call_048  ok
+call_049  ok
+call_050  ok
+call_051  ok
+call_052  ok
+call_053  ok
+call_054  ok
+call_055  ok
+call_056  ok
+call_057  ok
+call_058  ok
+call_059  ok
+
+phone: wrong_readback (tolerance 0.5s)
+type               found  missed   false  recall precision
+wrong_readback        15       0       0    100%      100%
+time_to_info_s: 58 calls matched, 2 missing, mean |error| 0.068 s, max |error| 0.107 s
+run time 591 s
+call_000  ok
+call_001  EXTRA wrong_readback@19.904 said=4267848583 read=4467848583  TTI missing (truth 27.18)
+call_002  ok
+call_003  ok
+call_004  ok
+call_005  ok
+call_006  ok
+call_007  ok
+call_008  ok
+call_009  ok
+call_010  ok
+call_011  ok
+call_012  ok
+call_013  ok
+call_014  ok
+call_015  TTI missing (truth 35.827)
+call_016  ok
+call_017  ok
+call_018  ok
+call_019  ok
+call_020  ok
+call_021  ok
+call_022  ok
+call_023  ok
+call_024  ok
+call_025  ok
+call_026  ok
+call_027  MISSED wrong_readback@19.105 said=8503209405 read=8503259405 (found said=None read=None)  TTI missing (truth 36.626)
+call_028  ok
+call_029  ok
+call_030  ok
+call_031  MISSED wrong_readback@19.372 said=5858192658 read=5828192658 (found said=None read=None)  TTI missing (truth 35.998)
+call_032  ok
+call_033  ok
+call_034  ok
+call_035  ok
+call_036  ok
+call_037  ok
+call_038  ok
+call_039  ok
+call_040  ok
+call_041  ok
+call_042  ok
+call_043  ok
+call_044  ok
+call_045  ok
+call_046  ok
+call_047  TTI missing (truth 27.022)
+call_048  ok
+call_049  ok
+call_050  ok
+call_051  ok
+call_052  ok
+call_053  ok
+call_054  ok
+call_055  ok
+call_056  ok
+call_057  ok
+call_058  ok
+call_059  ok
+
+wideband: wrong_readback (tolerance 0.5s)
+type               found  missed   false  recall precision
+wrong_readback        13       2       1     87%       93%
+time_to_info_s: 55 calls matched, 5 missing, mean |error| 0.077 s, max |error| 0.107 s
+run time 873 s

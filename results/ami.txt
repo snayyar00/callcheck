@@ -19,13 +19,12 @@ backchannel turns by B: 152; wrongly flagged as cutoff (within 0.5 s of a cc cut
 cc cutoff FPs: 52 (15 within 0.5 s of a backchannel onset, 37 other)
 
 == FALSE BARGE-IN: callcheck events vs annotated vocal sounds on caller (+-1 s) ==
-callcheck false_barge_in events: 5; with an annotated A vocalsound nearby: 1; with A words within 0.3 s: 3
+callcheck false_barge_in events: 4; with an annotated A vocalsound nearby: 1; with A words within 0.3 s: 3
   ES2008c_0 t=174.62 agent_stopped=174.88 nearby_vocal=[('laugh', 174.366, 174.366)] A_words=['i']
   ES2008c_2 t=125.36 agent_stopped=126.02 nearby_vocal=none A_words=none
-  ES2008c_2 t=125.56 agent_stopped=126.02 nearby_vocal=none A_words=none
   ES2010c_1 t=218.68 agent_stopped=218.82 nearby_vocal=none A_words=['years']
   TS3005a_1 t=113.20 agent_stopped=113.38 nearby_vocal=none A_words=['yeah']
-truth false-barge candidates (A vocalsound while B talks, no A word within 0.3 s): 34; cc events total 5
+truth false-barge candidates (A vocalsound while B talks, no A word within 0.3 s): 34; cc events total 4
 truth candidates where B (human words) actually went quiet within 1 s (true false-barge):
   25/34 candidates; callcheck flagged 0 of them; types: {'laugh': 7, 'other': 13, 'cough': 5}
   ES2002a_0 t=34.06-35.21 type=laugh cc_flagged=False
@@ -60,7 +59,7 @@ truth candidates where B (human words) actually went quiet within 1 s (true fals
 {'clip': 'ES2002a_2', 'bleed': 0.03, 'n_lat_truth': 5, 'n_cc_lat': 7, 'cutoff_truth': 8, 'cutoff_cc': 5, 'fb_cc': 0, 'fb_cand': 1}
 {'clip': 'ES2008c_0', 'bleed': 0.29, 'n_lat_truth': 7, 'n_cc_lat': 10, 'cutoff_truth': 5, 'cutoff_cc': 2, 'fb_cc': 1, 'fb_cand': 0}
 {'clip': 'ES2008c_1', 'bleed': 0.41, 'n_lat_truth': 5, 'n_cc_lat': 5, 'cutoff_truth': 2, 'cutoff_cc': 4, 'fb_cc': 0, 'fb_cand': 0}
-{'clip': 'ES2008c_2', 'bleed': 0.02, 'n_lat_truth': 7, 'n_cc_lat': 17, 'cutoff_truth': 10, 'cutoff_cc': 8, 'fb_cc': 2, 'fb_cand': 0}
+{'clip': 'ES2008c_2', 'bleed': 0.02, 'n_lat_truth': 7, 'n_cc_lat': 17, 'cutoff_truth': 10, 'cutoff_cc': 8, 'fb_cc': 1, 'fb_cand': 0}
 {'clip': 'ES2008c_3', 'bleed': 0.19, 'n_lat_truth': 9, 'n_cc_lat': 15, 'cutoff_truth': 3, 'cutoff_cc': 5, 'fb_cc': 0, 'fb_cand': 0}
 {'clip': 'ES2010c_0', 'bleed': 0.03, 'n_lat_truth': 7, 'n_cc_lat': 11, 'cutoff_truth': 4, 'cutoff_cc': 2, 'fb_cc': 0, 'fb_cand': 1}
 {'clip': 'ES2010c_1', 'bleed': 0.02, 'n_lat_truth': 8, 'n_cc_lat': 11, 'cutoff_truth': 6, 'cutoff_cc': 4, 'fb_cc': 1, 'fb_cand': 0}

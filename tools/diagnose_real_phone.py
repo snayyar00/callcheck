@@ -2,8 +2,8 @@
 import json, sys
 from pathlib import Path
 import numpy as np
-ROOT = Path(__file__).resolve().parents[2]
-res = json.load(open(Path(__file__).parent / "out/callcheck_results.json"))
+ROOT = Path(__file__).resolve().parents[1]
+res = json.load(open(ROOT / "realdata/telephone/out/callcheck_results.json"))  
 truth = {p.stem: json.load(open(p)) for p in sorted((ROOT / "data/real_tel/truth").glob("*.json"))}
 def ann_at(k, t, who=None):
     return [x for x in truth[k]["turns"] if x["start"] - 0.2 <= t <= x["end"] + 0.2 and (who is None or x["who"] == who)]

@@ -1,4 +1,4 @@
-"""Render the README charts in light and dark. Numbers are copied from the score outputs cited in README."""
+"""Render the README charts in light and dark. Cut-off numbers come from results/real_phone_holdout_first_version.txt, results/real_phone_holdout.txt, results/ami_first_version.txt and results/ami.txt (non-backchannel precision/recall); endpointing numbers from research/endpointing/RESULTS.md."""
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt

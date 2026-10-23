@@ -12,11 +12,11 @@ class agreement 76/88; confusion (truth,cc): {('dead', 'dead'): 20, ('dead', 'ok
 truth slow/dead latencies 53, cc flagged non-ok 32
 
 == CUT-OFF ==
-vs cutoff truth (non-backchannel B turn within 2 s of A speech and A resumes): TP 40 FP 52 FN 108 precision 0.43 recall 0.27
-vs pause-only cutoff truth (B starts in a real gap between A words and A resumes): TP 5 FN 35 cc events 92 -> precision 0.05 recall 0.12
-vs real interruptions (B overlap, non-backchannel): 35/133 flagged as cutoff within 0.5 s
-backchannel turns by B: 152; wrongly flagged as cutoff (within 0.5 s of a cc cutoff event): 15
-cc cutoff FPs: 52 (15 within 0.5 s of a backchannel onset, 37 other)
+vs cutoff truth (non-backchannel B turn within 2 s of A speech and A resumes): TP 41 FP 102 FN 107 precision 0.29 recall 0.28
+vs pause-only cutoff truth (B starts in a real gap between A words and A resumes): TP 19 FN 21 cc events 143 -> precision 0.13 recall 0.47
+vs real interruptions (B overlap, non-backchannel): 21/133 flagged as cutoff within 0.5 s
+backchannel turns by B: 152; wrongly flagged as cutoff (within 0.5 s of a cc cutoff event): 8
+cc cutoff FPs: 102 (8 within 0.5 s of a backchannel onset, 94 other)
 
 == FALSE BARGE-IN: callcheck events vs annotated vocal sounds on caller (+-1 s) ==
 callcheck false_barge_in events: 5; with an annotated A vocalsound nearby: 1; with A words within 0.3 s: 3
@@ -55,148 +55,199 @@ truth candidates where B (human words) actually went quiet within 1 s (true fals
   IS1009b_1 t=189.76-189.76 type=other cc_flagged=False
 
 == per clip ==
-{'clip': 'ES2002a_0', 'bleed': 0.02, 'n_lat_truth': 7, 'n_cc_lat': 11, 'cutoff_truth': 4, 'cutoff_cc': 1, 'fb_cc': 0, 'fb_cand': 6}
-{'clip': 'ES2002a_1', 'bleed': 0.03, 'n_lat_truth': 6, 'n_cc_lat': 14, 'cutoff_truth': 7, 'cutoff_cc': 7, 'fb_cc': 0, 'fb_cand': 0}
-{'clip': 'ES2002a_2', 'bleed': 0.03, 'n_lat_truth': 5, 'n_cc_lat': 7, 'cutoff_truth': 8, 'cutoff_cc': 5, 'fb_cc': 0, 'fb_cand': 1}
-{'clip': 'ES2008c_0', 'bleed': 0.29, 'n_lat_truth': 7, 'n_cc_lat': 10, 'cutoff_truth': 5, 'cutoff_cc': 2, 'fb_cc': 1, 'fb_cand': 0}
-{'clip': 'ES2008c_1', 'bleed': 0.41, 'n_lat_truth': 5, 'n_cc_lat': 5, 'cutoff_truth': 2, 'cutoff_cc': 4, 'fb_cc': 0, 'fb_cand': 0}
-{'clip': 'ES2008c_2', 'bleed': 0.02, 'n_lat_truth': 7, 'n_cc_lat': 17, 'cutoff_truth': 10, 'cutoff_cc': 8, 'fb_cc': 2, 'fb_cand': 0}
-{'clip': 'ES2008c_3', 'bleed': 0.19, 'n_lat_truth': 9, 'n_cc_lat': 15, 'cutoff_truth': 3, 'cutoff_cc': 5, 'fb_cc': 0, 'fb_cand': 0}
-{'clip': 'ES2010c_0', 'bleed': 0.03, 'n_lat_truth': 7, 'n_cc_lat': 11, 'cutoff_truth': 4, 'cutoff_cc': 2, 'fb_cc': 0, 'fb_cand': 1}
-{'clip': 'ES2010c_1', 'bleed': 0.02, 'n_lat_truth': 8, 'n_cc_lat': 11, 'cutoff_truth': 6, 'cutoff_cc': 4, 'fb_cc': 1, 'fb_cand': 0}
-{'clip': 'ES2010c_2', 'bleed': 0.02, 'n_lat_truth': 7, 'n_cc_lat': 13, 'cutoff_truth': 8, 'cutoff_cc': 2, 'fb_cc': 0, 'fb_cand': 0}
-{'clip': 'ES2012b_0', 'bleed': 0.04, 'n_lat_truth': 5, 'n_cc_lat': 7, 'cutoff_truth': 5, 'cutoff_cc': 2, 'fb_cc': 0, 'fb_cand': 3}
-{'clip': 'ES2012b_1', 'bleed': 0.04, 'n_lat_truth': 11, 'n_cc_lat': 16, 'cutoff_truth': 12, 'cutoff_cc': 5, 'fb_cc': 0, 'fb_cand': 3}
-{'clip': 'ES2012b_2', 'bleed': 0.09, 'n_lat_truth': 8, 'n_cc_lat': 7, 'cutoff_truth': 6, 'cutoff_cc': 3, 'fb_cc': 0, 'fb_cand': 2}
-{'clip': 'ES2014b_0', 'bleed': 0.01, 'n_lat_truth': 5, 'n_cc_lat': 7, 'cutoff_truth': 2, 'cutoff_cc': 2, 'fb_cc': 0, 'fb_cand': 1}
-{'clip': 'ES2014b_1', 'bleed': 0.08, 'n_lat_truth': 3, 'n_cc_lat': 8, 'cutoff_truth': 4, 'cutoff_cc': 1, 'fb_cc': 0, 'fb_cand': 2}
-{'clip': 'ES2014b_2', 'bleed': 0.01, 'n_lat_truth': 3, 'n_cc_lat': 8, 'cutoff_truth': 4, 'cutoff_cc': 1, 'fb_cc': 0, 'fb_cand': 0}
-{'clip': 'ES2014b_3', 'bleed': 0.01, 'n_lat_truth': 10, 'n_cc_lat': 18, 'cutoff_truth': 3, 'cutoff_cc': 1, 'fb_cc': 0, 'fb_cand': 1}
-{'clip': 'IS1003b_0', 'bleed': 0.93, 'n_lat_truth': 10, 'n_cc_lat': 5, 'cutoff_truth': 3, 'cutoff_cc': 1, 'fb_cc': 0, 'fb_cand': 0}
-{'clip': 'IS1003b_1', 'bleed': 0.89, 'n_lat_truth': 5, 'n_cc_lat': 4, 'cutoff_truth': 2, 'cutoff_cc': 0, 'fb_cc': 0, 'fb_cand': 1}
-{'clip': 'IS1003b_2', 'bleed': 0.9, 'n_lat_truth': 2, 'n_cc_lat': 0, 'cutoff_truth': 5, 'cutoff_cc': 3, 'fb_cc': 0, 'fb_cand': 0}
-{'clip': 'IS1003b_3', 'bleed': 0.98, 'n_lat_truth': 6, 'n_cc_lat': 8, 'cutoff_truth': 4, 'cutoff_cc': 1, 'fb_cc': 0, 'fb_cand': 1}
-{'clip': 'IS1008c_0', 'bleed': 0.15, 'n_lat_truth': 8, 'n_cc_lat': 3, 'cutoff_truth': 5, 'cutoff_cc': 3, 'fb_cc': 0, 'fb_cand': 6}
-{'clip': 'IS1008c_1', 'bleed': 0.12, 'n_lat_truth': 3, 'n_cc_lat': 12, 'cutoff_truth': 0, 'cutoff_cc': 4, 'fb_cc': 0, 'fb_cand': 3}
-{'clip': 'IS1008c_2', 'bleed': 0.15, 'n_lat_truth': 4, 'n_cc_lat': 5, 'cutoff_truth': 4, 'cutoff_cc': 3, 'fb_cc': 0, 'fb_cand': 2}
-{'clip': 'IS1009b_0', 'bleed': 0.38, 'n_lat_truth': 1, 'n_cc_lat': 1, 'cutoff_truth': 5, 'cutoff_cc': 1, 'fb_cc': 0, 'fb_cand': 0}
+{'clip': 'ES2002a_0', 'bleed': 0.02, 'n_lat_truth': 7, 'n_cc_lat': 11, 'cutoff_truth': 4, 'cutoff_cc': 4, 'fb_cc': 0, 'fb_cand': 6}
+{'clip': 'ES2002a_1', 'bleed': 0.03, 'n_lat_truth': 6, 'n_cc_lat': 14, 'cutoff_truth': 7, 'cutoff_cc': 2, 'fb_cc': 0, 'fb_cand': 0}
+{'clip': 'ES2002a_2', 'bleed': 0.03, 'n_lat_truth': 5, 'n_cc_lat': 7, 'cutoff_truth': 8, 'cutoff_cc': 3, 'fb_cc': 0, 'fb_cand': 1}
+{'clip': 'ES2008c_0', 'bleed': 0.29, 'n_lat_truth': 7, 'n_cc_lat': 10, 'cutoff_truth': 5, 'cutoff_cc': 5, 'fb_cc': 1, 'fb_cand': 0}
+{'clip': 'ES2008c_1', 'bleed': 0.41, 'n_lat_truth': 5, 'n_cc_lat': 5, 'cutoff_truth': 2, 'cutoff_cc': 1, 'fb_cc': 0, 'fb_cand': 0}
+{'clip': 'ES2008c_2', 'bleed': 0.02, 'n_lat_truth': 7, 'n_cc_lat': 17, 'cutoff_truth': 10, 'cutoff_cc': 3, 'fb_cc': 2, 'fb_cand': 0}
+{'clip': 'ES2008c_3', 'bleed': 0.19, 'n_lat_truth': 9, 'n_cc_lat': 15, 'cutoff_truth': 3, 'cutoff_cc': 2, 'fb_cc': 0, 'fb_cand': 0}
+{'clip': 'ES2010c_0', 'bleed': 0.03, 'n_lat_truth': 7, 'n_cc_lat': 11, 'cutoff_truth': 4, 'cutoff_cc': 0, 'fb_cc': 0, 'fb_cand': 1}
+{'clip': 'ES2010c_1', 'bleed': 0.02, 'n_lat_truth': 8, 'n_cc_lat': 11, 'cutoff_truth': 6, 'cutoff_cc': 2, 'fb_cc': 1, 'fb_cand': 0}
+{'clip': 'ES2010c_2', 'bleed': 0.02, 'n_lat_truth': 7, 'n_cc_lat': 13, 'cutoff_truth': 8, 'cutoff_cc': 3, 'fb_cc': 0, 'fb_cand': 0}
+{'clip': 'ES2012b_0', 'bleed': 0.04, 'n_lat_truth': 5, 'n_cc_lat': 7, 'cutoff_truth': 5, 'cutoff_cc': 5, 'fb_cc': 0, 'fb_cand': 3}
+{'clip': 'ES2012b_1', 'bleed': 0.04, 'n_lat_truth': 11, 'n_cc_lat': 16, 'cutoff_truth': 12, 'cutoff_cc': 7, 'fb_cc': 0, 'fb_cand': 3}
+{'clip': 'ES2012b_2', 'bleed': 0.09, 'n_lat_truth': 8, 'n_cc_lat': 7, 'cutoff_truth': 6, 'cutoff_cc': 5, 'fb_cc': 0, 'fb_cand': 2}
+{'clip': 'ES2014b_0', 'bleed': 0.01, 'n_lat_truth': 5, 'n_cc_lat': 7, 'cutoff_truth': 2, 'cutoff_cc': 1, 'fb_cc': 0, 'fb_cand': 1}
+{'clip': 'ES2014b_1', 'bleed': 0.08, 'n_lat_truth': 3, 'n_cc_lat': 8, 'cutoff_truth': 4, 'cutoff_cc': 2, 'fb_cc': 0, 'fb_cand': 2}
+{'clip': 'ES2014b_2', 'bleed': 0.01, 'n_lat_truth': 3, 'n_cc_lat': 8, 'cutoff_truth': 4, 'cutoff_cc': 3, 'fb_cc': 0, 'fb_cand': 0}
+{'clip': 'ES2014b_3', 'bleed': 0.01, 'n_lat_truth': 10, 'n_cc_lat': 18, 'cutoff_truth': 3, 'cutoff_cc': 3, 'fb_cc': 0, 'fb_cand': 1}
+{'clip': 'IS1003b_0', 'bleed': 0.93, 'n_lat_truth': 10, 'n_cc_lat': 5, 'cutoff_truth': 3, 'cutoff_cc': 18, 'fb_cc': 0, 'fb_cand': 0}
+{'clip': 'IS1003b_1', 'bleed': 0.89, 'n_lat_truth': 5, 'n_cc_lat': 4, 'cutoff_truth': 2, 'cutoff_cc': 9, 'fb_cc': 0, 'fb_cand': 1}
+{'clip': 'IS1003b_2', 'bleed': 0.9, 'n_lat_truth': 2, 'n_cc_lat': 0, 'cutoff_truth': 5, 'cutoff_cc': 8, 'fb_cc': 0, 'fb_cand': 0}
+{'clip': 'IS1003b_3', 'bleed': 0.98, 'n_lat_truth': 6, 'n_cc_lat': 8, 'cutoff_truth': 4, 'cutoff_cc': 7, 'fb_cc': 0, 'fb_cand': 1}
+{'clip': 'IS1008c_0', 'bleed': 0.15, 'n_lat_truth': 8, 'n_cc_lat': 3, 'cutoff_truth': 5, 'cutoff_cc': 10, 'fb_cc': 0, 'fb_cand': 6}
+{'clip': 'IS1008c_1', 'bleed': 0.12, 'n_lat_truth': 3, 'n_cc_lat': 12, 'cutoff_truth': 0, 'cutoff_cc': 8, 'fb_cc': 0, 'fb_cand': 3}
+{'clip': 'IS1008c_2', 'bleed': 0.15, 'n_lat_truth': 4, 'n_cc_lat': 5, 'cutoff_truth': 4, 'cutoff_cc': 13, 'fb_cc': 0, 'fb_cand': 2}
+{'clip': 'IS1009b_0', 'bleed': 0.38, 'n_lat_truth': 1, 'n_cc_lat': 1, 'cutoff_truth': 5, 'cutoff_cc': 2, 'fb_cc': 0, 'fb_cand': 0}
 {'clip': 'IS1009b_1', 'bleed': 0.4, 'n_lat_truth': 8, 'n_cc_lat': 2, 'cutoff_truth': 7, 'cutoff_cc': 1, 'fb_cc': 0, 'fb_cand': 1}
-{'clip': 'IS1009b_2', 'bleed': 0.13, 'n_lat_truth': 2, 'n_cc_lat': 1, 'cutoff_truth': 8, 'cutoff_cc': 6, 'fb_cc': 0, 'fb_cand': 0}
-{'clip': 'TS3005a_0', 'bleed': 0.06, 'n_lat_truth': 6, 'n_cc_lat': 8, 'cutoff_truth': 2, 'cutoff_cc': 10, 'fb_cc': 0, 'fb_cand': 0}
-{'clip': 'TS3005a_1', 'bleed': 0.06, 'n_lat_truth': 6, 'n_cc_lat': 14, 'cutoff_truth': 10, 'cutoff_cc': 4, 'fb_cc': 1, 'fb_cand': 0}
+{'clip': 'IS1009b_2', 'bleed': 0.13, 'n_lat_truth': 2, 'n_cc_lat': 1, 'cutoff_truth': 8, 'cutoff_cc': 4, 'fb_cc': 0, 'fb_cand': 0}
+{'clip': 'TS3005a_0', 'bleed': 0.06, 'n_lat_truth': 6, 'n_cc_lat': 8, 'cutoff_truth': 2, 'cutoff_cc': 6, 'fb_cc': 0, 'fb_cand': 0}
+{'clip': 'TS3005a_1', 'bleed': 0.06, 'n_lat_truth': 6, 'n_cc_lat': 14, 'cutoff_truth': 10, 'cutoff_cc': 6, 'fb_cc': 1, 'fb_cand': 0}
 
 == cc cutoff FPs ==
   ('ES2002a_0', 6.016, 'backchannel')
-  ('ES2002a_1', 46.816, 'backchannel')
-  ('ES2002a_1', 224.096, 'backchannel')
-  ('ES2002a_2', 76.192, 'other')
+  ('ES2002a_0', 33.472, 'other')
+  ('ES2002a_2', 87.328, 'other')
   ('ES2002a_2', 113.088, 'other')
-  ('ES2008c_0', 95.104, 'other')
-  ('ES2008c_1', 52.64, 'backchannel')
-  ('ES2008c_1', 73.696, 'backchannel')
-  ('ES2008c_1', 139.84, 'backchannel')
-  ('ES2008c_2', 107.2, 'other')
-  ('ES2008c_3', 27.52, 'other')
-  ('ES2008c_3', 171.424, 'backchannel')
-  ('ES2008c_3', 180.448, 'backchannel')
-  ('ES2010c_1', 27.84, 'backchannel')
+  ('ES2008c_0', 119.904, 'backchannel')
+  ('ES2008c_2', 181.152, 'other')
+  ('ES2008c_2', 233.92, 'other')
+  ('ES2010c_2', 86.496, 'other')
+  ('ES2010c_2', 110.976, 'other')
   ('ES2012b_0', 46.112, 'other')
-  ('ES2012b_2', 23.232, 'other')
-  ('ES2012b_2', 135.04, 'backchannel')
-  ('ES2012b_2', 156.64, 'backchannel')
-  ('ES2014b_0', 184.832, 'backchannel')
+  ('ES2012b_0', 52.256, 'other')
+  ('ES2012b_0', 215.264, 'other')
+  ('ES2012b_1', 114.688, 'backchannel')
+  ('ES2012b_1', 144.928, 'backchannel')
+  ('ES2012b_2', 8.416, 'backchannel')
+  ('ES2014b_2', 154.624, 'other')
+  ('IS1003b_0', 9.024, 'other')
+  ('IS1003b_0', 17.76, 'other')
+  ('IS1003b_0', 34.784, 'other')
+  ('IS1003b_0', 47.84, 'other')
+  ('IS1003b_0', 53.824, 'other')
+  ('IS1003b_0', 65.92, 'other')
+  ('IS1003b_0', 77.152, 'other')
+  ('IS1003b_0', 85.248, 'other')
+  ('IS1003b_0', 91.168, 'other')
+  ('IS1003b_0', 100.992, 'other')
   ('IS1003b_0', 109.536, 'other')
+  ('IS1003b_0', 121.984, 'other')
+  ('IS1003b_0', 129.408, 'other')
+  ('IS1003b_0', 139.232, 'other')
+  ('IS1003b_0', 145.216, 'other')
+  ('IS1003b_0', 177.504, 'other')
+  ('IS1003b_0', 188.096, 'other')
+  ('IS1003b_0', 214.368, 'other')
+  ('IS1003b_1', 14.176, 'other')
+  ('IS1003b_1', 38.656, 'other')
+  ('IS1003b_1', 59.008, 'other')
+  ('IS1003b_1', 65.216, 'other')
+  ('IS1003b_1', 83.456, 'other')
+  ('IS1003b_1', 104.256, 'other')
+  ('IS1003b_1', 114.752, 'other')
+  ('IS1003b_1', 171.68, 'other')
+  ('IS1003b_1', 231.168, 'other')
+  ('IS1003b_2', 1.152, 'other')
+  ('IS1003b_2', 23.968, 'other')
+  ('IS1003b_2', 82.304, 'other')
+  ('IS1003b_2', 101.504, 'other')
+  ('IS1003b_2', 143.968, 'other')
   ('IS1003b_2', 201.856, 'other')
-  ('IS1003b_2', 211.488, 'other')
-  ('IS1003b_2', 233.248, 'other')
+  ('IS1003b_2', 219.328, 'other')
+  ('IS1003b_2', 236.32, 'other')
+  ('IS1003b_3', 49.024, 'other')
+  ('IS1003b_3', 72.64, 'backchannel')
+  ('IS1003b_3', 75.488, 'other')
+  ('IS1003b_3', 167.648, 'other')
   ('IS1003b_3', 176.832, 'other')
-  ('IS1008c_0', 77.632, 'other')
-  ('IS1008c_0', 117.504, 'other')
+  ('IS1003b_3', 226.208, 'other')
+  ('IS1003b_3', 232.512, 'other')
+  ('IS1008c_0', 12.704, 'other')
+  ('IS1008c_0', 29.312, 'other')
+  ('IS1008c_0', 36.288, 'other')
+  ('IS1008c_0', 51.84, 'other')
+  ('IS1008c_0', 62.784, 'other')
+  ('IS1008c_0', 83.2, 'other')
+  ('IS1008c_0', 91.104, 'other')
   ('IS1008c_0', 136.224, 'other')
+  ('IS1008c_0', 145.76, 'other')
+  ('IS1008c_0', 188.32, 'other')
+  ('IS1008c_1', 0.608, 'other')
   ('IS1008c_1', 26.656, 'backchannel')
-  ('IS1008c_1', 142.144, 'other')
+  ('IS1008c_1', 37.856, 'other')
+  ('IS1008c_1', 79.36, 'other')
+  ('IS1008c_1', 83.2, 'other')
+  ('IS1008c_1', 93.376, 'other')
   ('IS1008c_1', 179.456, 'other')
-  ('IS1008c_1', 232.928, 'other')
-  ('IS1008c_2', 0.544, 'other')
-  ('IS1008c_2', 132.032, 'other')
+  ('IS1008c_1', 211.456, 'other')
+  ('IS1008c_2', 26.56, 'other')
+  ('IS1008c_2', 57.408, 'other')
+  ('IS1008c_2', 69.344, 'other')
+  ('IS1008c_2', 90.048, 'other')
+  ('IS1008c_2', 140.864, 'other')
+  ('IS1008c_2', 166.816, 'other')
+  ('IS1008c_2', 180.704, 'other')
+  ('IS1008c_2', 188.544, 'other')
   ('IS1008c_2', 200.256, 'other')
+  ('IS1008c_2', 221.792, 'other')
+  ('IS1008c_2', 235.328, 'other')
+  ('IS1009b_0', 39.84, 'other')
   ('IS1009b_0', 184.64, 'other')
-  ('IS1009b_1', 80.928, 'other')
+  ('IS1009b_1', 166.144, 'other')
   ('IS1009b_2', 46.816, 'other')
-  ('IS1009b_2', 137.824, 'other')
+  ('IS1009b_2', 71.968, 'other')
   ('IS1009b_2', 163.552, 'other')
-  ('IS1009b_2', 217.344, 'other')
-  ('IS1009b_2', 234.752, 'other')
+  ('IS1009b_2', 201.888, 'other')
+  ('TS3005a_0', 1.728, 'other')
   ('TS3005a_0', 7.968, 'backchannel')
-  ('TS3005a_0', 19.136, 'other')
-  ('TS3005a_0', 40.768, 'other')
-  ('TS3005a_0', 43.936, 'other')
-  ('TS3005a_0', 48.48, 'other')
   ('TS3005a_0', 52.672, 'other')
-  ('TS3005a_0', 62.848, 'other')
+  ('TS3005a_0', 66.656, 'other')
   ('TS3005a_0', 98.08, 'other')
-  ('TS3005a_0', 122.944, 'other')
-  ('TS3005a_1', 153.696, 'other')
-  ('TS3005a_1', 155.392, 'backchannel')
-== cutoff FN causes == {'agent_turn_start_near_but_no_cutoff_event': 64, 'agent_onset_missed_by_vad': 3, 'agent_turn_fused_with_earlier_turn_or_late_start': 41}
+  ('TS3005a_1', 8.064, 'other')
+  ('TS3005a_1', 98.912, 'other')
+  ('TS3005a_1', 134.624, 'other')
+== cutoff FN causes == {'agent_turn_start_near_but_no_cutoff_event': 63, 'agent_onset_missed_by_vad': 3, 'agent_turn_fused_with_earlier_turn_or_late_start': 41}
 == cutoff FNs ==
   ('ES2002a_0', 87.94, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2002a_0', 169.52, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2002a_0', 223.83, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2002a_0', 237.15, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2002a_1', 102.33, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2002a_1', 88.46, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2002a_1', 118.26, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2002a_1', 122.87, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2002a_1', 216.23, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2002a_1', 217.98, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2002a_2', 0.31, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2002a_2', 9.08, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2002a_2', 12.79, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2002a_2', 74.77, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2002a_2', 84.35, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2002a_2', 117.54, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2002a_2', 199.8, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2002a_2', 236.56, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2008c_0', 93.6, 'agent_onset_missed_by_vad')
-  ('ES2008c_0', 104.71, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2008c_0', 122.9, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2008c_0', 148.53, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2008c_1', 89.78, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2008c_2', 70.87, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2008c_2', 1.71, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2008c_2', 24.65, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2008c_2', 32.19, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2008c_2', 61.89, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2008c_2', 139.41, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2008c_2', 177.62, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2008c_3', 133.79, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2008c_2', 215.47, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2008c_2', 224.42, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2008c_2', 238.19, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2008c_3', 189.48, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2010c_0', 15.11, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2010c_0', 130.08, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2010c_0', 137.99, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2010c_0', 228.35, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2010c_1', 2.72, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2010c_1', 42.88, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2010c_1', 74.91, 'agent_turn_fused_with_earlier_turn_or_late_start')
-  ('ES2010c_1', 154.84, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2010c_1', 230.84, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2010c_2', 39.31, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2010c_2', 61.58, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2010c_2', 67.68, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2010c_2', 81.77, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2010c_2', 85.16, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2010c_2', 91.2, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2010c_2', 133.94, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2010c_2', 204.49, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2012b_0', 44.42, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2012b_0', 138.53, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2012b_0', 149.24, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2012b_0', 185.96, 'agent_onset_missed_by_vad')
-  ('ES2012b_1', 70.52, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2012b_1', 37.96, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2012b_1', 105.76, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2012b_1', 147.15, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2012b_1', 194.39, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2012b_1', 196.89, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2012b_1', 216.67, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2012b_1', 224.3, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2012b_1', 231.46, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2012b_2', 18.4, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2012b_1', 237.32, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2012b_2', 24.45, 'agent_turn_fused_with_earlier_turn_or_late_start')
-  ('ES2012b_2', 75.03, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2012b_2', 124.66, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2012b_2', 138.58, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2012b_2', 169.8, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2014b_0', 53.83, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2014b_1', 20.05, 'agent_turn_start_near_but_no_cutoff_event')
+  ('ES2014b_0', 186.83, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2014b_1', 58.24, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2014b_1', 222.92, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2014b_2', 47.04, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2014b_2', 146.88, 'agent_turn_start_near_but_no_cutoff_event')
   ('ES2014b_2', 153.92, 'agent_onset_missed_by_vad')
-  ('ES2014b_3', 4.02, 'agent_turn_start_near_but_no_cutoff_event')
-  ('ES2014b_3', 181.64, 'agent_turn_start_near_but_no_cutoff_event')
   ('IS1003b_0', 43.16, 'agent_turn_fused_with_earlier_turn_or_late_start')
   ('IS1003b_0', 194.41, 'agent_turn_fused_with_earlier_turn_or_late_start')
   ('IS1003b_0', 196.84, 'agent_turn_fused_with_earlier_turn_or_late_start')
@@ -216,10 +267,8 @@ truth candidates where B (human words) actually went quiet within 1 s (true fals
   ('IS1008c_0', 103.68, 'agent_turn_fused_with_earlier_turn_or_late_start')
   ('IS1008c_0', 121.74, 'agent_turn_fused_with_earlier_turn_or_late_start')
   ('IS1008c_0', 181.37, 'agent_turn_fused_with_earlier_turn_or_late_start')
-  ('IS1008c_2', 5.54, 'agent_turn_start_near_but_no_cutoff_event')
   ('IS1008c_2', 9.48, 'agent_turn_fused_with_earlier_turn_or_late_start')
   ('IS1008c_2', 36.63, 'agent_turn_fused_with_earlier_turn_or_late_start')
-  ('IS1008c_2', 208.18, 'agent_turn_start_near_but_no_cutoff_event')
   ('IS1009b_0', 117.1, 'agent_turn_fused_with_earlier_turn_or_late_start')
   ('IS1009b_0', 133.0, 'agent_turn_fused_with_earlier_turn_or_late_start')
   ('IS1009b_0', 164.16, 'agent_turn_fused_with_earlier_turn_or_late_start')
@@ -237,15 +286,15 @@ truth candidates where B (human words) actually went quiet within 1 s (true fals
   ('IS1009b_2', 85.53, 'agent_turn_fused_with_earlier_turn_or_late_start')
   ('IS1009b_2', 98.47, 'agent_turn_fused_with_earlier_turn_or_late_start')
   ('IS1009b_2', 139.27, 'agent_turn_fused_with_earlier_turn_or_late_start')
+  ('IS1009b_2', 208.28, 'agent_turn_start_near_but_no_cutoff_event')
   ('IS1009b_2', 218.92, 'agent_turn_fused_with_earlier_turn_or_late_start')
   ('IS1009b_2', 231.45, 'agent_turn_fused_with_earlier_turn_or_late_start')
   ('TS3005a_0', 223.6, 'agent_turn_start_near_but_no_cutoff_event')
   ('TS3005a_1', 3.94, 'agent_turn_start_near_but_no_cutoff_event')
   ('TS3005a_1', 18.56, 'agent_turn_start_near_but_no_cutoff_event')
-  ('TS3005a_1', 51.83, 'agent_turn_start_near_but_no_cutoff_event')
   ('TS3005a_1', 86.53, 'agent_turn_start_near_but_no_cutoff_event')
   ('TS3005a_1', 137.54, 'agent_turn_start_near_but_no_cutoff_event')
-  ('TS3005a_1', 157.25, 'agent_turn_start_near_but_no_cutoff_event')
+  ('TS3005a_1', 147.89, 'agent_turn_start_near_but_no_cutoff_event')
   ('TS3005a_1', 222.31, 'agent_turn_start_near_but_no_cutoff_event')
   ('TS3005a_1', 235.22, 'agent_turn_start_near_but_no_cutoff_event')
 

@@ -1,0 +1,40 @@
+calls=40  hard=22  total_audio_min=131.3
+
+===== truth variant: CAL (pad-corrected, primary) =====
+LATENCY error (detected - annotated), seconds, over matched agent turns:
+   n=731 median=-0.084 p90_abs=0.210 max_abs=1.916 mean_abs=0.118 | truth latencies missed by callcheck=40, callcheck latencies with no truth=85
+  abs error <=0.25s: 92%  <=0.5s: 98%
+OVERLAP/cutoff (truth: agent starts >=0.3s into a caller turn with >=0.3s left; detected: 'cutoff'):
+   vs all overlaps         TP=29 FP=13 FN=44 precision=0.69 recall=0.40
+   vs non-backchannel only TP=24 FP=18 FN=37 precision=0.57 recall=0.39 (backchannel = agent turn <=2 words)
+   95% CI, bootstrap over calls (2000 resamples): precision 0.41-0.74, recall 0.28-0.53
+   hard   calls (22): TP=20 FP=13 FN=35 precision=0.61 recall=0.36
+   random calls (18): TP=4 FP=5 FN=2 precision=0.44 recall=0.67
+GAPS >1.5 s (slow_response|dead_air): TP=94 FP=17 FN=26 precision=0.85 recall=0.78
+GAPS >3.0 s (dead_air):              TP=9 FP=5 FN=2 precision=0.64 recall=0.82
+Truth >3 s mutual-silences in corpus: 36
+  truth counts: latencies=771 overlaps=73 (non-bc 61) gaps>1.5=120 gaps>3=11
+
+===== truth variant: RAW (annotation as published) =====
+LATENCY error (detected - annotated), seconds, over matched agent turns:
+   n=634 median=+0.602 p90_abs=0.685 max_abs=1.226 mean_abs=0.581 | truth latencies missed by callcheck=34, callcheck latencies with no truth=182
+  abs error <=0.25s: 4%  <=0.5s: 12%
+OVERLAP/cutoff (truth: agent starts >=0.3s into a caller turn with >=0.3s left; detected: 'cutoff'):
+   vs all overlaps         TP=28 FP=14 FN=70 precision=0.67 recall=0.29
+   vs non-backchannel only TP=23 FP=19 FN=60 precision=0.55 recall=0.28 (backchannel = agent turn <=2 words)
+   95% CI, bootstrap over calls (2000 resamples): precision 0.38-0.72, recall 0.19-0.38
+   hard   calls (22): TP=19 FP=14 FN=53 precision=0.58 recall=0.26
+   random calls (18): TP=4 FP=5 FN=7 precision=0.44 recall=0.36
+GAPS >1.5 s (slow_response|dead_air): TP=24 FP=87 FN=5 precision=0.22 recall=0.83
+GAPS >3.0 s (dead_air):              TP=4 FP=10 FN=0 precision=0.29 recall=1.00
+Truth >3 s mutual-silences in corpus: 19
+
+===== FALSE BARGE-IN events (no truth; listen at these times) =====
+  MUL0511 t=80.08s agent_stopped_at=80.61s annotated turns near: ['agent:75.5-84.0']
+  MUL0608 t=36.10s agent_stopped_at=37.06s annotated turns near: ['agent:33.0-40.7']
+  MUL0784 t=155.24s agent_stopped_at=155.78s annotated turns near: ['agent:147.6-175.9']
+  MUL1849 t=198.32s agent_stopped_at=198.69s annotated turns near: ['agent:197.3-202.2']
+  total: 4 in 131.3 min of real speech
+
+===== event totals =====
+  {'cutoff': 42, 'dead_air': 14, 'slow_response': 97, 'false_barge_in': 4}

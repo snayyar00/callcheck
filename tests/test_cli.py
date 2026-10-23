@@ -16,7 +16,8 @@ SR = 16000
 
 def tone(n, f=180):
     t = np.arange(n) / SR
-    # harmonic-rich, amplitude-modulated so it is voiced-like; the VAD may or may not call it speech
+    # harmonic-rich and amplitude-modulated so it looks voiced. This file tests the CLI plumbing only;
+    # the detection rules are tested on exact segments in test_detectors.py.
     sig = sum(np.sin(2 * np.pi * f * k * t) / k for k in range(1, 8)) * (0.5 + 0.5 * np.sin(2 * np.pi * 4 * t))
     return (0.3 * sig / 2).astype(np.float32)
 

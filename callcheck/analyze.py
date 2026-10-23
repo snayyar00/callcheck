@@ -110,33 +110,51 @@ def analyze(caller, agent, cfg=Config(), vad=None):
         elif lat > cfg.slow_s:
             res.events.append({"type": "slow_response", "time": round(a_start, 3), "latency_s": round(lat, 3)})
 
-    # Cut-off, two ways (tuned on real SpokenWOZ phone calls, see realdata/telephone):
-    # - talk-over: the agent started while the caller was mid-word and the caller kept going;
-    # - pause jump: the agent started in a short caller pause and the caller resumed soon after.
-    # A caller reply that only starts late in a long agent turn is the caller answering early, not a cut-off.
     c_speech = union(vad_c + [seg for seg in snd_c if seg[1] - seg[0] >= cfg.min_piece_s])
+    res.events += find_cutoffs(c_speech, a_turns, cfg)
+    res.events += find_false_barge_ins(sound_segments(caller), c_words, a_segs, cfg)
+    res.events.sort(key=lambda ev: ev["time"])
+    return res
+
+
+def find_cutoffs(c_speech, a_turns, cfg=Config()):
+    """Cut-off, two ways (tuned on real SpokenWOZ phone calls, see realdata/telephone):
+    - talk-over: the agent started while the caller was mid-word and the caller kept going;
+    - pause jump: the agent started in a short caller pause and the caller resumed soon after.
+    A caller reply that only starts late in a long agent turn is the caller answering early, not a cut-off.
+    """
+    events = []
+    # Join words split by short gaps first: "to... the bank" resumes even if "to" alone is short.
+    c_phrases = merge(c_speech, 0.6, [])
     for a_start, a_end in a_turns:
         if a_end - a_start < 0.3:
             continue
         over = any(s <= a_start - 0.1 and e >= a_start + cfg.talk_over_s for s, e in c_speech)
         spoke_recently = any(a_start - cfg.cutoff_window_s <= e <= a_start for _, e in c_speech)
-        # Join words split by short gaps first: "to... the bank" resumes even if "to" alone is short.
-        resumed = [s for s, e in merge(c_speech, 0.6, []) if a_start + 0.1 < s < min(a_end, a_start + cfg.cutoff_resume_s)
+        resumed = [s for s, e in c_phrases if a_start + 0.1 < s < min(a_end, a_start + cfg.cutoff_resume_s)
                    and e - s >= cfg.cutoff_resume_min_s]
         if over:
-            res.events.append({"type": "cutoff", "time": round(a_start, 3), "kind": "talk_over"})
+            events.append({"type": "cutoff", "time": round(a_start, 3), "kind": "talk_over"})
         elif spoke_recently and resumed:
-            res.events.append({"type": "cutoff", "time": round(a_start, 3), "kind": "pause_jump",
-                               "caller_resumed_at": round(resumed[0], 3)})
+            events.append({"type": "cutoff", "time": round(a_start, 3), "kind": "pause_jump",
+                           "caller_resumed_at": round(resumed[0], 3)})
+    return events
 
-    # False barge-in: a short sound that is not speech, then the agent stops and stays quiet.
-    for s, e in sound_segments(caller):
+
+def find_false_barge_ins(sounds, c_words, a_segs, cfg=Config()):
+    """A short caller sound that is not speech, after which the agent goes quiet.
+
+    Two ways the agent can be stopped by it:
+    - mid-segment: the agent's speech ends within barge_stop_s after the sound starts, then stays quiet;
+    - in a breath: the sound lands in an agent pause of under 0.3 s and the agent never picks up again.
+    Not checked (audio alone cannot tell): whether the agent was about to finish its sentence anyway.
+    """
+    events = []
+    for s, e in sounds:
         if e - s >= cfg.min_speech_s or any(ws < e and s < we for ws, we in c_words):
             continue
-        # The agent was talking: inside a segment, or in a breath gap within the last 300 ms.
         if not any(a_s < s and a_e > s - 0.3 for a_s, a_e in a_segs):
-            continue
-        # Where did the agent next go quiet for at least barge_quiet_s?
+            continue  # the agent was not talking
         stop = None
         for i, (a_s, a_e) in enumerate(a_segs):
             if a_e < s:
@@ -145,11 +163,14 @@ def analyze(caller, agent, cfg=Config(), vad=None):
             if nxt is None or nxt - a_e >= cfg.barge_quiet_s:
                 stop = a_e
                 break
-        if stop is None:
+        if stop is not None:
+            stopped = 0 <= stop - s <= cfg.barge_stop_s
+        else:
+            # Nothing after the sound: the agent was in a breath pause and did not resume.
             prior = [a_e for a_s, a_e in a_segs if a_s < s]
             stop = prior[-1] if prior else None
-        if stop is not None and 0 <= stop - s <= cfg.barge_stop_s or (stop is not None and s - 0.3 < stop < s):
-            res.events.append({"type": "false_barge_in", "time": round(s, 3), "agent_stopped_at": round(stop, 3)})
-
-    res.events.sort(key=lambda ev: ev["time"])
-    return res
+            stopped = stop is not None and s - 0.3 < stop < s
+        # One sound can come back from the energy detector as two fragments; report it once.
+        if stopped and not (events and s - events[-1]["time"] < 0.5):
+            events.append({"type": "false_barge_in", "time": round(s, 3), "agent_stopped_at": round(stop, 3)})
+    return events

@@ -1,7 +1,7 @@
 """Print VAD segments vs truth words around a time. usage: inspect_clip.py CLIP T0 T1"""
 import json, sys
 from pathlib import Path
-P = Path(__file__).resolve().parents[2] / "data/ami_pairs"
+P = Path(__file__).resolve().parents[1] / "data/ami_pairs"
 c, t0, t1 = sys.argv[1], float(sys.argv[2]), float(sys.argv[3])
 tr = json.load(open(P / f"truth/{c}.json")); cc = json.load(open(P / f"cc_cache/{c}.json"))
 def win(xs, f=lambda x: x): return [x for x in xs if t1 >= f(x)[0] and t0 <= f(x)[1]]

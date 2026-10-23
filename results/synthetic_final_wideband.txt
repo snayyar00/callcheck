@@ -1,0 +1,68 @@
+call_000  ok
+call_001  ok
+call_002  ok
+call_003  ok
+call_004  ok
+call_005  ok
+call_006  ok
+call_007  ok
+call_008  ok
+call_009  ok
+call_010  ok
+call_011  ok
+call_012  ok
+call_013  ok
+call_014  ok
+call_015  ok
+call_016  ok
+call_017  ok
+call_018  ok
+call_019  ok
+call_020  ok
+call_021  ok
+call_022  ok
+call_023  ok
+call_024  ok
+call_025  ok
+call_026  ok
+call_027  ok
+call_028  ok
+call_029  ok
+call_030  ok
+call_031  ok
+call_032  ok
+call_033  ok
+call_034  ok
+call_035  ok
+call_036  ok
+call_037  ok
+call_038  ok
+call_039  ok
+call_040  ok
+call_041  ok
+call_042  ok
+call_043  ok
+call_044  ok
+call_045  ok
+call_046  ok
+call_047  ok
+call_048  ok
+call_049  ok
+call_050  ok
+call_051  ok
+call_052  ok
+call_053  ok
+call_054  ok
+call_055  ok
+call_056  ok
+call_057  ok
+call_058  ok
+call_059  ok
+
+wideband: per fault type (tolerance 0.5s)
+type               found  missed   false  recall precision
+slow_response         21       0       0    100%      100%
+dead_air              16       0       0    100%      100%
+cutoff                17       0       0    100%      100%
+false_barge_in        22       0       0    100%      100%
+latency: 337 turns matched, mean error -45 ms, median |error| 52 ms, max |error| 226 ms

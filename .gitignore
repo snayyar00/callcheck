@@ -12,9 +12,8 @@ data/real_tel_holdout/
 data/ami_pairs/cc_cache*/
 realdata/telephone/out/
 research/endpointing/cache/
-realdata/telephone/out_diagnose.txt
-data/ami_pairs/score_clean.txt
-data/ami_pairs/score_leaky.txt
 research/endpointing/models/
 research/endpointing/smartturn_P.npy
 audit/out/
+scripts/
+data/hard/

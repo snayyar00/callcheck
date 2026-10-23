@@ -1,6 +1,6 @@
 # Endpointing on real phone calls: silence timeout vs a small causal model
 
-Local only. SpokenWOZ test (CC BY-NC 4.0). Not for publication. Reproduce: `run.py` (stage 1 cached in `cache/`), then `smartturn.py`.
+Data: SpokenWOZ test set (CC BY-NC 4.0); audio and per-call labels stay local, only aggregate results are here. Reproduce: `run.py` (stage 1 cached in `cache/`), then `smartturn.py`.
 Raw output: `out.txt`, `out_smartturn.txt`, `results.json`, `smartturn_results.json`. Plot: `curve.png`.
 
 ## Bottom line

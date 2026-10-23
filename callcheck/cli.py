@@ -4,7 +4,6 @@ import argparse
 import json
 import subprocess
 import sys
-import urllib.request
 from pathlib import Path
 
 import numpy as np
@@ -13,27 +12,7 @@ from . import vad as vadmod
 from .analyze import analyze, load
 
 AUDIO_EXT = {".wav", ".mp3", ".m4a", ".flac", ".ogg", ".opus", ".aac", ".mp4"}
-CACHE = Path.home() / ".cache" / "callcheck"
 TYPES = ["slow_response", "dead_air", "cutoff", "false_barge_in", "wrong_readback"]
-
-
-def model_path():
-    """Repo-local models/ first, then the user cache. Download on first use."""
-    if vadmod.MODEL.exists():
-        return vadmod.MODEL
-    cached = CACHE / "silero_vad.onnx"
-    if not cached.exists():
-        print(f"Silero VAD model not found. Downloading to {cached} (one time, about 2 MB)...", file=sys.stderr)
-        CACHE.mkdir(parents=True, exist_ok=True)
-        tmp = cached.with_suffix(".part")
-        try:
-            urllib.request.urlretrieve(vadmod.MODEL_URL, tmp)
-        except Exception as e:  # network or HTTP failure
-            tmp.unlink(missing_ok=True)
-            sys.exit(f"callcheck: could not download the VAD model from {vadmod.MODEL_URL}: {e}\n"
-                     f"Download it by hand and save it as {cached}")
-        tmp.rename(cached)
-    return cached
 
 
 def channels(path):
@@ -153,7 +132,7 @@ def cmd_call(args):
         print(f"callcheck: file not found: {path}", file=sys.stderr)
         return 2
     use_stt = stt_check(args)
-    vad = vadmod.SileroVAD(model_path())
+    vad = vadmod.SileroVAD()
     try:
         call = run_call(path, vad, args.caller_channel, use_stt)
     except (ValueError, subprocess.CalledProcessError) as e:
@@ -175,7 +154,7 @@ def cmd_batch(args):
         print(f"callcheck: no audio files in {root}", file=sys.stderr)
         return 2
     use_stt = stt_check(args)
-    vad = vadmod.SileroVAD(model_path())
+    vad = vadmod.SileroVAD()
     calls, failed = [], []
     for i, p in enumerate(files, 1):
         print(f"[{i}/{len(files)}] {p.name}", file=sys.stderr)

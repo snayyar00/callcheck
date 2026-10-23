@@ -21,9 +21,10 @@ HOLDOUT = len(sys.argv) > 1 and sys.argv[1] == "holdout"
 if HOLDOUT:
     OUT, N_RANDOM, N_HARD, SEED = ROOT / "data/real_tel_holdout", 20, 20, 2026
 BACKCHANNEL_MAX_WORDS = 2
-# Annotated utterance boundaries are padded vs. the audio: measured on own-channel energy over 1090 turns,
-# annotated start is a median 0.34 s BEFORE voice onset (IQR 0.29-0.35) and annotated end is 0.35 s AFTER
-# voice offset (IQR 0.32-0.39). We remove that constant pad to get the "cal" truth; "raw" keeps annotation as-is.
+# Annotated utterance boundaries are padded vs. the audio. measure_pad.py measures it on the tuning calls
+# (results/real_phone_annotation_pad.txt): annotated start a median 0.33 s before voice onset, end 0.35 s
+# after voice offset. A first, rougher pass gave 0.34 / 0.35, which is what every reported score uses.
+# We remove that constant pad to get the "cal" truth; "raw" keeps the annotation as published.
 PAD_START, PAD_END = 0.34, 0.35
 
 
@@ -135,8 +136,7 @@ def main():
             rej.append(k); continue
         subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(p), "-ar", "16000", "-ac", "2",
                         "-c:a", "pcm_s16le", str(OUT / "wav" / f"{k}.wav")], check=True)
-        lat, ov, sil = derive(tr, info[k]["dur"])
-        tr_raw = turns_of(d[k]["log"], pad=False)
+        tr_raw = tr
         lat_r, ov_r, sil_r = derive(tr_raw, info[k]["dur"])
         tr_cal = turns_of(d[k]["log"])
         lat, ov, sil = derive(tr_cal, info[k]["dur"])

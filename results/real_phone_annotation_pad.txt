@@ -1,0 +1,2 @@
+annotated start is before voice onset by: median 0.33 s, IQR 0.29-0.35 s, n=1131 turns
+annotated end is after voice offset by: median 0.35 s, IQR 0.32-0.40 s, n=1132 turns

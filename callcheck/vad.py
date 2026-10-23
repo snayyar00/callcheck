@@ -1,5 +1,8 @@
 """Silero VAD (ONNX) over a whole channel, returning speech segments in seconds."""
 
+import hashlib
+import sys
+import urllib.request
 from pathlib import Path
 
 import numpy as np
@@ -9,17 +12,35 @@ SR = 16000
 CHUNK = 512  # 32 ms at 16 kHz, what Silero expects
 CONTEXT = 64
 MODEL = Path(__file__).resolve().parent.parent / "models" / "silero_vad.onnx"
-MODEL_URL = "https://github.com/snakers4/silero-vad/raw/master/src/silero_vad/data/silero_vad.onnx"
+# Pinned: every number in the README was produced with this exact file (Silero VAD v6.2).
+MODEL_URL = "https://github.com/snakers4/silero-vad/raw/v6.2.3/src/silero_vad/data/silero_vad.onnx"
+MODEL_SHA256 = "1a153a22f4509e292a94e67d6f9b85e8deb25b4988682b7e174c65279d8788e3"
+CACHE = Path.home() / ".cache" / "callcheck" / "silero_vad.onnx"
+
+
+def model_path():
+    """Repo-local models/ first, then the user cache. Downloads once and checks the hash."""
+    if MODEL.exists():
+        return MODEL
+    if not CACHE.exists():
+        print(f"Downloading Silero VAD v6.2 to {CACHE} (one time, about 2 MB)", file=sys.stderr)
+        CACHE.parent.mkdir(parents=True, exist_ok=True)
+        tmp = CACHE.with_suffix(".part")
+        urllib.request.urlretrieve(MODEL_URL, tmp)
+        if hashlib.sha256(tmp.read_bytes()).hexdigest() != MODEL_SHA256:
+            tmp.unlink()
+            raise RuntimeError(f"{MODEL_URL} does not match the pinned hash")
+        tmp.rename(CACHE)
+    return CACHE
 
 
 class SileroVAD:
-    def __init__(self, model_path=MODEL):
-        if not Path(model_path).exists():
-            raise FileNotFoundError(f"{model_path} missing. Download it from {MODEL_URL}")
+    def __init__(self, path=None):
+        path = path or model_path()
         opts = ort.SessionOptions()
         opts.inter_op_num_threads = 1
         opts.intra_op_num_threads = 1
-        self.session = ort.InferenceSession(str(model_path), providers=["CPUExecutionProvider"], sess_options=opts)
+        self.session = ort.InferenceSession(str(path), providers=["CPUExecutionProvider"], sess_options=opts)
 
     def probs(self, audio):
         """Speech probability for every 32 ms chunk of a mono float32 16 kHz signal."""

@@ -65,9 +65,13 @@ Read the conversation and answer in JSON only, no prose:
  "systems": [subset of %s],
  "info_needed": ["details the agent had to collect, e.g. order id, email"]
 }
-"full" = an AI agent with access to the listed systems could resolve it without a human.
-"partial" = it can do most of it but a human must approve or finish something.
-"no" = it needs human judgment, empathy or authority throughout.
+Judge from what actually happened in this conversation, not from the topic in general:
+"full" = an AI agent with the listed systems could have done everything the human agent did here.
+"partial" = most of it, but one step needed a person: an exception to policy, an approval, a report
+  to another team, a promise of follow-up, or calming an upset customer before anything could happen.
+"no" = the core of the request needed a person: a complaint or dispute about a decision, a problem
+  nobody on the call could fix, a negotiation, or the human agent had to escalate or transfer it.
+If the human agent escalated, transferred, or said another team must handle it, it is not "full".
 List a system only if resolving this specific request needs it.
 System descriptions: %s
 
@@ -230,28 +234,42 @@ def main():
         syst = Counter(s for p in ps for s in p["systems"]).most_common(3)
         lines.append(f"| {t} | {len(ps) / len(rows):.0%} | {auto['full'] / len(ps):.0%} | {auto['partial'] / len(ps):.0%} | "
                      f"{auto['no'] / len(ps):.0%} | {', '.join(s for s, _ in syst)} |")
+    # Calibration check: the human agent's own escalations are the only automation ground truth ABCD has.
+    esc = Counter(); rest = Counter()
+    for r, g in zip(rows, gold):
+        (esc if "human_handoff" in g["systems"] else rest)[r["pred"]["automatable"]] += 1
+    lines += ["", "## Is the automation judgment calibrated?", "",
+              "ABCD has no automation label, but it records when the human agent escalated to another team. "
+              "Those calls should rarely be judged fully automatable.", "",
+              "| Calls | n | full | partial | no | unknown |", "|---|---|---|---|---|---|"]
+    for name, c in (("human agent escalated", esc), ("all other calls", rest)):
+        n = sum(c.values())
+        lines.append(f"| {name} | {n} | " + " | ".join(f"{c[k] / n:.0%}" for k in ("full", "partial", "no", "unknown")) + " |")
+
     auto = Counter(r["pred"]["automatable"] for r in rows)
     full, part = auto["full"] / len(rows), auto["partial"] / len(rows)
-    minutes = a.calls_per_month * a.handle_min
-    saved_min = minutes * (full + part * a.partial_share)
-    human = saved_min / 60 * a.agent_cost_hr
-    ai = a.calls_per_month * (full + part) * a.handle_min * a.ai_cost_min
-    lines += ["", "## Savings estimate", "",
-              f"Fully automatable {full:.0%}, partly {part:.0%}, not {auto['no'] / len(rows):.0%}.", "",
+    hours = a.calls_per_month * a.handle_min / 60
+    low, high = hours * full, hours * (full + part)  # partial calls save somewhere between none and all of their time
+    lines += ["", "## Savings, as a range", "",
+              f"Judged fully automatable {full:.0%}, partly {part:.0%}, not {auto['no'] / len(rows):.0%}"
+              + (f", no usable answer {auto['unknown'] / len(rows):.0%}" if auto["unknown"] else "") + ".", "",
               "| Assumption (change with flags) | Value |", "|---|---|",
               f"| Calls per month | {a.calls_per_month:,} |", f"| Human handle time | {a.handle_min} min |",
-              f"| Human agent cost | ${a.agent_cost_hr}/hr |", f"| Voice AI cost | ${a.ai_cost_min}/min |",
-              f"| Time saved on 'partial' calls | {a.partial_share:.0%} |", "",
-              f"Human hours freed per month: **{saved_min / 60:,.0f}** (${human:,.0f}). "
-              f"Voice AI cost: ${ai:,.0f}. Net: **${human - ai:,.0f}/month**.", "",
-              "The automation split is the model's judgment, not a measured outcome; the systems and call-type "
-              "numbers above are what was measured.", ""]
+              f"| Human agent cost | ${a.agent_cost_hr}/hr |", f"| Voice AI cost | ${a.ai_cost_min}/min |", "",
+              f"Agent hours freed per month: {low:,.0f} to {high:,.0f} of {hours:,.0f}, "
+              f"worth ${low * a.agent_cost_hr:,.0f} to ${high * a.agent_cost_hr:,.0f} before the voice AI cost "
+              f"(${a.calls_per_month * full * a.handle_min * a.ai_cost_min:,.0f} to "
+              f"${a.calls_per_month * (full + part) * a.handle_min * a.ai_cost_min:,.0f}).", "",
+              "The automation split is the model's judgment and runs optimistic (see the table above). "
+              "The systems and call-type numbers are what was measured. Use this range to decide what to "
+              "pilot, not to quote a saving.", ""]
     examples = [(t, r["pred"]) for t, r in zip(types, rows)]
     lines += ["## Example judgments", ""]
     for t, p in examples[:6]:
         lines.append(f"- **{t}** / {p['reason']}: {p['automatable']}. {p['why']} Systems: {', '.join(p['systems']) or 'none'}.")
     usage = [r["usage"] for r in rows if r.get("usage")]
-    lines += ["", f"Tokens: {sum(u.get('prompt_tokens', 0) for u in usage):,} in, {sum(u.get('completion_tokens', 0) for u in usage):,} out."]
+    lines += ["", f"Tokens: {sum(u.get('prompt_tokens', 0) for u in usage):,} in, {sum(u.get('completion_tokens', 0) for u in usage):,} out. "
+              f"API cost for the per-conversation pass: ${sum(u.get('cost', 0) for u in usage):.2f}."]
     report = "\n".join(lines)
     (OUT / f"report_{tag}.md").write_text(report)
     print(report)

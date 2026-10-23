@@ -35,7 +35,6 @@ def make_call(path):
         w.writeframes(pcm.tobytes())
 
 
-@pytest.mark.skipif(not cli.vadmod.MODEL.exists() and not (cli.CACHE / "silero_vad.onnx").exists(), reason="VAD model not present")
 def test_cli_json(tmp_path):
     wav = tmp_path / "call.wav"
     make_call(wav)

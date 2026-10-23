@@ -128,8 +128,12 @@ def extract(convos, cache):
 
     def one(c):
         prompt = EXTRACT_PROMPT % (list(SYSTEMS), json.dumps(SYSTEMS), transcript(c))
+        ans, usage = {}, {}
         for _ in range(3):  # cheaper models sometimes drop a field; ask again rather than guess it
-            ans, usage = llm(prompt)
+            try:
+                ans, usage = llm(prompt)
+            except (AttributeError, json.JSONDecodeError):  # no JSON at all, e.g. reasoning used every token
+                continue
             if {"reason", "automatable", "systems"} <= ans.keys() and ans["automatable"] in ("full", "partial", "no"):
                 break
         else:

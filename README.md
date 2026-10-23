@@ -24,7 +24,7 @@ Both parts were tested against labelled public data the code never saw while it 
 
 | Question | Tool | Tested on | Result |
 |---|---|---|---|
-| Which systems will the agent need? | `audit/run.py` | 300 held-out support conversations (ABCD) | precision AUDIT_P, recall AUDIT_R |
+| Which systems will the agent need? | `audit/run.py` | 300 held-out support conversations (ABCD) | precision 75%, recall 87% |
 | How fast does the call center answer today? | `callcheck` | 40 held-out real phone calls, 131 min (SpokenWOZ) | 90% of 731 turns within 0.21 s of the human-marked time |
 | How often are callers left waiting over 1.5 s? | `callcheck` | same 40 calls | precision 85%, recall 78% |
 | How often are callers talked over? | `callcheck` | same 40 calls | precision 57%, recall 39% (first version 13% and 13%) |
@@ -36,25 +36,38 @@ Both parts were tested against labelled public data the code never saw while it 
 
 ## 1. Audit: what callers want and what to automate
 
-`audit/run.py` reads each transcript with an LLM (DeepSeek v4.1 Flash through Vercel AI Gateway) and records three things: the reason for the call, whether an agent could resolve it end to end ("full", "partial" or "no"), and which systems it would need. A second pass groups the reasons into at most 12 call types. The report then gives each type's share, its automation split, the systems it needs, and a savings range. The run below cost AUDIT_COST.
+`audit/run.py` reads each transcript with an LLM (DeepSeek v4.1 Flash through Vercel AI Gateway) and records three things: the reason for the call, whether an agent could resolve it end to end ("full", "partial" or "no"), and which systems it would need. A second pass groups the reasons into at most 12 call types. The report then gives each type's share, its automation split, the systems it needs, and a savings range. The per-conversation pass for the 300-conversation run below cost $0.59.
 
 ### How it was tested
 
-ABCD (ASAPP, MIT licence) is a set of human customer-service conversations. Each one is labelled with what the customer wanted and every system action the human agent took. The model sees only the spoken lines, as a real transcript would show them, and is scored against the hidden labels. The action labels map to seven systems: account lookup, identity check, orders, refunds, membership and billing, FAQ, and handoff to a human. Prompts were adjusted on 40 dev conversations. The numbers below come from one run on 300 test conversations that were not used for tuning. The full output is `audit/SAMPLE_REPORT.md`.
+ABCD (ASAPP, MIT licence) is a set of human customer-service conversations. Each one is labelled with what the customer wanted and every system action the human agent took. The model sees only the spoken lines, as a real transcript would show them, and is scored against the hidden labels. The action labels map to eight systems: account lookup, identity check, account changes, orders, refunds, membership and billing, FAQ, and handoff to a human. Prompts were adjusted on 40 dev conversations. The numbers below come from one run on 300 test conversations that were not used for tuning. The full output is `audit/SAMPLE_REPORT.md`.
 
 | Check | Result |
 |---|---|
-| Systems the agent would need | precision AUDIT_P, recall AUDIT_R |
-| Call types found vs the 10 true top-level reasons | AUDIT_TYPES |
-| Conversations with no usable answer after three tries | AUDIT_UNKNOWN |
+| Systems the agent would need | precision 75%, recall 87% |
+| Call types found vs the 10 true top-level reasons | 12 types, purity 72%, NMI 0.67 |
+| Conversations with no usable answer after three tries | 0 of 300 |
 
-AUDIT_CALIBRATION
+ABCD has no automation label, but it records when the human agent escalated to another team. Those calls should rarely be judged fully automatable:
 
-AUDIT_SAMPLE_TABLE
+| Calls | n | full | partial | no |
+|---|---|---|---|---|
+| human agent escalated | 22 | 5% | 91% | 5% |
+| all other calls | 278 | 97% | 1% | 1% |
+
+What the report shows for each call type (first rows of `audit/SAMPLE_REPORT.md`):
+
+| Call type | Share | Fully automatable | Systems needed |
+|---|---|---|---|
+| Subscription & Membership | 18% | 89% | membership_billing, account_lookup, identity_verification |
+| Returns & Refunds | 13% | 92% | account_lookup, identity_verification, order_system |
+| Order Changes & Status | 12% | 97% | identity_verification, order_system, account_lookup |
+| Website, Search & Cart Issues | 10% | 67% | knowledge_base, human_handoff, order_system |
+| ... 8 more types | | | |
 
 ### Limits
 
-- It is too optimistic about automation. AUDIT_OPTIMISM Treat the automation split as a first pass for a person to review with the customer, not as a commitment.
+- It is too optimistic about automation. It marks 91% of all calls fully automatable. It separates escalated calls well, but almost never says "no", and ABCD has no label to check the 97% of ordinary calls it calls "full". Treat the automation split as a first pass for a person to review with the customer, not as a commitment.
 - It lists a system when unsure. That is the safer mistake when you scope integrations, but it lowers precision.
 - It was tested on transcripts, not end to end from audio. A real onboarding adds a speech-to-text step first.
 - The savings range depends entirely on four inputs: calls per month, handle time, agent cost per hour and AI cost per minute. They are command-line flags, and the report prints them next to the result.

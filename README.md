@@ -71,7 +71,7 @@ What the report shows for each call type (first rows of `audit/SAMPLE_REPORT.md`
 - It lists a system when unsure. That is the safer mistake when you scope integrations, but it lowers precision.
 - It was tested on transcripts, not end to end from audio. A real onboarding adds a speech-to-text step first.
 - The savings range depends entirely on four inputs: calls per month, handle time, agent cost per hour and AI cost per minute. They are command-line flags, and the report prints them next to the result.
-- The test set was run three times. The first two runs used an earlier prompt: Sonnet 5.5 scored systems precision 71% and recall 89%, and DeepSeek scored 73% and 82%. In the DeepSeek run, 10 of the 22 calls a human escalated were still marked fully automatable, so I changed the prompt on dev only, to judge automation from what happened in the call, and ran DeepSeek once more on test. The numbers above are from that third run. The earlier reports are in `audit/earlier_runs/`.
+- The test set was run three times. The first two runs used an earlier prompt: Sonnet 5.5 scored systems precision 71% and recall 89%, and DeepSeek scored 73% and 82%. Neither run marked a single call "not automatable", even complaints and transfers, so I changed the prompt on dev only, to judge automation from what happened in the call, and ran DeepSeek once more on test. The numbers above are from that third run. The earlier reports are in `audit/earlier_runs/`.
 
 ## 2. callcheck: how callers' experience looks today
 

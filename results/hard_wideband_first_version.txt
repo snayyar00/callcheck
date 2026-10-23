@@ -1,0 +1,68 @@
+call_000  ok
+call_001  ok
+call_002  ok
+call_003  ok
+call_004  ok
+call_005  ok
+call_006  ok
+call_007  EXTRA cutoff@0.32  EXTRA cutoff@8.096  EXTRA cutoff@19.264  EXTRA cutoff@26.976  EXTRA cutoff@36.416  EXTRA cutoff@44.096
+call_008  ok
+call_009  EXTRA cutoff@0.352  EXTRA cutoff@8.128  EXTRA cutoff@19.296  EXTRA cutoff@27.648  EXTRA cutoff@37.632  EXTRA cutoff@45.12
+call_010  EXTRA cutoff@0.32  EXTRA cutoff@8.48  EXTRA cutoff@18.752  EXTRA cutoff@30.304  EXTRA cutoff@37.056  EXTRA cutoff@47.808
+call_011  ok
+call_012  MISSED slow_response@10.098  EXTRA cutoff@0.32  EXTRA cutoff@10.112  EXTRA cutoff@21.184  EXTRA cutoff@29.184  EXTRA cutoff@38.88  EXTRA cutoff@46.4
+call_013  ok
+call_014  ok
+call_015  MISSED slow_response@37.928  EXTRA cutoff@8.416  EXTRA cutoff@18.88  EXTRA cutoff@29.728  EXTRA cutoff@47.04
+call_016  ok
+call_017  MISSED false_barge_in@50.152  EXTRA cutoff@0.32  EXTRA cutoff@8.832  EXTRA cutoff@20.192  EXTRA cutoff@31.584  EXTRA cutoff@38.048  EXTRA cutoff@49.344  EXTRA cutoff@56.896  EXTRA cutoff@62.816
+call_018  EXTRA cutoff@18.784  EXTRA cutoff@26.88  EXTRA cutoff@44.576
+call_019  MISSED slow_response@28.594  EXTRA cutoff@8.416  EXTRA cutoff@19.2  EXTRA cutoff@28.608  EXTRA cutoff@39.808  EXTRA cutoff@47.328
+call_020  ok
+call_021  ok
+call_022  MISSED cutoff@35.587
+call_023  MISSED slow_response@39.189  EXTRA cutoff@0.32  EXTRA cutoff@8.608  EXTRA cutoff@19.008  EXTRA cutoff@27.456  EXTRA cutoff@39.2  EXTRA cutoff@46.752
+call_024  ok
+call_025  MISSED false_barge_in@40.565  EXTRA cutoff@0.32  EXTRA cutoff@8.672  EXTRA cutoff@19.648  EXTRA cutoff@28.256  EXTRA cutoff@39.424  EXTRA cutoff@47.136  EXTRA cutoff@53.216
+call_026  ok
+call_027  MISSED false_barge_in@47.535  EXTRA cutoff@0.32  EXTRA cutoff@7.968  EXTRA cutoff@19.136  EXTRA cutoff@30.56  EXTRA cutoff@37.248  EXTRA cutoff@46.72  EXTRA cutoff@54.048  EXTRA cutoff@59.936
+call_028  MISSED slow_response@10.304  MISSED false_barge_in@40.849  EXTRA cutoff@0.32  EXTRA cutoff@10.304  EXTRA cutoff@39.648  EXTRA cutoff@42.048
+call_029  MISSED false_barge_in@47.129  EXTRA cutoff@0.32  EXTRA cutoff@8.512  EXTRA cutoff@18.976  EXTRA cutoff@30.304  EXTRA cutoff@36.96  EXTRA cutoff@46.304  EXTRA cutoff@53.248  EXTRA cutoff@58.944
+call_030  EXTRA cutoff@0.32  EXTRA cutoff@8.64  EXTRA cutoff@19.296  EXTRA cutoff@30.816  EXTRA cutoff@37.6  EXTRA cutoff@55.232
+call_031  EXTRA cutoff@0.32  EXTRA cutoff@8.384  EXTRA cutoff@19.392  EXTRA cutoff@30.176  EXTRA cutoff@36.768  EXTRA cutoff@47.488  EXTRA cutoff@55.328
+call_032  ok
+call_033  MISSED dead_air@33.611  MISSED false_barge_in@46.113  EXTRA cutoff@21.28  EXTRA slow_response@33.632
+call_034  MISSED slow_response@29.13  MISSED false_barge_in@41.257  EXTRA cutoff@0.32  EXTRA cutoff@8.768  EXTRA cutoff@19.04  EXTRA cutoff@29.152  EXTRA cutoff@40.128  EXTRA cutoff@47.904  EXTRA cutoff@54.112
+call_035  MISSED cutoff@40.818
+call_036  ok
+call_037  ok
+call_038  ok
+call_039  EXTRA cutoff@0.32  EXTRA cutoff@8.192  EXTRA cutoff@27.36  EXTRA cutoff@44.608
+call_040  EXTRA cutoff@0.32
+call_041  ok
+call_042  MISSED cutoff@38.927
+call_043  ok
+call_044  ok
+call_045  MISSED false_barge_in@38.318  EXTRA cutoff@0.32  EXTRA cutoff@8.576  EXTRA cutoff@27.008  EXTRA cutoff@44.352  EXTRA cutoff@50.432
+call_046  MISSED dead_air@31.559  MISSED false_barge_in@44.4  EXTRA cutoff@19.52  EXTRA cutoff@31.584  EXTRA cutoff@51.072
+call_047  MISSED dead_air@40.558  EXTRA cutoff@0.32  EXTRA cutoff@8.8  EXTRA cutoff@19.712  EXTRA cutoff@27.488  EXTRA cutoff@40.576  EXTRA cutoff@48.352
+call_048  MISSED cutoff@15.328  MISSED false_barge_in@39.752  EXTRA cutoff@20.0  EXTRA cutoff@28.352  EXTRA cutoff@46.24
+call_049  MISSED dead_air@29.113  MISSED slow_response@41.726  EXTRA cutoff@0.32  EXTRA cutoff@7.968  EXTRA cutoff@18.72  EXTRA cutoff@29.12  EXTRA cutoff@41.728  EXTRA cutoff@49.12
+call_050  MISSED false_barge_in@54.753
+call_051  MISSED dead_air@40.057  EXTRA cutoff@26.144  EXTRA cutoff@40.064
+call_052  MISSED false_barge_in@43.948
+call_053  ok
+call_054  ok
+call_055  MISSED false_barge_in@38.285  EXTRA cutoff@8.48  EXTRA cutoff@19.488  EXTRA cutoff@27.712  EXTRA cutoff@37.44  EXTRA cutoff@44.832  EXTRA cutoff@50.496
+call_056  MISSED dead_air@11.219  MISSED false_barge_in@40.828  EXTRA cutoff@0.32  EXTRA cutoff@11.232  EXTRA cutoff@21.952  EXTRA cutoff@30.048  EXTRA cutoff@39.936  EXTRA cutoff@47.392  EXTRA cutoff@53.376
+call_057  ok
+call_058  MISSED slow_response@10.177  MISSED false_barge_in@40.861  EXTRA cutoff@0.32  EXTRA cutoff@10.176  EXTRA cutoff@21.6  EXTRA cutoff@29.824  EXTRA cutoff@39.904  EXTRA cutoff@47.584  EXTRA cutoff@53.632
+call_059  ok
+
+wideband: per fault type (tolerance 0.5s)
+type               found  missed   false  recall precision
+slow_response         13       8       1     62%       93%
+dead_air              10       6       0     62%      100%
+cutoff                13       4     148     76%        8%
+false_barge_in         7      15       0     32%      100%
+latency: 205 turns matched, mean error -89 ms, median |error| 57 ms, max |error| 3590 ms

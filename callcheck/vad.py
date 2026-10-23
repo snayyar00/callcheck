@@ -79,11 +79,20 @@ class SileroVAD:
         return segs
 
 
+FLOOR_K = 4.0  # a sound must be this many times louder than the channel's noise floor
+
+
 def sound_segments(audio, rms_on=0.02, frame_s=0.02, min_gap_s=0.1):
-    """Any loud sound, speech or not (coughs, bumps). Used next to VAD, not instead of it."""
+    """Any loud sound, speech or not (coughs, bumps). Used next to VAD, not instead of it.
+
+    The threshold is rms_on, raised to FLOOR_K times the channel's noise floor when the line
+    is noisy, so steady background noise does not read as one long sound.
+    """
     n = int(frame_s * SR)
     frames = audio[: len(audio) // n * n].reshape(-1, n)
-    loud = np.sqrt((frames ** 2).mean(axis=1)) > rms_on
+    rms = np.sqrt((frames ** 2).mean(axis=1))
+    floor = np.percentile(rms, 10) if len(rms) else 0.0  # quietest frames: the line with nobody talking
+    loud = rms > max(rms_on, FLOOR_K * floor)
     segs, start, gap = [], None, 0
     for i, v in enumerate(loud):
         if v:

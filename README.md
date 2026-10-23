@@ -120,11 +120,11 @@ Cut-off recall fell from 75% on the 32 tuning calls to 39% on the held-out calls
 
 ### More results
 
-Real meetings (AMI), synthetic calls with planted faults, the same calls with noise, echo and codecs, and a side study on endpointing (can audio alone tell when the caller is done?) are in [docs/RESULTS.md](docs/RESULTS.md). Short version: on clean synthetic calls every fault is found; noise and echo cut precision badly; and a plain 0.8 s silence timeout did as well as two trained endpointing models.
+Real meetings (AMI), synthetic calls with planted faults, the same calls with noise, echo and codecs, and a side study on endpointing (can audio alone tell when the caller is done?) are in [docs/RESULTS.md](docs/RESULTS.md). Short version: on clean synthetic calls every fault is found; noise and echo still hurt, mostly cut-off precision; and a plain 0.8 s silence timeout did as well as two trained endpointing models.
 
 ## Where it breaks
 
-- Background noise. Steady noise defeats the fixed loudness threshold (see docs/RESULTS.md). Fix: set the threshold relative to each channel's own noise floor.
+- Speech-like noise. A threshold set from each channel's noise floor fixed most steady noise (slow-reply recall on the noisy set went from 62% to 95%), but a TV in the background still reads as speech and creates false cut-offs (see docs/RESULTS.md).
 - Echo and bleed. If one side's voice leaks into the other channel, callcheck sees phantom turns.
 - Backchannels. A caller "mm-hm" is not a turn, but there is no class for it yet, so it can reset the latency timer.
 - Talk-over recall. It still misses most interruptions where the caller never pauses.
@@ -133,7 +133,7 @@ Real meetings (AMI), synthetic calls with planted faults, the same calls with no
 
 ## What I would do next
 
-1. Noise-floor-relative energy threshold, then rerun the hard set.
+1. Echo: the agent's own audio is known, so cancel it from the caller channel before detection.
 2. A backchannel class, so "mm-hm" stops resetting latency and stops counting as a cut-off.
 3. Run the audit end to end from audio, with speech-to-text in front, and measure how much transcript errors cost.
 4. Have a person review the "full" automation calls with a customer, and use their corrections to fix the prompt.

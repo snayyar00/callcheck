@@ -16,12 +16,16 @@ The AMI meeting corpus (CC BY 4.0) gives 29 four-minute windows of two people on
 
 | 60 calls | Wideband recall / precision | Phone recall / precision |
 |---|---|---|
-| slow_response | 62% / 93% | 76% / 100% |
-| dead_air | 62% / 100% | 94% / 100% |
-| cutoff | 76% / 8% | 76% / 14% |
-| false_barge_in | 32% / 100% | 59% / 93% |
+| slow_response | 95% / 100% (was 62% / 93%) | 90% / 100% (was 76% / 100%) |
+| dead_air | 88% / 100% (was 62% / 100%) | 94% / 100% (was 94% / 100%) |
+| cutoff | 76% / 20% (was 76% / 8%) | 76% / 22% (was 76% / 14%) |
+| false_barge_in | 50% / 92% (was 32% / 100%) | 68% / 94% (was 59% / 93%) |
 
-Sources: `results/hard_wideband.txt`, `results/hard_phone.txt`. The per-condition split is in `results/hard_by_condition_wideband.txt`. Each call has several conditions at once. Calls with echo or noise under 10 dB SNR score worst: on echo calls, cut-off recall is 20% and false barge-in recall 0%. The energy fallback uses a fixed loudness threshold, so steady noise reads as caller speech and creates false cut-offs. Echo puts the agent's voice on the caller channel.
+Sources: `results/hard_wideband.txt` and `results/hard_phone.txt`; the "was" numbers are in the `*_first_version.txt` files next to them. The per-condition split is in `results/hard_by_condition_wideband.txt`.
+
+The first version's energy fallback used a fixed loudness threshold, so steady noise read as one long caller turn. It now uses the larger of that threshold and 4 times the channel's noise floor (the 10th percentile of frame loudness). The factor 4 was picked on noisy copies of the dev calls (`data/synthetic` and `data/heldout`, hardened with a different seed), not on these 60. Clean and real-call scores did not change.
+
+What still fails: TV noise (speech-like, so the speech detector hears it too: cut-off precision 7%) and echo (the agent's voice lands on the caller channel: cut-off recall 20%, false barge-in recall 0%). Each call has several conditions at once, so these rows overlap.
 
 ## can audio alone tell when the caller is done?
 

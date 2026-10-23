@@ -57,3 +57,14 @@ def test_word_is_not_a_cough():
 def test_fragments_reported_once():
     ev = find_false_barge_ins([(24.0, 24.1), (24.2, 24.3)], [], [(20.0, 24.4), (27.0, 28.0)])
     assert len(ev) == 1
+
+
+def test_sound_segments_ignore_steady_noise():
+    """Steady background noise above the fixed threshold must not read as one long sound."""
+    import numpy as np
+    from callcheck.vad import SR, sound_segments
+    rng = np.random.default_rng(0)
+    audio = (rng.standard_normal(SR * 4) * 0.03).astype(np.float32)  # noise louder than rms_on=0.02
+    audio[SR : SR + SR // 2] += np.sin(np.arange(SR // 2) * 2 * np.pi * 300 / SR).astype(np.float32) * 0.5
+    segs = sound_segments(audio)
+    assert len(segs) == 1 and abs(segs[0][0] - 1.0) < 0.05 and abs(segs[0][1] - 1.5) < 0.05

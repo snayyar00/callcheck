@@ -9,7 +9,7 @@ When a customer onboards, they usually have a pile of past calls handled by thei
 3. What it saves: agent hours freed per month, as a range, with every assumption printed.
 4. How callers' experience looks today: response times, dead air and how often callers get talked over.
 
-After go-live, the same call grader runs on the agent's own calls. The improvement is then a measured before and after, not a claim.
+After go-live, the same call grader runs on the agent's own calls, so the improvement is measured against that baseline.
 
 ```mermaid
 flowchart LR
@@ -20,7 +20,7 @@ flowchart LR
     C --> E
 ```
 
-Both parts were tested against labelled public data the code never saw while it was being tuned. Each number below names the file in `results/` or `audit/` it comes from.
+Both parts were tested on labelled public data held out from tuning. The one exception, a prompt change after a first audit test run, is noted under Limits. Each number below names the file in `results/` or `audit/` it comes from.
 
 | Question | Tool | Tested on | Result |
 |---|---|---|---|
@@ -40,7 +40,7 @@ Both parts were tested against labelled public data the code never saw while it 
 
 ### How it was tested
 
-ABCD (ASAPP, MIT licence) is a set of human customer-service conversations. Each one is labelled with what the customer wanted and every system action the human agent took. The model sees only the spoken lines, as a real transcript would show them, and is scored against the hidden labels. The action labels map to eight systems: account lookup, identity check, account changes, orders, refunds, membership and billing, FAQ, and handoff to a human. Prompts were adjusted on 40 dev conversations. The numbers below come from one run on 300 test conversations that were not used for tuning. The full output is `audit/SAMPLE_REPORT.md`.
+ABCD (ASAPP, MIT licence) is a set of human customer-service conversations. Each one is labelled with what the customer wanted and every system action the human agent took. The model sees only the spoken lines, as a real transcript would show them, and is scored against the hidden labels. The action labels map to eight systems: account lookup, identity check, account changes, orders, refunds, membership and billing, FAQ, and handoff to a human. Prompts were adjusted on 40 dev conversations. The numbers below come from 300 test conversations that were not used for tuning, scored on the second test run (see Limits). The full output is `audit/SAMPLE_REPORT.md`.
 
 | Check | Result |
 |---|---|
@@ -67,7 +67,7 @@ What the report shows for each call type (first rows of `audit/SAMPLE_REPORT.md`
 
 ### Limits
 
-- It is too optimistic about automation. It marks 91% of all calls fully automatable. It separates escalated calls well, but almost never says "no", and ABCD has no label to check the 97% of ordinary calls it calls "full". Treat the automation split as a first pass for a person to review with the customer, not as a commitment.
+- It is too optimistic about automation. It marks 91% of all calls fully automatable. It separates escalated calls well, but almost never says "no", and ABCD has no label to check the 97% of ordinary calls it calls "full". Treat the automation split as a first pass for a person to review with the customer.
 - It lists a system when unsure. That is the safer mistake when you scope integrations, but it lowers precision.
 - It was tested on transcripts, not end to end from audio. A real onboarding adds a speech-to-text step first.
 - The savings range depends entirely on four inputs: calls per month, handle time, agent cost per hour and AI cost per minute. They are command-line flags, and the report prints them next to the result.
@@ -148,7 +148,7 @@ The same real calls give a clean test of endpointing, the decision a voice agent
   <img alt="Share of mid-turn pauses where the agent would cut in, by wait time. At 0.3 s: timeout 80%, prosody model 71%, smart-turn 66%. At 0.8 s: timeout 31%, prosody model 32%, smart-turn 35%." src="docs/endpointing-light.png" width="720">
 </picture>
 
-The models only help when the agent answers very fast. At the waits a production agent would use, the plain timeout does as well. Most of what the model learned was pause length and how long this caller usually pauses. Pitch and energy added little. Human operators in these calls answer a median 1.0 s after the caller stops. Details, confidence intervals and limits are in `research/endpointing/RESULTS.md`. The likely next step is text: what the caller said, not how it sounded.
+The models only help when the agent answers very fast. At the waits a production agent would use, the plain timeout does as well. Most of what the model learned was pause length and how long this caller usually pauses. Pitch and energy added little. Human operators in these calls answer a median 1.0 s after the caller stops. Details, confidence intervals and limits are in `research/endpointing/RESULTS.md`. The next thing to try is adding what the caller said, from the transcript, to the audio features.
 
 ## Where it breaks
 

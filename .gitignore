@@ -16,4 +16,4 @@ research/endpointing/models/
 research/endpointing/smartturn_P.npy
 audit/out/
 scripts/
-data/hard/
+data/hard*/
